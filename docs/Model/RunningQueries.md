@@ -4,10 +4,10 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** | Unique Id | [optional] 
-**user** | [**\Swagger\Client\Model\UserPublic**](UserPublic.md) | User who initiated the query | [optional] 
-**query** | [**\Swagger\Client\Model\Query**](Query.md) | Query that was run | [optional] 
-**sql_query** | [**\Swagger\Client\Model\SqlQuery**](SqlQuery.md) | SQL Query that was run | [optional] 
-**look** | [**\Swagger\Client\Model\LookBasic**](LookBasic.md) | Look of query that was run | [optional] 
+**user** | [**\Swagger\Client\Looker\Model\UserPublic**](UserPublic.md) | User who initiated the query | [optional] 
+**query** | [**\Swagger\Client\Looker\Model\Query**](Query.md) | Query that was run | [optional] 
+**sql_query** | [**\Swagger\Client\Looker\Model\SqlQuery**](SqlQuery.md) | SQL Query that was run | [optional] 
+**look** | [**\Swagger\Client\Looker\Model\LookBasic**](LookBasic.md) | Look of query that was run | [optional] 
 **created_at** | **string** | Date/Time Query was initiated | [optional] 
 **completed_at** | **string** | Date/Time Query was completed | [optional] 
 **query_id** | **string** | Query Id | [optional] 

@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **label_for_database_equivalent** | **string** | What the dialect calls the equivalent of a normal SQL table | [optional] 
 **default_port** | **string** | Default port number | [optional] 
 **default_max_connections** | **string** | Default number max connections | [optional] 
-**supported_options** | [**\Swagger\Client\Model\DialectInfoOptions**](DialectInfoOptions.md) | Option support details | [optional] 
+**supported_options** | [**\Swagger\Client\Looker\Model\DialectInfoOptions**](DialectInfoOptions.md) | Option support details | [optional] 
 **installed** | **bool** | Is the supporting driver installed | [optional] 
 **can** | **map[string,bool]** | Operations the current user is able to perform on this object | [optional] 
 

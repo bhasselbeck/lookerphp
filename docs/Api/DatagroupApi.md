@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **allDatagroups**
-> \Swagger\Client\Model\Datagroup[] allDatagroups()
+> \Swagger\Client\Looker\Model\Datagroup[] allDatagroups()
 
 Get All Datagroups
 
@@ -41,7 +41,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\Datagroup[]**](../Model/Datagroup.md)
+[**\Swagger\Client\Looker\Model\Datagroup[]**](../Model/Datagroup.md)
 
 ### Authorization
 
@@ -55,7 +55,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **datagroup**
-> \Swagger\Client\Model\Datagroup datagroup($datagroup_id)
+> \Swagger\Client\Looker\Model\Datagroup datagroup($datagroup_id)
 
 Get Datagroup
 
@@ -90,7 +90,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Datagroup**](../Model/Datagroup.md)
+[**\Swagger\Client\Looker\Model\Datagroup**](../Model/Datagroup.md)
 
 ### Authorization
 
@@ -104,7 +104,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateDatagroup**
-> \Swagger\Client\Model\Datagroup updateDatagroup($datagroup_id, $body)
+> \Swagger\Client\Looker\Model\Datagroup updateDatagroup($datagroup_id, $body)
 
 Update Datagroup
 
@@ -121,7 +121,7 @@ $apiInstance = new Swagger\Client\Api\DatagroupApi(
     new GuzzleHttp\Client()
 );
 $datagroup_id = "datagroup_id_example"; // string | ID of datagroup.
-$body = new \Swagger\Client\Model\Datagroup(); // \Swagger\Client\Model\Datagroup | Datagroup
+$body = new \Swagger\Client\Looker\Model\Datagroup(); // \Swagger\Client\Looker\Model\Datagroup | Datagroup
 
 try {
     $result = $apiInstance->updateDatagroup($datagroup_id, $body);
@@ -137,11 +137,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **datagroup_id** | **string**| ID of datagroup. |
- **body** | [**\Swagger\Client\Model\Datagroup**](../Model/Datagroup.md)| Datagroup |
+ **body** | [**\Swagger\Client\Looker\Model\Datagroup**](../Model/Datagroup.md)| Datagroup |
 
 ### Return type
 
-[**\Swagger\Client\Model\Datagroup**](../Model/Datagroup.md)
+[**\Swagger\Client\Looker\Model\Datagroup**](../Model/Datagroup.md)
 
 ### Authorization
 

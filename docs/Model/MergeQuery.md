@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **total** | **bool** | Total | [optional] 
 **vis_config** | **map[string,string]** | Visualization Config | [optional] 
 **dynamic_fields** | **string** | Dynamic Fields | [optional] 
-**source_queries** | [**\Swagger\Client\Model\MergeQuerySourceQuery[]**](MergeQuerySourceQuery.md) | Source Queries defining the results to be merged. | [optional] 
+**source_queries** | [**\Swagger\Client\Looker\Model\MergeQuerySourceQuery[]**](MergeQuerySourceQuery.md) | Source Queries defining the results to be merged. | [optional] 
 **result_maker_id** | **int** | Unique to get results | [optional] 
 **can** | **map[string,bool]** | Operations the current user is able to perform on this object | [optional] 
 

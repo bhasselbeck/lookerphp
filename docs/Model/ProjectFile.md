@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **title** | **string** | Display name | [optional] 
 **type** | **string** | File type: model, view, etc | [optional] 
 **mime_type** | **string** | File mime type | [optional] 
-**git_status** | [**\Swagger\Client\Model\GitStatus**](GitStatus.md) | Status of the file according to git | [optional] 
+**git_status** | [**\Swagger\Client\Looker\Model\GitStatus**](GitStatus.md) | Status of the file according to git | [optional] 
 **can** | **map[string,bool]** | Operations the current user is able to perform on this object | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

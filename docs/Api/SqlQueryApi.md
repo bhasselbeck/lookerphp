@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **createSqlQuery**
-> \Swagger\Client\Model\SqlQuery createSqlQuery($body)
+> \Swagger\Client\Looker\Model\SqlQuery createSqlQuery($body)
 
 Create SQL Runner Query
 
@@ -25,7 +25,7 @@ $apiInstance = new Swagger\Client\Api\SqlQueryApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\SqlQueryCreate(); // \Swagger\Client\Model\SqlQueryCreate | SQL Runner Query
+$body = new \Swagger\Client\Looker\Model\SqlQueryCreate(); // \Swagger\Client\Looker\Model\SqlQueryCreate | SQL Runner Query
 
 try {
     $result = $apiInstance->createSqlQuery($body);
@@ -40,11 +40,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\SqlQueryCreate**](../Model/SqlQueryCreate.md)| SQL Runner Query |
+ **body** | [**\Swagger\Client\Looker\Model\SqlQueryCreate**](../Model/SqlQueryCreate.md)| SQL Runner Query |
 
 ### Return type
 
-[**\Swagger\Client\Model\SqlQuery**](../Model/SqlQuery.md)
+[**\Swagger\Client\Looker\Model\SqlQuery**](../Model/SqlQuery.md)
 
 ### Authorization
 
@@ -58,7 +58,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **sqlQuery**
-> \Swagger\Client\Model\SqlQuery sqlQuery($slug)
+> \Swagger\Client\Looker\Model\SqlQuery sqlQuery($slug)
 
 Get SQL Runner Query
 
@@ -93,7 +93,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\SqlQuery**](../Model/SqlQuery.md)
+[**\Swagger\Client\Looker\Model\SqlQuery**](../Model/SqlQuery.md)
 
 ### Authorization
 

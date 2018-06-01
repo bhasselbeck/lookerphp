@@ -4,8 +4,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **string** | Name of the connection. Also used as the unique identifier | [optional] 
-**dialect** | [**\Swagger\Client\Model\Dialect**](Dialect.md) | (Read-only) SQL Dialect details | [optional] 
-**snippets** | [**\Swagger\Client\Model\Snippet[]**](Snippet.md) | SQL Runner snippets for this connection | [optional] 
+**dialect** | [**\Swagger\Client\Looker\Model\Dialect**](Dialect.md) | (Read-only) SQL Dialect details | [optional] 
+**snippets** | [**\Swagger\Client\Looker\Model\Snippet[]**](Snippet.md) | SQL Runner snippets for this connection | [optional] 
 **host** | **string** | Host name/address of server | [optional] 
 **port** | **string** | Port number on server | [optional] 
 **username** | **string** | Username for server authentication | [optional] 
@@ -34,7 +34,7 @@ Name | Type | Description | Notes
 **last_reap_at** | **string** | Unix timestamp at start of last completed PDT reap process | [optional] 
 **sql_runner_precache_tables** | **bool** | Precache tables in the SQL Runner | [optional] 
 **after_connect_statements** | **string** | SQL statements (semicolon separated) to issue after connecting to the database. Requires &#x60;custom_after_connect_statements&#x60; license feature | [optional] 
-**pdt_context_override** | [**\Swagger\Client\Model\DBConnectionOverride**](DBConnectionOverride.md) | db_connection_override for this connection in the &#x60;pdt&#x60; maintenance context | [optional] 
+**pdt_context_override** | [**\Swagger\Client\Looker\Model\DBConnectionOverride**](DBConnectionOverride.md) | db_connection_override for this connection in the &#x60;pdt&#x60; maintenance context | [optional] 
 **can** | **map[string,bool]** | Operations the current user is able to perform on this object | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **column_width** | **int** | Column Width | [optional] 
 **width** | **int** | Width | [optional] 
 **deleted** | **bool** | Whether or not the dashboard layout is deleted. | [optional] 
-**dashboard_layout_components** | [**\Swagger\Client\Model\DashboardLayoutComponent[]**](DashboardLayoutComponent.md) | Components | [optional] 
+**dashboard_layout_components** | [**\Swagger\Client\Looker\Model\DashboardLayoutComponent[]**](DashboardLayoutComponent.md) | Components | [optional] 
 **can** | **map[string,bool]** | Operations the current user is able to perform on this object | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

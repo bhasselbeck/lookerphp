@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **session**
-> \Swagger\Client\Model\ApiSession session()
+> \Swagger\Client\Looker\Model\ApiSession session()
 
 Get Session
 
@@ -40,7 +40,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\ApiSession**](../Model/ApiSession.md)
+[**\Swagger\Client\Looker\Model\ApiSession**](../Model/ApiSession.md)
 
 ### Authorization
 
@@ -54,7 +54,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateSession**
-> \Swagger\Client\Model\ApiSession updateSession($body)
+> \Swagger\Client\Looker\Model\ApiSession updateSession($body)
 
 Update Session
 
@@ -70,7 +70,7 @@ $apiInstance = new Swagger\Client\Api\SessionApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\ApiSession(); // \Swagger\Client\Model\ApiSession | Session
+$body = new \Swagger\Client\Looker\Model\ApiSession(); // \Swagger\Client\Looker\Model\ApiSession | Session
 
 try {
     $result = $apiInstance->updateSession($body);
@@ -85,11 +85,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ApiSession**](../Model/ApiSession.md)| Session |
+ **body** | [**\Swagger\Client\Looker\Model\ApiSession**](../Model/ApiSession.md)| Session |
 
 ### Return type
 
-[**\Swagger\Client\Model\ApiSession**](../Model/ApiSession.md)
+[**\Swagger\Client\Looker\Model\ApiSession**](../Model/ApiSession.md)
 
 ### Authorization
 

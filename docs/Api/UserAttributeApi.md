@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 
 # **allUserAttributeGroupValues**
-> \Swagger\Client\Model\UserAttributeGroupValue[] allUserAttributeGroupValues($user_attribute_id, $fields)
+> \Swagger\Client\Looker\Model\UserAttributeGroupValue[] allUserAttributeGroupValues($user_attribute_id, $fields)
 
 Get User Attribute Group Values
 
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\UserAttributeGroupValue[]**](../Model/UserAttributeGroupValue.md)
+[**\Swagger\Client\Looker\Model\UserAttributeGroupValue[]**](../Model/UserAttributeGroupValue.md)
 
 ### Authorization
 
@@ -65,7 +65,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allUserAttributes**
-> \Swagger\Client\Model\UserAttribute[] allUserAttributes($fields, $sorts)
+> \Swagger\Client\Looker\Model\UserAttribute[] allUserAttributes($fields, $sorts)
 
 Get All User Attributes
 
@@ -102,7 +102,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\UserAttribute[]**](../Model/UserAttribute.md)
+[**\Swagger\Client\Looker\Model\UserAttribute[]**](../Model/UserAttribute.md)
 
 ### Authorization
 
@@ -116,7 +116,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createUserAttribute**
-> \Swagger\Client\Model\UserAttribute createUserAttribute($body, $fields)
+> \Swagger\Client\Looker\Model\UserAttribute createUserAttribute($body, $fields)
 
 Create User Attribute
 
@@ -132,7 +132,7 @@ $apiInstance = new Swagger\Client\Api\UserAttributeApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\UserAttribute(); // \Swagger\Client\Model\UserAttribute | User Attribute
+$body = new \Swagger\Client\Looker\Model\UserAttribute(); // \Swagger\Client\Looker\Model\UserAttribute | User Attribute
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -148,12 +148,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\UserAttribute**](../Model/UserAttribute.md)| User Attribute | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\UserAttribute**](../Model/UserAttribute.md)| User Attribute | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\UserAttribute**](../Model/UserAttribute.md)
+[**\Swagger\Client\Looker\Model\UserAttribute**](../Model/UserAttribute.md)
 
 ### Authorization
 
@@ -216,7 +216,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setUserAttributeGroupValues**
-> \Swagger\Client\Model\UserAttributeGroupValue[] setUserAttributeGroupValues($user_attribute_id, $body)
+> \Swagger\Client\Looker\Model\UserAttributeGroupValue[] setUserAttributeGroupValues($user_attribute_id, $body)
 
 Set User Attribute Group Values
 
@@ -233,7 +233,7 @@ $apiInstance = new Swagger\Client\Api\UserAttributeApi(
     new GuzzleHttp\Client()
 );
 $user_attribute_id = 789; // int | Id of user attribute
-$body = array(new \Swagger\Client\Model\UserAttributeGroupValue()); // \Swagger\Client\Model\UserAttributeGroupValue[] | Array of group values.
+$body = array(new \Swagger\Client\Looker\Model\UserAttributeGroupValue()); // \Swagger\Client\Looker\Model\UserAttributeGroupValue[] | Array of group values.
 
 try {
     $result = $apiInstance->setUserAttributeGroupValues($user_attribute_id, $body);
@@ -249,11 +249,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_attribute_id** | **int**| Id of user attribute |
- **body** | [**\Swagger\Client\Model\UserAttributeGroupValue[]**](../Model/UserAttributeGroupValue.md)| Array of group values. |
+ **body** | [**\Swagger\Client\Looker\Model\UserAttributeGroupValue[]**](../Model/UserAttributeGroupValue.md)| Array of group values. |
 
 ### Return type
 
-[**\Swagger\Client\Model\UserAttributeGroupValue[]**](../Model/UserAttributeGroupValue.md)
+[**\Swagger\Client\Looker\Model\UserAttributeGroupValue[]**](../Model/UserAttributeGroupValue.md)
 
 ### Authorization
 
@@ -267,7 +267,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateUserAttribute**
-> \Swagger\Client\Model\UserAttribute updateUserAttribute($user_attribute_id, $body, $fields)
+> \Swagger\Client\Looker\Model\UserAttribute updateUserAttribute($user_attribute_id, $body, $fields)
 
 Update User Attribute
 
@@ -284,7 +284,7 @@ $apiInstance = new Swagger\Client\Api\UserAttributeApi(
     new GuzzleHttp\Client()
 );
 $user_attribute_id = 789; // int | Id of user attribute
-$body = new \Swagger\Client\Model\UserAttribute(); // \Swagger\Client\Model\UserAttribute | User Attribute
+$body = new \Swagger\Client\Looker\Model\UserAttribute(); // \Swagger\Client\Looker\Model\UserAttribute | User Attribute
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -301,12 +301,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_attribute_id** | **int**| Id of user attribute |
- **body** | [**\Swagger\Client\Model\UserAttribute**](../Model/UserAttribute.md)| User Attribute |
+ **body** | [**\Swagger\Client\Looker\Model\UserAttribute**](../Model/UserAttribute.md)| User Attribute |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\UserAttribute**](../Model/UserAttribute.md)
+[**\Swagger\Client\Looker\Model\UserAttribute**](../Model/UserAttribute.md)
 
 ### Authorization
 
@@ -320,7 +320,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userAttribute**
-> \Swagger\Client\Model\UserAttribute userAttribute($user_attribute_id, $fields)
+> \Swagger\Client\Looker\Model\UserAttribute userAttribute($user_attribute_id, $fields)
 
 Get User Attribute
 
@@ -357,7 +357,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\UserAttribute**](../Model/UserAttribute.md)
+[**\Swagger\Client\Looker\Model\UserAttribute**](../Model/UserAttribute.md)
 
 ### Authorization
 

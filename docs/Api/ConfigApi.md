@@ -16,7 +16,7 @@ Method | HTTP request | Description
 
 
 # **allLegacyFeatures**
-> \Swagger\Client\Model\LegacyFeature[] allLegacyFeatures()
+> \Swagger\Client\Looker\Model\LegacyFeature[] allLegacyFeatures()
 
 Get All Legacy Features
 
@@ -47,7 +47,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\LegacyFeature[]**](../Model/LegacyFeature.md)
+[**\Swagger\Client\Looker\Model\LegacyFeature[]**](../Model/LegacyFeature.md)
 
 ### Authorization
 
@@ -61,7 +61,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allTimezones**
-> \Swagger\Client\Model\Timezone[] allTimezones()
+> \Swagger\Client\Looker\Model\Timezone[] allTimezones()
 
 Get All Timezones
 
@@ -92,7 +92,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\Timezone[]**](../Model/Timezone.md)
+[**\Swagger\Client\Looker\Model\Timezone[]**](../Model/Timezone.md)
 
 ### Authorization
 
@@ -106,7 +106,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **backupConfiguration**
-> \Swagger\Client\Model\BackupConfiguration backupConfiguration()
+> \Swagger\Client\Looker\Model\BackupConfiguration backupConfiguration()
 
 Get Backup Configuration
 
@@ -137,7 +137,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\BackupConfiguration**](../Model/BackupConfiguration.md)
+[**\Swagger\Client\Looker\Model\BackupConfiguration**](../Model/BackupConfiguration.md)
 
 ### Authorization
 
@@ -151,7 +151,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **legacyFeature**
-> \Swagger\Client\Model\LegacyFeature legacyFeature($legacy_feature_id)
+> \Swagger\Client\Looker\Model\LegacyFeature legacyFeature($legacy_feature_id)
 
 Get Legacy Feature
 
@@ -186,7 +186,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\LegacyFeature**](../Model/LegacyFeature.md)
+[**\Swagger\Client\Looker\Model\LegacyFeature**](../Model/LegacyFeature.md)
 
 ### Authorization
 
@@ -200,7 +200,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateBackupConfiguration**
-> \Swagger\Client\Model\BackupConfiguration updateBackupConfiguration($body)
+> \Swagger\Client\Looker\Model\BackupConfiguration updateBackupConfiguration($body)
 
 Update Backup Configuration
 
@@ -216,7 +216,7 @@ $apiInstance = new Swagger\Client\Api\ConfigApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\BackupConfiguration(); // \Swagger\Client\Model\BackupConfiguration | Options for Backup Configuration
+$body = new \Swagger\Client\Looker\Model\BackupConfiguration(); // \Swagger\Client\Looker\Model\BackupConfiguration | Options for Backup Configuration
 
 try {
     $result = $apiInstance->updateBackupConfiguration($body);
@@ -231,11 +231,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\BackupConfiguration**](../Model/BackupConfiguration.md)| Options for Backup Configuration |
+ **body** | [**\Swagger\Client\Looker\Model\BackupConfiguration**](../Model/BackupConfiguration.md)| Options for Backup Configuration |
 
 ### Return type
 
-[**\Swagger\Client\Model\BackupConfiguration**](../Model/BackupConfiguration.md)
+[**\Swagger\Client\Looker\Model\BackupConfiguration**](../Model/BackupConfiguration.md)
 
 ### Authorization
 
@@ -249,7 +249,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLegacyFeature**
-> \Swagger\Client\Model\LegacyFeature updateLegacyFeature($legacy_feature_id, $body)
+> \Swagger\Client\Looker\Model\LegacyFeature updateLegacyFeature($legacy_feature_id, $body)
 
 Update Legacy Feature
 
@@ -266,7 +266,7 @@ $apiInstance = new Swagger\Client\Api\ConfigApi(
     new GuzzleHttp\Client()
 );
 $legacy_feature_id = 789; // int | id of legacy feature
-$body = new \Swagger\Client\Model\LegacyFeature(); // \Swagger\Client\Model\LegacyFeature | Legacy Feature
+$body = new \Swagger\Client\Looker\Model\LegacyFeature(); // \Swagger\Client\Looker\Model\LegacyFeature | Legacy Feature
 
 try {
     $result = $apiInstance->updateLegacyFeature($legacy_feature_id, $body);
@@ -282,11 +282,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **legacy_feature_id** | **int**| id of legacy feature |
- **body** | [**\Swagger\Client\Model\LegacyFeature**](../Model/LegacyFeature.md)| Legacy Feature |
+ **body** | [**\Swagger\Client\Looker\Model\LegacyFeature**](../Model/LegacyFeature.md)| Legacy Feature |
 
 ### Return type
 
-[**\Swagger\Client\Model\LegacyFeature**](../Model/LegacyFeature.md)
+[**\Swagger\Client\Looker\Model\LegacyFeature**](../Model/LegacyFeature.md)
 
 ### Authorization
 
@@ -300,7 +300,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateWhitelabelConfiguration**
-> \Swagger\Client\Model\WhitelabelConfiguration updateWhitelabelConfiguration($body)
+> \Swagger\Client\Looker\Model\WhitelabelConfiguration updateWhitelabelConfiguration($body)
 
 Update Whitelabel configuration
 
@@ -316,7 +316,7 @@ $apiInstance = new Swagger\Client\Api\ConfigApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\WhitelabelConfiguration(); // \Swagger\Client\Model\WhitelabelConfiguration | Whitelabel configuration
+$body = new \Swagger\Client\Looker\Model\WhitelabelConfiguration(); // \Swagger\Client\Looker\Model\WhitelabelConfiguration | Whitelabel configuration
 
 try {
     $result = $apiInstance->updateWhitelabelConfiguration($body);
@@ -331,11 +331,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\WhitelabelConfiguration**](../Model/WhitelabelConfiguration.md)| Whitelabel configuration |
+ **body** | [**\Swagger\Client\Looker\Model\WhitelabelConfiguration**](../Model/WhitelabelConfiguration.md)| Whitelabel configuration |
 
 ### Return type
 
-[**\Swagger\Client\Model\WhitelabelConfiguration**](../Model/WhitelabelConfiguration.md)
+[**\Swagger\Client\Looker\Model\WhitelabelConfiguration**](../Model/WhitelabelConfiguration.md)
 
 ### Authorization
 
@@ -349,7 +349,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **versions**
-> \Swagger\Client\Model\ApiVersion versions($fields)
+> \Swagger\Client\Looker\Model\ApiVersion versions($fields)
 
 Get ApiVersion
 
@@ -384,7 +384,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ApiVersion**](../Model/ApiVersion.md)
+[**\Swagger\Client\Looker\Model\ApiVersion**](../Model/ApiVersion.md)
 
 ### Authorization
 
@@ -398,7 +398,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **whitelabelConfiguration**
-> \Swagger\Client\Model\WhitelabelConfiguration whitelabelConfiguration($fields)
+> \Swagger\Client\Looker\Model\WhitelabelConfiguration whitelabelConfiguration($fields)
 
 Get Whitelabel configuration
 
@@ -433,7 +433,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\WhitelabelConfiguration**](../Model/WhitelabelConfiguration.md)
+[**\Swagger\Client\Looker\Model\WhitelabelConfiguration**](../Model/WhitelabelConfiguration.md)
 
 ### Authorization
 

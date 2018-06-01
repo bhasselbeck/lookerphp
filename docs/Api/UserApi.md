@@ -57,7 +57,7 @@ Method | HTTP request | Description
 
 
 # **allUserAccessFilters**
-> \Swagger\Client\Model\AccessFilter[] allUserAccessFilters($user_id, $fields)
+> \Swagger\Client\Looker\Model\AccessFilter[] allUserAccessFilters($user_id, $fields)
 
 Get All Access Filters
 
@@ -94,7 +94,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\AccessFilter[]**](../Model/AccessFilter.md)
+[**\Swagger\Client\Looker\Model\AccessFilter[]**](../Model/AccessFilter.md)
 
 ### Authorization
 
@@ -108,7 +108,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allUserCredentialsApi3s**
-> \Swagger\Client\Model\CredentialsApi3[] allUserCredentialsApi3s($user_id, $fields)
+> \Swagger\Client\Looker\Model\CredentialsApi3[] allUserCredentialsApi3s($user_id, $fields)
 
 Get All API 3 Credentials
 
@@ -145,7 +145,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CredentialsApi3[]**](../Model/CredentialsApi3.md)
+[**\Swagger\Client\Looker\Model\CredentialsApi3[]**](../Model/CredentialsApi3.md)
 
 ### Authorization
 
@@ -159,7 +159,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allUserCredentialsEmbeds**
-> \Swagger\Client\Model\CredentialsEmbed[] allUserCredentialsEmbeds($user_id, $fields)
+> \Swagger\Client\Looker\Model\CredentialsEmbed[] allUserCredentialsEmbeds($user_id, $fields)
 
 Get All Embedding Credentials
 
@@ -196,7 +196,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CredentialsEmbed[]**](../Model/CredentialsEmbed.md)
+[**\Swagger\Client\Looker\Model\CredentialsEmbed[]**](../Model/CredentialsEmbed.md)
 
 ### Authorization
 
@@ -210,7 +210,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allUserSessions**
-> \Swagger\Client\Model\Session[] allUserSessions($user_id, $fields)
+> \Swagger\Client\Looker\Model\Session[] allUserSessions($user_id, $fields)
 
 Get All Web Login Sessions
 
@@ -247,7 +247,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Session[]**](../Model/Session.md)
+[**\Swagger\Client\Looker\Model\Session[]**](../Model/Session.md)
 
 ### Authorization
 
@@ -261,7 +261,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allUsers**
-> \Swagger\Client\Model\User[] allUsers($fields, $page, $per_page, $sorts, $ids)
+> \Swagger\Client\Looker\Model\User[] allUsers($fields, $page, $per_page, $sorts, $ids)
 
 Get All Users
 
@@ -304,7 +304,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\User[]**](../Model/User.md)
+[**\Swagger\Client\Looker\Model\User[]**](../Model/User.md)
 
 ### Authorization
 
@@ -318,7 +318,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createUser**
-> \Swagger\Client\Model\User createUser($body, $fields)
+> \Swagger\Client\Looker\Model\User createUser($body, $fields)
 
 Create User
 
@@ -334,7 +334,7 @@ $apiInstance = new Swagger\Client\Api\UserApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\User(); // \Swagger\Client\Model\User | User
+$body = new \Swagger\Client\Looker\Model\User(); // \Swagger\Client\Looker\Model\User | User
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -350,12 +350,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\User**](../Model/User.md)| User | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\User**](../Model/User.md)| User | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\User**](../Model/User.md)
+[**\Swagger\Client\Looker\Model\User**](../Model/User.md)
 
 ### Authorization
 
@@ -369,7 +369,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createUserAccessFilter**
-> \Swagger\Client\Model\AccessFilter createUserAccessFilter($user_id, $body, $fields)
+> \Swagger\Client\Looker\Model\AccessFilter createUserAccessFilter($user_id, $body, $fields)
 
 Create Access Filter
 
@@ -386,7 +386,7 @@ $apiInstance = new Swagger\Client\Api\UserApi(
     new GuzzleHttp\Client()
 );
 $user_id = 789; // int | id of user
-$body = new \Swagger\Client\Model\AccessFilter(); // \Swagger\Client\Model\AccessFilter | Access Filter
+$body = new \Swagger\Client\Looker\Model\AccessFilter(); // \Swagger\Client\Looker\Model\AccessFilter | Access Filter
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -403,12 +403,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_id** | **int**| id of user |
- **body** | [**\Swagger\Client\Model\AccessFilter**](../Model/AccessFilter.md)| Access Filter | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\AccessFilter**](../Model/AccessFilter.md)| Access Filter | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\AccessFilter**](../Model/AccessFilter.md)
+[**\Swagger\Client\Looker\Model\AccessFilter**](../Model/AccessFilter.md)
 
 ### Authorization
 
@@ -422,7 +422,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createUserCredentialsApi**
-> \Swagger\Client\Model\CredentialsApi createUserCredentialsApi($user_id, $body)
+> \Swagger\Client\Looker\Model\CredentialsApi createUserCredentialsApi($user_id, $body)
 
 Create API Credential
 
@@ -439,7 +439,7 @@ $apiInstance = new Swagger\Client\Api\UserApi(
     new GuzzleHttp\Client()
 );
 $user_id = 789; // int | Id of user
-$body = new \Swagger\Client\Model\CredentialsApi(); // \Swagger\Client\Model\CredentialsApi | API Credential
+$body = new \Swagger\Client\Looker\Model\CredentialsApi(); // \Swagger\Client\Looker\Model\CredentialsApi | API Credential
 
 try {
     $result = $apiInstance->createUserCredentialsApi($user_id, $body);
@@ -455,11 +455,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_id** | **int**| Id of user |
- **body** | [**\Swagger\Client\Model\CredentialsApi**](../Model/CredentialsApi.md)| API Credential | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\CredentialsApi**](../Model/CredentialsApi.md)| API Credential | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\CredentialsApi**](../Model/CredentialsApi.md)
+[**\Swagger\Client\Looker\Model\CredentialsApi**](../Model/CredentialsApi.md)
 
 ### Authorization
 
@@ -473,7 +473,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createUserCredentialsApi3**
-> \Swagger\Client\Model\CredentialsApi3 createUserCredentialsApi3($user_id, $body, $fields)
+> \Swagger\Client\Looker\Model\CredentialsApi3 createUserCredentialsApi3($user_id, $body, $fields)
 
 Create API 3 Credential
 
@@ -490,7 +490,7 @@ $apiInstance = new Swagger\Client\Api\UserApi(
     new GuzzleHttp\Client()
 );
 $user_id = 789; // int | id of user
-$body = new \Swagger\Client\Model\CredentialsApi3(); // \Swagger\Client\Model\CredentialsApi3 | API 3 Credential
+$body = new \Swagger\Client\Looker\Model\CredentialsApi3(); // \Swagger\Client\Looker\Model\CredentialsApi3 | API 3 Credential
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -507,12 +507,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_id** | **int**| id of user |
- **body** | [**\Swagger\Client\Model\CredentialsApi3**](../Model/CredentialsApi3.md)| API 3 Credential | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\CredentialsApi3**](../Model/CredentialsApi3.md)| API 3 Credential | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\CredentialsApi3**](../Model/CredentialsApi3.md)
+[**\Swagger\Client\Looker\Model\CredentialsApi3**](../Model/CredentialsApi3.md)
 
 ### Authorization
 
@@ -526,7 +526,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createUserCredentialsEmail**
-> \Swagger\Client\Model\CredentialsEmail createUserCredentialsEmail($user_id, $body, $fields)
+> \Swagger\Client\Looker\Model\CredentialsEmail createUserCredentialsEmail($user_id, $body, $fields)
 
 Create Email/Password Credential
 
@@ -543,7 +543,7 @@ $apiInstance = new Swagger\Client\Api\UserApi(
     new GuzzleHttp\Client()
 );
 $user_id = 789; // int | id of user
-$body = new \Swagger\Client\Model\CredentialsEmail(); // \Swagger\Client\Model\CredentialsEmail | Email/Password Credential
+$body = new \Swagger\Client\Looker\Model\CredentialsEmail(); // \Swagger\Client\Looker\Model\CredentialsEmail | Email/Password Credential
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -560,12 +560,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_id** | **int**| id of user |
- **body** | [**\Swagger\Client\Model\CredentialsEmail**](../Model/CredentialsEmail.md)| Email/Password Credential | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\CredentialsEmail**](../Model/CredentialsEmail.md)| Email/Password Credential | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\CredentialsEmail**](../Model/CredentialsEmail.md)
+[**\Swagger\Client\Looker\Model\CredentialsEmail**](../Model/CredentialsEmail.md)
 
 ### Authorization
 
@@ -579,7 +579,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createUserCredentialsEmailPasswordReset**
-> \Swagger\Client\Model\CredentialsEmail createUserCredentialsEmailPasswordReset($user_id, $expires, $fields)
+> \Swagger\Client\Looker\Model\CredentialsEmail createUserCredentialsEmailPasswordReset($user_id, $expires, $fields)
 
 Create Password Reset Token
 
@@ -618,7 +618,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CredentialsEmail**](../Model/CredentialsEmail.md)
+[**\Swagger\Client\Looker\Model\CredentialsEmail**](../Model/CredentialsEmail.md)
 
 ### Authorization
 
@@ -632,7 +632,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createUserCredentialsTotp**
-> \Swagger\Client\Model\CredentialsTotp createUserCredentialsTotp($user_id, $body, $fields)
+> \Swagger\Client\Looker\Model\CredentialsTotp createUserCredentialsTotp($user_id, $body, $fields)
 
 Create Two-Factor Credential
 
@@ -649,7 +649,7 @@ $apiInstance = new Swagger\Client\Api\UserApi(
     new GuzzleHttp\Client()
 );
 $user_id = 789; // int | id of user
-$body = new \Swagger\Client\Model\CredentialsTotp(); // \Swagger\Client\Model\CredentialsTotp | Two-Factor Credential
+$body = new \Swagger\Client\Looker\Model\CredentialsTotp(); // \Swagger\Client\Looker\Model\CredentialsTotp | Two-Factor Credential
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -666,12 +666,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_id** | **int**| id of user |
- **body** | [**\Swagger\Client\Model\CredentialsTotp**](../Model/CredentialsTotp.md)| Two-Factor Credential | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\CredentialsTotp**](../Model/CredentialsTotp.md)| Two-Factor Credential | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\CredentialsTotp**](../Model/CredentialsTotp.md)
+[**\Swagger\Client\Looker\Model\CredentialsTotp**](../Model/CredentialsTotp.md)
 
 ### Authorization
 
@@ -1380,7 +1380,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **me**
-> \Swagger\Client\Model\User me($fields)
+> \Swagger\Client\Looker\Model\User me($fields)
 
 Get Current User
 
@@ -1415,7 +1415,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\User**](../Model/User.md)
+[**\Swagger\Client\Looker\Model\User**](../Model/User.md)
 
 ### Authorization
 
@@ -1429,7 +1429,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **searchUsers**
-> \Swagger\Client\Model\User[] searchUsers($fields, $page, $per_page, $sorts, $id, $first_name, $last_name, $verified_looker_employee, $email, $is_disabled, $filter_or, $content_metadata_id, $group_id)
+> \Swagger\Client\Looker\Model\User[] searchUsers($fields, $page, $per_page, $sorts, $id, $first_name, $last_name, $verified_looker_employee, $email, $is_disabled, $filter_or, $content_metadata_id, $group_id)
 
 Search Users
 
@@ -1488,7 +1488,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\User[]**](../Model/User.md)
+[**\Swagger\Client\Looker\Model\User[]**](../Model/User.md)
 
 ### Authorization
 
@@ -1502,7 +1502,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **searchUsersNames**
-> \Swagger\Client\Model\User[] searchUsersNames($pattern, $fields, $page, $per_page, $sorts, $id, $first_name, $last_name, $verified_looker_employee, $email, $is_disabled)
+> \Swagger\Client\Looker\Model\User[] searchUsersNames($pattern, $fields, $page, $per_page, $sorts, $id, $first_name, $last_name, $verified_looker_employee, $email, $is_disabled)
 
 Search User Names
 
@@ -1557,7 +1557,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\User[]**](../Model/User.md)
+[**\Swagger\Client\Looker\Model\User[]**](../Model/User.md)
 
 ### Authorization
 
@@ -1571,7 +1571,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setUserAttributeUserValue**
-> \Swagger\Client\Model\UserAttributeWithValue setUserAttributeUserValue($user_id, $user_attribute_id, $body)
+> \Swagger\Client\Looker\Model\UserAttributeWithValue setUserAttributeUserValue($user_id, $user_attribute_id, $body)
 
 Set User Attribute User Value
 
@@ -1589,7 +1589,7 @@ $apiInstance = new Swagger\Client\Api\UserApi(
 );
 $user_id = 789; // int | Id of user
 $user_attribute_id = 789; // int | Id of user attribute
-$body = new \Swagger\Client\Model\UserAttributeWithValue(); // \Swagger\Client\Model\UserAttributeWithValue | New attribute value for user.
+$body = new \Swagger\Client\Looker\Model\UserAttributeWithValue(); // \Swagger\Client\Looker\Model\UserAttributeWithValue | New attribute value for user.
 
 try {
     $result = $apiInstance->setUserAttributeUserValue($user_id, $user_attribute_id, $body);
@@ -1606,11 +1606,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_id** | **int**| Id of user |
  **user_attribute_id** | **int**| Id of user attribute |
- **body** | [**\Swagger\Client\Model\UserAttributeWithValue**](../Model/UserAttributeWithValue.md)| New attribute value for user. |
+ **body** | [**\Swagger\Client\Looker\Model\UserAttributeWithValue**](../Model/UserAttributeWithValue.md)| New attribute value for user. |
 
 ### Return type
 
-[**\Swagger\Client\Model\UserAttributeWithValue**](../Model/UserAttributeWithValue.md)
+[**\Swagger\Client\Looker\Model\UserAttributeWithValue**](../Model/UserAttributeWithValue.md)
 
 ### Authorization
 
@@ -1624,7 +1624,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setUserRoles**
-> \Swagger\Client\Model\Role[] setUserRoles($user_id, $body, $fields)
+> \Swagger\Client\Looker\Model\Role[] setUserRoles($user_id, $body, $fields)
 
 Set User Roles
 
@@ -1641,7 +1641,7 @@ $apiInstance = new Swagger\Client\Api\UserApi(
     new GuzzleHttp\Client()
 );
 $user_id = 789; // int | id of user
-$body = array(new \Swagger\Client\Model\int[]()); // int[] | array of roles ids for user
+$body = array(new \Swagger\Client\Looker\Model\int[]()); // int[] | array of roles ids for user
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -1663,7 +1663,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Role[]**](../Model/Role.md)
+[**\Swagger\Client\Looker\Model\Role[]**](../Model/Role.md)
 
 ### Authorization
 
@@ -1677,7 +1677,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateUser**
-> \Swagger\Client\Model\User updateUser($user_id, $body, $fields)
+> \Swagger\Client\Looker\Model\User updateUser($user_id, $body, $fields)
 
 Update User
 
@@ -1694,7 +1694,7 @@ $apiInstance = new Swagger\Client\Api\UserApi(
     new GuzzleHttp\Client()
 );
 $user_id = 789; // int | Id of user
-$body = new \Swagger\Client\Model\User(); // \Swagger\Client\Model\User | User
+$body = new \Swagger\Client\Looker\Model\User(); // \Swagger\Client\Looker\Model\User | User
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -1711,12 +1711,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_id** | **int**| Id of user |
- **body** | [**\Swagger\Client\Model\User**](../Model/User.md)| User |
+ **body** | [**\Swagger\Client\Looker\Model\User**](../Model/User.md)| User |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\User**](../Model/User.md)
+[**\Swagger\Client\Looker\Model\User**](../Model/User.md)
 
 ### Authorization
 
@@ -1730,7 +1730,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateUserAccessFilter**
-> \Swagger\Client\Model\AccessFilter updateUserAccessFilter($user_id, $access_filter_id, $body, $fields)
+> \Swagger\Client\Looker\Model\AccessFilter updateUserAccessFilter($user_id, $access_filter_id, $body, $fields)
 
 Update Access Filter
 
@@ -1748,7 +1748,7 @@ $apiInstance = new Swagger\Client\Api\UserApi(
 );
 $user_id = 789; // int | id of user
 $access_filter_id = 789; // int | id of Access Filter
-$body = new \Swagger\Client\Model\AccessFilter(); // \Swagger\Client\Model\AccessFilter | Access Filter
+$body = new \Swagger\Client\Looker\Model\AccessFilter(); // \Swagger\Client\Looker\Model\AccessFilter | Access Filter
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -1766,12 +1766,12 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_id** | **int**| id of user |
  **access_filter_id** | **int**| id of Access Filter |
- **body** | [**\Swagger\Client\Model\AccessFilter**](../Model/AccessFilter.md)| Access Filter |
+ **body** | [**\Swagger\Client\Looker\Model\AccessFilter**](../Model/AccessFilter.md)| Access Filter |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\AccessFilter**](../Model/AccessFilter.md)
+[**\Swagger\Client\Looker\Model\AccessFilter**](../Model/AccessFilter.md)
 
 ### Authorization
 
@@ -1785,7 +1785,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateUserCredentialsEmail**
-> \Swagger\Client\Model\CredentialsEmail updateUserCredentialsEmail($user_id, $body, $fields)
+> \Swagger\Client\Looker\Model\CredentialsEmail updateUserCredentialsEmail($user_id, $body, $fields)
 
 Update Email/Password Credential
 
@@ -1802,7 +1802,7 @@ $apiInstance = new Swagger\Client\Api\UserApi(
     new GuzzleHttp\Client()
 );
 $user_id = 789; // int | id of user
-$body = new \Swagger\Client\Model\CredentialsEmail(); // \Swagger\Client\Model\CredentialsEmail | Email/Password Credential
+$body = new \Swagger\Client\Looker\Model\CredentialsEmail(); // \Swagger\Client\Looker\Model\CredentialsEmail | Email/Password Credential
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -1819,12 +1819,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_id** | **int**| id of user |
- **body** | [**\Swagger\Client\Model\CredentialsEmail**](../Model/CredentialsEmail.md)| Email/Password Credential |
+ **body** | [**\Swagger\Client\Looker\Model\CredentialsEmail**](../Model/CredentialsEmail.md)| Email/Password Credential |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\CredentialsEmail**](../Model/CredentialsEmail.md)
+[**\Swagger\Client\Looker\Model\CredentialsEmail**](../Model/CredentialsEmail.md)
 
 ### Authorization
 
@@ -1838,7 +1838,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **user**
-> \Swagger\Client\Model\User user($user_id, $fields)
+> \Swagger\Client\Looker\Model\User user($user_id, $fields)
 
 Get User by Id
 
@@ -1875,7 +1875,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\User**](../Model/User.md)
+[**\Swagger\Client\Looker\Model\User**](../Model/User.md)
 
 ### Authorization
 
@@ -1889,7 +1889,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userAccessFilter**
-> \Swagger\Client\Model\AccessFilter userAccessFilter($user_id, $access_filter_id, $fields)
+> \Swagger\Client\Looker\Model\AccessFilter userAccessFilter($user_id, $access_filter_id, $fields)
 
 Get Access Filter
 
@@ -1928,7 +1928,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\AccessFilter**](../Model/AccessFilter.md)
+[**\Swagger\Client\Looker\Model\AccessFilter**](../Model/AccessFilter.md)
 
 ### Authorization
 
@@ -1942,7 +1942,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userAttributeUserValues**
-> \Swagger\Client\Model\UserAttributeWithValue[] userAttributeUserValues($user_id, $fields, $user_attribute_ids, $all_values, $include_unset)
+> \Swagger\Client\Looker\Model\UserAttributeWithValue[] userAttributeUserValues($user_id, $fields, $user_attribute_ids, $all_values, $include_unset)
 
 Get User Attribute Values
 
@@ -1985,7 +1985,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\UserAttributeWithValue[]**](../Model/UserAttributeWithValue.md)
+[**\Swagger\Client\Looker\Model\UserAttributeWithValue[]**](../Model/UserAttributeWithValue.md)
 
 ### Authorization
 
@@ -1999,7 +1999,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userCredentialsApi**
-> \Swagger\Client\Model\CredentialsApi userCredentialsApi($user_id, $fields)
+> \Swagger\Client\Looker\Model\CredentialsApi userCredentialsApi($user_id, $fields)
 
 Get API Credential
 
@@ -2036,7 +2036,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CredentialsApi**](../Model/CredentialsApi.md)
+[**\Swagger\Client\Looker\Model\CredentialsApi**](../Model/CredentialsApi.md)
 
 ### Authorization
 
@@ -2050,7 +2050,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userCredentialsApi3**
-> \Swagger\Client\Model\CredentialsApi3 userCredentialsApi3($user_id, $credentials_api3_id, $fields)
+> \Swagger\Client\Looker\Model\CredentialsApi3 userCredentialsApi3($user_id, $credentials_api3_id, $fields)
 
 Get API 3 Credential
 
@@ -2089,7 +2089,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CredentialsApi3**](../Model/CredentialsApi3.md)
+[**\Swagger\Client\Looker\Model\CredentialsApi3**](../Model/CredentialsApi3.md)
 
 ### Authorization
 
@@ -2103,7 +2103,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userCredentialsEmail**
-> \Swagger\Client\Model\CredentialsEmail userCredentialsEmail($user_id, $fields)
+> \Swagger\Client\Looker\Model\CredentialsEmail userCredentialsEmail($user_id, $fields)
 
 Get Email/Password Credential
 
@@ -2140,7 +2140,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CredentialsEmail**](../Model/CredentialsEmail.md)
+[**\Swagger\Client\Looker\Model\CredentialsEmail**](../Model/CredentialsEmail.md)
 
 ### Authorization
 
@@ -2154,7 +2154,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userCredentialsEmbed**
-> \Swagger\Client\Model\CredentialsEmbed userCredentialsEmbed($user_id, $credentials_embed_id, $fields)
+> \Swagger\Client\Looker\Model\CredentialsEmbed userCredentialsEmbed($user_id, $credentials_embed_id, $fields)
 
 Get Embedding Credential
 
@@ -2193,7 +2193,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CredentialsEmbed**](../Model/CredentialsEmbed.md)
+[**\Swagger\Client\Looker\Model\CredentialsEmbed**](../Model/CredentialsEmbed.md)
 
 ### Authorization
 
@@ -2207,7 +2207,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userCredentialsGoogle**
-> \Swagger\Client\Model\CredentialsGoogle userCredentialsGoogle($user_id, $fields)
+> \Swagger\Client\Looker\Model\CredentialsGoogle userCredentialsGoogle($user_id, $fields)
 
 Get Google Auth Credential
 
@@ -2244,7 +2244,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CredentialsGoogle**](../Model/CredentialsGoogle.md)
+[**\Swagger\Client\Looker\Model\CredentialsGoogle**](../Model/CredentialsGoogle.md)
 
 ### Authorization
 
@@ -2258,7 +2258,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userCredentialsLdap**
-> \Swagger\Client\Model\CredentialsLDAP userCredentialsLdap($user_id, $fields)
+> \Swagger\Client\Looker\Model\CredentialsLDAP userCredentialsLdap($user_id, $fields)
 
 Get LDAP Credential
 
@@ -2295,7 +2295,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CredentialsLDAP**](../Model/CredentialsLDAP.md)
+[**\Swagger\Client\Looker\Model\CredentialsLDAP**](../Model/CredentialsLDAP.md)
 
 ### Authorization
 
@@ -2309,7 +2309,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userCredentialsLookerOpenid**
-> \Swagger\Client\Model\CredentialsLookerOpenid userCredentialsLookerOpenid($user_id, $fields)
+> \Swagger\Client\Looker\Model\CredentialsLookerOpenid userCredentialsLookerOpenid($user_id, $fields)
 
 Get Looker OpenId Credential
 
@@ -2346,7 +2346,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CredentialsLookerOpenid**](../Model/CredentialsLookerOpenid.md)
+[**\Swagger\Client\Looker\Model\CredentialsLookerOpenid**](../Model/CredentialsLookerOpenid.md)
 
 ### Authorization
 
@@ -2360,7 +2360,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userCredentialsOidc**
-> \Swagger\Client\Model\CredentialsOIDC userCredentialsOidc($user_id, $fields)
+> \Swagger\Client\Looker\Model\CredentialsOIDC userCredentialsOidc($user_id, $fields)
 
 Get OIDC Auth Credential
 
@@ -2397,7 +2397,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CredentialsOIDC**](../Model/CredentialsOIDC.md)
+[**\Swagger\Client\Looker\Model\CredentialsOIDC**](../Model/CredentialsOIDC.md)
 
 ### Authorization
 
@@ -2411,7 +2411,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userCredentialsSaml**
-> \Swagger\Client\Model\CredentialsSaml userCredentialsSaml($user_id, $fields)
+> \Swagger\Client\Looker\Model\CredentialsSaml userCredentialsSaml($user_id, $fields)
 
 Get Saml Auth Credential
 
@@ -2448,7 +2448,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CredentialsSaml**](../Model/CredentialsSaml.md)
+[**\Swagger\Client\Looker\Model\CredentialsSaml**](../Model/CredentialsSaml.md)
 
 ### Authorization
 
@@ -2462,7 +2462,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userCredentialsTotp**
-> \Swagger\Client\Model\CredentialsTotp userCredentialsTotp($user_id, $fields)
+> \Swagger\Client\Looker\Model\CredentialsTotp userCredentialsTotp($user_id, $fields)
 
 Get Two-Factor Credential
 
@@ -2499,7 +2499,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CredentialsTotp**](../Model/CredentialsTotp.md)
+[**\Swagger\Client\Looker\Model\CredentialsTotp**](../Model/CredentialsTotp.md)
 
 ### Authorization
 
@@ -2513,7 +2513,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userForCredential**
-> \Swagger\Client\Model\User userForCredential($credential_type, $credential_id, $fields)
+> \Swagger\Client\Looker\Model\User userForCredential($credential_type, $credential_id, $fields)
 
 Get User by Credential Id
 
@@ -2552,7 +2552,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\User**](../Model/User.md)
+[**\Swagger\Client\Looker\Model\User**](../Model/User.md)
 
 ### Authorization
 
@@ -2566,7 +2566,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userRoles**
-> \Swagger\Client\Model\Role[] userRoles($user_id, $fields, $direct_association_only)
+> \Swagger\Client\Looker\Model\Role[] userRoles($user_id, $fields, $direct_association_only)
 
 Get User Roles
 
@@ -2605,7 +2605,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Role[]**](../Model/Role.md)
+[**\Swagger\Client\Looker\Model\Role[]**](../Model/Role.md)
 
 ### Authorization
 
@@ -2619,7 +2619,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userSession**
-> \Swagger\Client\Model\Session userSession($user_id, $session_id, $fields)
+> \Swagger\Client\Looker\Model\Session userSession($user_id, $session_id, $fields)
 
 Get Web Login Session
 
@@ -2658,7 +2658,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Session**](../Model/Session.md)
+[**\Swagger\Client\Looker\Model\Session**](../Model/Session.md)
 
 ### Authorization
 

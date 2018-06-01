@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **fetchRemoteDataActionForm**
-> \Swagger\Client\Model\DataActionForm fetchRemoteDataActionForm($body)
+> \Swagger\Client\Looker\Model\DataActionForm fetchRemoteDataActionForm($body)
 
 Fetch Remote Data Action Form
 
@@ -44,7 +44,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DataActionForm**](../Model/DataActionForm.md)
+[**\Swagger\Client\Looker\Model\DataActionForm**](../Model/DataActionForm.md)
 
 ### Authorization
 
@@ -58,7 +58,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **performDataAction**
-> \Swagger\Client\Model\DataActionResponse performDataAction($body)
+> \Swagger\Client\Looker\Model\DataActionResponse performDataAction($body)
 
 Send a Data Action
 
@@ -74,7 +74,7 @@ $apiInstance = new Swagger\Client\Api\DataActionApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\DataActionRequest(); // \Swagger\Client\Model\DataActionRequest | Data Action Request
+$body = new \Swagger\Client\Looker\Model\DataActionRequest(); // \Swagger\Client\Looker\Model\DataActionRequest | Data Action Request
 
 try {
     $result = $apiInstance->performDataAction($body);
@@ -89,11 +89,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\DataActionRequest**](../Model/DataActionRequest.md)| Data Action Request |
+ **body** | [**\Swagger\Client\Looker\Model\DataActionRequest**](../Model/DataActionRequest.md)| Data Action Request |
 
 ### Return type
 
-[**\Swagger\Client\Model\DataActionResponse**](../Model/DataActionResponse.md)
+[**\Swagger\Client\Looker\Model\DataActionResponse**](../Model/DataActionResponse.md)
 
 ### Authorization
 

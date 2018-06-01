@@ -16,7 +16,7 @@ Method | HTTP request | Description
 
 
 # **allConnections**
-> \Swagger\Client\Model\DBConnection[] allConnections($fields)
+> \Swagger\Client\Looker\Model\DBConnection[] allConnections($fields)
 
 Get All Connections
 
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DBConnection[]**](../Model/DBConnection.md)
+[**\Swagger\Client\Looker\Model\DBConnection[]**](../Model/DBConnection.md)
 
 ### Authorization
 
@@ -65,7 +65,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allDialectInfos**
-> \Swagger\Client\Model\DialectInfo[] allDialectInfos($fields)
+> \Swagger\Client\Looker\Model\DialectInfo[] allDialectInfos($fields)
 
 Get All Dialect Infos
 
@@ -100,7 +100,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DialectInfo[]**](../Model/DialectInfo.md)
+[**\Swagger\Client\Looker\Model\DialectInfo[]**](../Model/DialectInfo.md)
 
 ### Authorization
 
@@ -114,7 +114,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **connection**
-> \Swagger\Client\Model\DBConnection connection($connection_name, $fields)
+> \Swagger\Client\Looker\Model\DBConnection connection($connection_name, $fields)
 
 Get Connection
 
@@ -151,7 +151,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DBConnection**](../Model/DBConnection.md)
+[**\Swagger\Client\Looker\Model\DBConnection**](../Model/DBConnection.md)
 
 ### Authorization
 
@@ -165,7 +165,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createConnection**
-> \Swagger\Client\Model\DBConnection createConnection($body)
+> \Swagger\Client\Looker\Model\DBConnection createConnection($body)
 
 Create Connection
 
@@ -181,7 +181,7 @@ $apiInstance = new Swagger\Client\Api\ConnectionApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\DBConnection(); // \Swagger\Client\Model\DBConnection | Connection
+$body = new \Swagger\Client\Looker\Model\DBConnection(); // \Swagger\Client\Looker\Model\DBConnection | Connection
 
 try {
     $result = $apiInstance->createConnection($body);
@@ -196,11 +196,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\DBConnection**](../Model/DBConnection.md)| Connection | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\DBConnection**](../Model/DBConnection.md)| Connection | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\DBConnection**](../Model/DBConnection.md)
+[**\Swagger\Client\Looker\Model\DBConnection**](../Model/DBConnection.md)
 
 ### Authorization
 
@@ -314,7 +314,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **testConnection**
-> \Swagger\Client\Model\DBConnectionTestResult[] testConnection($connection_name, $tests)
+> \Swagger\Client\Looker\Model\DBConnectionTestResult[] testConnection($connection_name, $tests)
 
 Test Connection
 
@@ -351,7 +351,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DBConnectionTestResult[]**](../Model/DBConnectionTestResult.md)
+[**\Swagger\Client\Looker\Model\DBConnectionTestResult[]**](../Model/DBConnectionTestResult.md)
 
 ### Authorization
 
@@ -365,7 +365,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **testConnectionConfig**
-> \Swagger\Client\Model\DBConnectionTestResult[] testConnectionConfig($body, $tests)
+> \Swagger\Client\Looker\Model\DBConnectionTestResult[] testConnectionConfig($body, $tests)
 
 Test Connection Configuration
 
@@ -381,7 +381,7 @@ $apiInstance = new Swagger\Client\Api\ConnectionApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\DBConnection(); // \Swagger\Client\Model\DBConnection | Connection
+$body = new \Swagger\Client\Looker\Model\DBConnection(); // \Swagger\Client\Looker\Model\DBConnection | Connection
 $tests = array("tests_example"); // string[] | Array of names of tests to run
 
 try {
@@ -397,12 +397,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\DBConnection**](../Model/DBConnection.md)| Connection | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\DBConnection**](../Model/DBConnection.md)| Connection | [optional]
  **tests** | [**string[]**](../Model/string.md)| Array of names of tests to run | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\DBConnectionTestResult[]**](../Model/DBConnectionTestResult.md)
+[**\Swagger\Client\Looker\Model\DBConnectionTestResult[]**](../Model/DBConnectionTestResult.md)
 
 ### Authorization
 
@@ -416,7 +416,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateConnection**
-> \Swagger\Client\Model\DBConnection updateConnection($connection_name, $body)
+> \Swagger\Client\Looker\Model\DBConnection updateConnection($connection_name, $body)
 
 Update Connection
 
@@ -433,7 +433,7 @@ $apiInstance = new Swagger\Client\Api\ConnectionApi(
     new GuzzleHttp\Client()
 );
 $connection_name = "connection_name_example"; // string | Name of connection
-$body = new \Swagger\Client\Model\DBConnection(); // \Swagger\Client\Model\DBConnection | Connection
+$body = new \Swagger\Client\Looker\Model\DBConnection(); // \Swagger\Client\Looker\Model\DBConnection | Connection
 
 try {
     $result = $apiInstance->updateConnection($connection_name, $body);
@@ -449,11 +449,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **connection_name** | **string**| Name of connection |
- **body** | [**\Swagger\Client\Model\DBConnection**](../Model/DBConnection.md)| Connection |
+ **body** | [**\Swagger\Client\Looker\Model\DBConnection**](../Model/DBConnection.md)| Connection |
 
 ### Return type
 
-[**\Swagger\Client\Model\DBConnection**](../Model/DBConnection.md)
+[**\Swagger\Client\Looker\Model\DBConnection**](../Model/DBConnection.md)
 
 ### Authorization
 

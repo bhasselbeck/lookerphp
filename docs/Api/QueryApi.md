@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 
 # **createMergeQuery**
-> \Swagger\Client\Model\MergeQuery createMergeQuery($body, $fields)
+> \Swagger\Client\Looker\Model\MergeQuery createMergeQuery($body, $fields)
 
 Create Merge Query
 
@@ -35,7 +35,7 @@ $apiInstance = new Swagger\Client\Api\QueryApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\MergeQuery(); // \Swagger\Client\Model\MergeQuery | Merge Query
+$body = new \Swagger\Client\Looker\Model\MergeQuery(); // \Swagger\Client\Looker\Model\MergeQuery | Merge Query
 $fields = "fields_example"; // string | Requested fields
 
 try {
@@ -51,12 +51,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\MergeQuery**](../Model/MergeQuery.md)| Merge Query | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\MergeQuery**](../Model/MergeQuery.md)| Merge Query | [optional]
  **fields** | **string**| Requested fields | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\MergeQuery**](../Model/MergeQuery.md)
+[**\Swagger\Client\Looker\Model\MergeQuery**](../Model/MergeQuery.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createQuery**
-> \Swagger\Client\Model\Query createQuery($body, $fields)
+> \Swagger\Client\Looker\Model\Query createQuery($body, $fields)
 
 Create Query
 
@@ -86,7 +86,7 @@ $apiInstance = new Swagger\Client\Api\QueryApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\Query(); // \Swagger\Client\Model\Query | Query
+$body = new \Swagger\Client\Looker\Model\Query(); // \Swagger\Client\Looker\Model\Query | Query
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -102,12 +102,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\Query**](../Model/Query.md)| Query | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\Query**](../Model/Query.md)| Query | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\Query**](../Model/Query.md)
+[**\Swagger\Client\Looker\Model\Query**](../Model/Query.md)
 
 ### Authorization
 
@@ -121,7 +121,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createQueryTask**
-> \Swagger\Client\Model\QueryTask createQueryTask($body, $limit, $apply_formatting, $apply_vis, $cache, $image_width, $image_height, $generate_drill_links, $force_production, $cache_only, $path_prefix, $rebuild_pdts, $server_table_calcs, $fields)
+> \Swagger\Client\Looker\Model\QueryTask createQueryTask($body, $limit, $apply_formatting, $apply_vis, $cache, $image_width, $image_height, $generate_drill_links, $force_production, $cache_only, $path_prefix, $rebuild_pdts, $server_table_calcs, $fields)
 
 Run Query Async
 
@@ -137,7 +137,7 @@ $apiInstance = new Swagger\Client\Api\QueryApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\CreateQueryTask(); // \Swagger\Client\Model\CreateQueryTask | Query parameters
+$body = new \Swagger\Client\Looker\Model\CreateQueryTask(); // \Swagger\Client\Looker\Model\CreateQueryTask | Query parameters
 $limit = 789; // int | Row limit (may override the limit in the saved query).
 $apply_formatting = true; // bool | Apply model-specified formatting to each result.
 $apply_vis = true; // bool | Apply visualization options to results.
@@ -165,7 +165,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\CreateQueryTask**](../Model/CreateQueryTask.md)| Query parameters |
+ **body** | [**\Swagger\Client\Looker\Model\CreateQueryTask**](../Model/CreateQueryTask.md)| Query parameters |
  **limit** | **int**| Row limit (may override the limit in the saved query). | [optional]
  **apply_formatting** | **bool**| Apply model-specified formatting to each result. | [optional]
  **apply_vis** | **bool**| Apply visualization options to results. | [optional]
@@ -182,7 +182,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\QueryTask**](../Model/QueryTask.md)
+[**\Swagger\Client\Looker\Model\QueryTask**](../Model/QueryTask.md)
 
 ### Authorization
 
@@ -196,7 +196,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **mergeQuery**
-> \Swagger\Client\Model\MergeQuery mergeQuery($merge_query_id, $fields)
+> \Swagger\Client\Looker\Model\MergeQuery mergeQuery($merge_query_id, $fields)
 
 Get Merge Query
 
@@ -233,7 +233,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\MergeQuery**](../Model/MergeQuery.md)
+[**\Swagger\Client\Looker\Model\MergeQuery**](../Model/MergeQuery.md)
 
 ### Authorization
 
@@ -247,7 +247,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **query**
-> \Swagger\Client\Model\Query query($query_id, $fields)
+> \Swagger\Client\Looker\Model\Query query($query_id, $fields)
 
 Get Query
 
@@ -284,7 +284,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Query**](../Model/Query.md)
+[**\Swagger\Client\Looker\Model\Query**](../Model/Query.md)
 
 ### Authorization
 
@@ -298,7 +298,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryForSlug**
-> \Swagger\Client\Model\Query queryForSlug($slug, $fields)
+> \Swagger\Client\Looker\Model\Query queryForSlug($slug, $fields)
 
 Get Query for Slug
 
@@ -335,7 +335,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Query**](../Model/Query.md)
+[**\Swagger\Client\Looker\Model\Query**](../Model/Query.md)
 
 ### Authorization
 
@@ -349,7 +349,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryTask**
-> \Swagger\Client\Model\QueryTask queryTask($query_task_id, $fields)
+> \Swagger\Client\Looker\Model\QueryTask queryTask($query_task_id, $fields)
 
 Get Async Query Info
 
@@ -386,7 +386,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\QueryTask**](../Model/QueryTask.md)
+[**\Swagger\Client\Looker\Model\QueryTask**](../Model/QueryTask.md)
 
 ### Authorization
 
@@ -515,7 +515,7 @@ $apiInstance = new Swagger\Client\Api\QueryApi(
     new GuzzleHttp\Client()
 );
 $result_format = "result_format_example"; // string | Format of result
-$body = new \Swagger\Client\Model\Query(); // \Swagger\Client\Model\Query | inline query
+$body = new \Swagger\Client\Looker\Model\Query(); // \Swagger\Client\Looker\Model\Query | inline query
 $limit = 789; // int | Row limit (may override the limit in the saved query).
 $apply_formatting = true; // bool | Apply model-specified formatting to each result.
 $apply_vis = true; // bool | Apply visualization options to results.
@@ -543,7 +543,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **result_format** | **string**| Format of result |
- **body** | [**\Swagger\Client\Model\Query**](../Model/Query.md)| inline query |
+ **body** | [**\Swagger\Client\Looker\Model\Query**](../Model/Query.md)| inline query |
  **limit** | **int**| Row limit (may override the limit in the saved query). | [optional]
  **apply_formatting** | **bool**| Apply model-specified formatting to each result. | [optional]
  **apply_vis** | **bool**| Apply visualization options to results. | [optional]

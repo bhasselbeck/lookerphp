@@ -23,7 +23,7 @@ Method | HTTP request | Description
 
 
 # **allGitBranches**
-> \Swagger\Client\Model\GitBranch[] allGitBranches($project_id)
+> \Swagger\Client\Looker\Model\GitBranch[] allGitBranches($project_id)
 
 Get All Git Branchs
 
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GitBranch[]**](../Model/GitBranch.md)
+[**\Swagger\Client\Looker\Model\GitBranch[]**](../Model/GitBranch.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allGitConnectionTests**
-> \Swagger\Client\Model\GitConnectionTest[] allGitConnectionTests($project_id)
+> \Swagger\Client\Looker\Model\GitConnectionTest[] allGitConnectionTests($project_id)
 
 Get All Git Connection Tests
 
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GitConnectionTest[]**](../Model/GitConnectionTest.md)
+[**\Swagger\Client\Looker\Model\GitConnectionTest[]**](../Model/GitConnectionTest.md)
 
 ### Authorization
 
@@ -121,7 +121,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allProjectFiles**
-> \Swagger\Client\Model\ProjectFile[] allProjectFiles($project_id, $fields)
+> \Swagger\Client\Looker\Model\ProjectFile[] allProjectFiles($project_id, $fields)
 
 Get All Project Files
 
@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProjectFile[]**](../Model/ProjectFile.md)
+[**\Swagger\Client\Looker\Model\ProjectFile[]**](../Model/ProjectFile.md)
 
 ### Authorization
 
@@ -172,7 +172,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allProjects**
-> \Swagger\Client\Model\Project[] allProjects($fields)
+> \Swagger\Client\Looker\Model\Project[] allProjects($fields)
 
 Get All Projects
 
@@ -207,7 +207,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Project[]**](../Model/Project.md)
+[**\Swagger\Client\Looker\Model\Project[]**](../Model/Project.md)
 
 ### Authorization
 
@@ -270,7 +270,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createProject**
-> \Swagger\Client\Model\Project createProject($body)
+> \Swagger\Client\Looker\Model\Project createProject($body)
 
 Create Project
 
@@ -286,7 +286,7 @@ $apiInstance = new Swagger\Client\Api\ProjectApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\Project(); // \Swagger\Client\Model\Project | Project
+$body = new \Swagger\Client\Looker\Model\Project(); // \Swagger\Client\Looker\Model\Project | Project
 
 try {
     $result = $apiInstance->createProject($body);
@@ -301,11 +301,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\Project**](../Model/Project.md)| Project | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\Project**](../Model/Project.md)| Project | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\Project**](../Model/Project.md)
+[**\Swagger\Client\Looker\Model\Project**](../Model/Project.md)
 
 ### Authorization
 
@@ -368,7 +368,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **project**
-> \Swagger\Client\Model\Project project($project_id, $fields)
+> \Swagger\Client\Looker\Model\Project project($project_id, $fields)
 
 Get Project
 
@@ -405,7 +405,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Project**](../Model/Project.md)
+[**\Swagger\Client\Looker\Model\Project**](../Model/Project.md)
 
 ### Authorization
 
@@ -419,7 +419,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **projectFile**
-> \Swagger\Client\Model\ProjectFile projectFile($project_id, $file_id, $fields)
+> \Swagger\Client\Looker\Model\ProjectFile projectFile($project_id, $file_id, $fields)
 
 Get Project File
 
@@ -458,7 +458,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProjectFile**](../Model/ProjectFile.md)
+[**\Swagger\Client\Looker\Model\ProjectFile**](../Model/ProjectFile.md)
 
 ### Authorization
 
@@ -472,7 +472,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **projectValidationResults**
-> \Swagger\Client\Model\ProjectValidationCache projectValidationResults($project_id, $fields)
+> \Swagger\Client\Looker\Model\ProjectValidationCache projectValidationResults($project_id, $fields)
 
 Cached Project Validation Results
 
@@ -509,7 +509,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProjectValidationCache**](../Model/ProjectValidationCache.md)
+[**\Swagger\Client\Looker\Model\ProjectValidationCache**](../Model/ProjectValidationCache.md)
 
 ### Authorization
 
@@ -523,7 +523,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **projectWorkspace**
-> \Swagger\Client\Model\ProjectWorkspace projectWorkspace($project_id, $fields)
+> \Swagger\Client\Looker\Model\ProjectWorkspace projectWorkspace($project_id, $fields)
 
 Get Project Workspace
 
@@ -560,7 +560,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProjectWorkspace**](../Model/ProjectWorkspace.md)
+[**\Swagger\Client\Looker\Model\ProjectWorkspace**](../Model/ProjectWorkspace.md)
 
 ### Authorization
 
@@ -672,7 +672,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **runGitConnectionTest**
-> \Swagger\Client\Model\GitConnectionTestResult runGitConnectionTest($project_id, $test_id)
+> \Swagger\Client\Looker\Model\GitConnectionTestResult runGitConnectionTest($project_id, $test_id)
 
 Run Git Connection Test
 
@@ -709,7 +709,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GitConnectionTestResult**](../Model/GitConnectionTestResult.md)
+[**\Swagger\Client\Looker\Model\GitConnectionTestResult**](../Model/GitConnectionTestResult.md)
 
 ### Authorization
 
@@ -723,7 +723,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateProject**
-> \Swagger\Client\Model\Project updateProject($project_id, $body, $fields)
+> \Swagger\Client\Looker\Model\Project updateProject($project_id, $body, $fields)
 
 Update Project
 
@@ -740,7 +740,7 @@ $apiInstance = new Swagger\Client\Api\ProjectApi(
     new GuzzleHttp\Client()
 );
 $project_id = "project_id_example"; // string | Project Id
-$body = new \Swagger\Client\Model\Project(); // \Swagger\Client\Model\Project | Project
+$body = new \Swagger\Client\Looker\Model\Project(); // \Swagger\Client\Looker\Model\Project | Project
 $fields = "fields_example"; // string | Requested fields
 
 try {
@@ -757,12 +757,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **project_id** | **string**| Project Id |
- **body** | [**\Swagger\Client\Model\Project**](../Model/Project.md)| Project |
+ **body** | [**\Swagger\Client\Looker\Model\Project**](../Model/Project.md)| Project |
  **fields** | **string**| Requested fields | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\Project**](../Model/Project.md)
+[**\Swagger\Client\Looker\Model\Project**](../Model/Project.md)
 
 ### Authorization
 
@@ -776,7 +776,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **validateProject**
-> \Swagger\Client\Model\ProjectValidation validateProject($project_id, $fields)
+> \Swagger\Client\Looker\Model\ProjectValidation validateProject($project_id, $fields)
 
 Validate Project
 
@@ -813,7 +813,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProjectValidation**](../Model/ProjectValidation.md)
+[**\Swagger\Client\Looker\Model\ProjectValidation**](../Model/ProjectValidation.md)
 
 ### Authorization
 

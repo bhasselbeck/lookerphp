@@ -32,7 +32,7 @@ Method | HTTP request | Description
 
 
 # **allDashboards**
-> \Swagger\Client\Model\DashboardBase[] allDashboards($fields)
+> \Swagger\Client\Looker\Model\DashboardBase[] allDashboards($fields)
 
 Get All Dashboards
 
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DashboardBase[]**](../Model/DashboardBase.md)
+[**\Swagger\Client\Looker\Model\DashboardBase[]**](../Model/DashboardBase.md)
 
 ### Authorization
 
@@ -81,7 +81,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createDashboard**
-> \Swagger\Client\Model\Dashboard createDashboard($body)
+> \Swagger\Client\Looker\Model\Dashboard createDashboard($body)
 
 Create Dashboard
 
@@ -97,7 +97,7 @@ $apiInstance = new Swagger\Client\Api\DashboardApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\Dashboard(); // \Swagger\Client\Model\Dashboard | Dashboard
+$body = new \Swagger\Client\Looker\Model\Dashboard(); // \Swagger\Client\Looker\Model\Dashboard | Dashboard
 
 try {
     $result = $apiInstance->createDashboard($body);
@@ -112,11 +112,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\Dashboard**](../Model/Dashboard.md)| Dashboard | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\Dashboard**](../Model/Dashboard.md)| Dashboard | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\Dashboard**](../Model/Dashboard.md)
+[**\Swagger\Client\Looker\Model\Dashboard**](../Model/Dashboard.md)
 
 ### Authorization
 
@@ -130,7 +130,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createDashboardElement**
-> \Swagger\Client\Model\DashboardElement createDashboardElement($body, $fields)
+> \Swagger\Client\Looker\Model\DashboardElement createDashboardElement($body, $fields)
 
 Create DashboardElement
 
@@ -146,7 +146,7 @@ $apiInstance = new Swagger\Client\Api\DashboardApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\DashboardElement(); // \Swagger\Client\Model\DashboardElement | DashboardElement
+$body = new \Swagger\Client\Looker\Model\DashboardElement(); // \Swagger\Client\Looker\Model\DashboardElement | DashboardElement
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -162,12 +162,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\DashboardElement**](../Model/DashboardElement.md)| DashboardElement | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\DashboardElement**](../Model/DashboardElement.md)| DashboardElement | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\DashboardElement**](../Model/DashboardElement.md)
+[**\Swagger\Client\Looker\Model\DashboardElement**](../Model/DashboardElement.md)
 
 ### Authorization
 
@@ -181,7 +181,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createDashboardFilter**
-> \Swagger\Client\Model\DashboardFilter createDashboardFilter($body, $fields)
+> \Swagger\Client\Looker\Model\DashboardFilter createDashboardFilter($body, $fields)
 
 Create Dashboard Filter
 
@@ -197,7 +197,7 @@ $apiInstance = new Swagger\Client\Api\DashboardApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\DashboardFilter(); // \Swagger\Client\Model\DashboardFilter | Dashboard Filter
+$body = new \Swagger\Client\Looker\Model\DashboardFilter(); // \Swagger\Client\Looker\Model\DashboardFilter | Dashboard Filter
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -213,12 +213,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\DashboardFilter**](../Model/DashboardFilter.md)| Dashboard Filter | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\DashboardFilter**](../Model/DashboardFilter.md)| Dashboard Filter | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\DashboardFilter**](../Model/DashboardFilter.md)
+[**\Swagger\Client\Looker\Model\DashboardFilter**](../Model/DashboardFilter.md)
 
 ### Authorization
 
@@ -232,7 +232,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createDashboardLayout**
-> \Swagger\Client\Model\DashboardLayout createDashboardLayout($body, $fields)
+> \Swagger\Client\Looker\Model\DashboardLayout createDashboardLayout($body, $fields)
 
 Create DashboardLayout
 
@@ -248,7 +248,7 @@ $apiInstance = new Swagger\Client\Api\DashboardApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\DashboardLayout(); // \Swagger\Client\Model\DashboardLayout | DashboardLayout
+$body = new \Swagger\Client\Looker\Model\DashboardLayout(); // \Swagger\Client\Looker\Model\DashboardLayout | DashboardLayout
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -264,12 +264,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\DashboardLayout**](../Model/DashboardLayout.md)| DashboardLayout | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\DashboardLayout**](../Model/DashboardLayout.md)| DashboardLayout | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\DashboardLayout**](../Model/DashboardLayout.md)
+[**\Swagger\Client\Looker\Model\DashboardLayout**](../Model/DashboardLayout.md)
 
 ### Authorization
 
@@ -283,7 +283,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dashboard**
-> \Swagger\Client\Model\Dashboard dashboard($dashboard_id, $fields)
+> \Swagger\Client\Looker\Model\Dashboard dashboard($dashboard_id, $fields)
 
 Get Dashboard
 
@@ -320,7 +320,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Dashboard**](../Model/Dashboard.md)
+[**\Swagger\Client\Looker\Model\Dashboard**](../Model/Dashboard.md)
 
 ### Authorization
 
@@ -334,7 +334,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dashboardDashboardElements**
-> \Swagger\Client\Model\DashboardElement[] dashboardDashboardElements($dashboard_id, $fields)
+> \Swagger\Client\Looker\Model\DashboardElement[] dashboardDashboardElements($dashboard_id, $fields)
 
 Get All DashboardElements
 
@@ -371,7 +371,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DashboardElement[]**](../Model/DashboardElement.md)
+[**\Swagger\Client\Looker\Model\DashboardElement[]**](../Model/DashboardElement.md)
 
 ### Authorization
 
@@ -385,7 +385,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dashboardDashboardFilters**
-> \Swagger\Client\Model\DashboardFilter[] dashboardDashboardFilters($dashboard_id, $fields)
+> \Swagger\Client\Looker\Model\DashboardFilter[] dashboardDashboardFilters($dashboard_id, $fields)
 
 Get All Dashboard Filters
 
@@ -422,7 +422,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DashboardFilter[]**](../Model/DashboardFilter.md)
+[**\Swagger\Client\Looker\Model\DashboardFilter[]**](../Model/DashboardFilter.md)
 
 ### Authorization
 
@@ -436,7 +436,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dashboardDashboardLayouts**
-> \Swagger\Client\Model\DashboardLayout[] dashboardDashboardLayouts($dashboard_id, $fields)
+> \Swagger\Client\Looker\Model\DashboardLayout[] dashboardDashboardLayouts($dashboard_id, $fields)
 
 Get All DashboardLayouts
 
@@ -473,7 +473,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DashboardLayout[]**](../Model/DashboardLayout.md)
+[**\Swagger\Client\Looker\Model\DashboardLayout[]**](../Model/DashboardLayout.md)
 
 ### Authorization
 
@@ -487,7 +487,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dashboardElement**
-> \Swagger\Client\Model\DashboardElement dashboardElement($dashboard_element_id, $fields)
+> \Swagger\Client\Looker\Model\DashboardElement dashboardElement($dashboard_element_id, $fields)
 
 Get DashboardElement
 
@@ -524,7 +524,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DashboardElement**](../Model/DashboardElement.md)
+[**\Swagger\Client\Looker\Model\DashboardElement**](../Model/DashboardElement.md)
 
 ### Authorization
 
@@ -538,7 +538,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dashboardFilter**
-> \Swagger\Client\Model\DashboardFilter dashboardFilter($dashboard_filter_id, $fields)
+> \Swagger\Client\Looker\Model\DashboardFilter dashboardFilter($dashboard_filter_id, $fields)
 
 Get Dashboard Filter
 
@@ -575,7 +575,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DashboardFilter**](../Model/DashboardFilter.md)
+[**\Swagger\Client\Looker\Model\DashboardFilter**](../Model/DashboardFilter.md)
 
 ### Authorization
 
@@ -589,7 +589,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dashboardLayout**
-> \Swagger\Client\Model\DashboardLayout dashboardLayout($dashboard_layout_id, $fields)
+> \Swagger\Client\Looker\Model\DashboardLayout dashboardLayout($dashboard_layout_id, $fields)
 
 Get DashboardLayout
 
@@ -626,7 +626,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DashboardLayout**](../Model/DashboardLayout.md)
+[**\Swagger\Client\Looker\Model\DashboardLayout**](../Model/DashboardLayout.md)
 
 ### Authorization
 
@@ -640,7 +640,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dashboardLayoutComponent**
-> \Swagger\Client\Model\DashboardLayoutComponent dashboardLayoutComponent($dashboard_layout_component_id, $fields)
+> \Swagger\Client\Looker\Model\DashboardLayoutComponent dashboardLayoutComponent($dashboard_layout_component_id, $fields)
 
 Get DashboardLayoutComponent
 
@@ -677,7 +677,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DashboardLayoutComponent**](../Model/DashboardLayoutComponent.md)
+[**\Swagger\Client\Looker\Model\DashboardLayoutComponent**](../Model/DashboardLayoutComponent.md)
 
 ### Authorization
 
@@ -691,7 +691,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dashboardLayoutDashboardLayoutComponents**
-> \Swagger\Client\Model\DashboardLayoutComponent[] dashboardLayoutDashboardLayoutComponents($dashboard_layout_id, $fields)
+> \Swagger\Client\Looker\Model\DashboardLayoutComponent[] dashboardLayoutDashboardLayoutComponents($dashboard_layout_id, $fields)
 
 Get All DashboardLayoutComponents
 
@@ -728,7 +728,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DashboardLayoutComponent[]**](../Model/DashboardLayoutComponent.md)
+[**\Swagger\Client\Looker\Model\DashboardLayoutComponent[]**](../Model/DashboardLayoutComponent.md)
 
 ### Authorization
 
@@ -938,7 +938,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **searchDashboardElements**
-> \Swagger\Client\Model\DashboardElement[] searchDashboardElements($fields, $look_id, $dashboard_id, $title)
+> \Swagger\Client\Looker\Model\DashboardElement[] searchDashboardElements($fields, $look_id, $dashboard_id, $title)
 
 Get DashboardElement
 
@@ -979,7 +979,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DashboardElement[]**](../Model/DashboardElement.md)
+[**\Swagger\Client\Looker\Model\DashboardElement[]**](../Model/DashboardElement.md)
 
 ### Authorization
 
@@ -993,7 +993,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **searchDashboards**
-> \Swagger\Client\Model\Dashboard[] searchDashboards($fields, $id, $page, $per_page, $limit, $offset, $sorts, $title, $description, $content_favorite_id, $space_id, $deleted, $user_id, $view_count)
+> \Swagger\Client\Looker\Model\Dashboard[] searchDashboards($fields, $id, $page, $per_page, $limit, $offset, $sorts, $title, $description, $content_favorite_id, $space_id, $deleted, $user_id, $view_count)
 
 Search Dashboards
 
@@ -1054,7 +1054,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Dashboard[]**](../Model/Dashboard.md)
+[**\Swagger\Client\Looker\Model\Dashboard[]**](../Model/Dashboard.md)
 
 ### Authorization
 
@@ -1068,7 +1068,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateDashboard**
-> \Swagger\Client\Model\Dashboard updateDashboard($dashboard_id, $body)
+> \Swagger\Client\Looker\Model\Dashboard updateDashboard($dashboard_id, $body)
 
 Update Dashboard
 
@@ -1085,7 +1085,7 @@ $apiInstance = new Swagger\Client\Api\DashboardApi(
     new GuzzleHttp\Client()
 );
 $dashboard_id = "dashboard_id_example"; // string | Id of dashboard
-$body = new \Swagger\Client\Model\Dashboard(); // \Swagger\Client\Model\Dashboard | Dashboard
+$body = new \Swagger\Client\Looker\Model\Dashboard(); // \Swagger\Client\Looker\Model\Dashboard | Dashboard
 
 try {
     $result = $apiInstance->updateDashboard($dashboard_id, $body);
@@ -1101,11 +1101,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **dashboard_id** | **string**| Id of dashboard |
- **body** | [**\Swagger\Client\Model\Dashboard**](../Model/Dashboard.md)| Dashboard |
+ **body** | [**\Swagger\Client\Looker\Model\Dashboard**](../Model/Dashboard.md)| Dashboard |
 
 ### Return type
 
-[**\Swagger\Client\Model\Dashboard**](../Model/Dashboard.md)
+[**\Swagger\Client\Looker\Model\Dashboard**](../Model/Dashboard.md)
 
 ### Authorization
 
@@ -1119,7 +1119,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateDashboardElement**
-> \Swagger\Client\Model\DashboardElement updateDashboardElement($dashboard_element_id, $body, $fields)
+> \Swagger\Client\Looker\Model\DashboardElement updateDashboardElement($dashboard_element_id, $body, $fields)
 
 Update DashboardElement
 
@@ -1136,7 +1136,7 @@ $apiInstance = new Swagger\Client\Api\DashboardApi(
     new GuzzleHttp\Client()
 );
 $dashboard_element_id = "dashboard_element_id_example"; // string | Id of dashboard element
-$body = new \Swagger\Client\Model\DashboardElement(); // \Swagger\Client\Model\DashboardElement | DashboardElement
+$body = new \Swagger\Client\Looker\Model\DashboardElement(); // \Swagger\Client\Looker\Model\DashboardElement | DashboardElement
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -1153,12 +1153,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **dashboard_element_id** | **string**| Id of dashboard element |
- **body** | [**\Swagger\Client\Model\DashboardElement**](../Model/DashboardElement.md)| DashboardElement |
+ **body** | [**\Swagger\Client\Looker\Model\DashboardElement**](../Model/DashboardElement.md)| DashboardElement |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\DashboardElement**](../Model/DashboardElement.md)
+[**\Swagger\Client\Looker\Model\DashboardElement**](../Model/DashboardElement.md)
 
 ### Authorization
 
@@ -1172,7 +1172,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateDashboardFilter**
-> \Swagger\Client\Model\DashboardFilter updateDashboardFilter($dashboard_filter_id, $body, $fields)
+> \Swagger\Client\Looker\Model\DashboardFilter updateDashboardFilter($dashboard_filter_id, $body, $fields)
 
 Update Dashboard Filter
 
@@ -1189,7 +1189,7 @@ $apiInstance = new Swagger\Client\Api\DashboardApi(
     new GuzzleHttp\Client()
 );
 $dashboard_filter_id = "dashboard_filter_id_example"; // string | Id of dashboard filter
-$body = new \Swagger\Client\Model\DashboardFilter(); // \Swagger\Client\Model\DashboardFilter | Dashboard Filter
+$body = new \Swagger\Client\Looker\Model\DashboardFilter(); // \Swagger\Client\Looker\Model\DashboardFilter | Dashboard Filter
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -1206,12 +1206,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **dashboard_filter_id** | **string**| Id of dashboard filter |
- **body** | [**\Swagger\Client\Model\DashboardFilter**](../Model/DashboardFilter.md)| Dashboard Filter |
+ **body** | [**\Swagger\Client\Looker\Model\DashboardFilter**](../Model/DashboardFilter.md)| Dashboard Filter |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\DashboardFilter**](../Model/DashboardFilter.md)
+[**\Swagger\Client\Looker\Model\DashboardFilter**](../Model/DashboardFilter.md)
 
 ### Authorization
 
@@ -1225,7 +1225,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateDashboardLayout**
-> \Swagger\Client\Model\DashboardLayout updateDashboardLayout($dashboard_layout_id, $body, $fields)
+> \Swagger\Client\Looker\Model\DashboardLayout updateDashboardLayout($dashboard_layout_id, $body, $fields)
 
 Update DashboardLayout
 
@@ -1242,7 +1242,7 @@ $apiInstance = new Swagger\Client\Api\DashboardApi(
     new GuzzleHttp\Client()
 );
 $dashboard_layout_id = "dashboard_layout_id_example"; // string | Id of dashboard layout
-$body = new \Swagger\Client\Model\DashboardLayout(); // \Swagger\Client\Model\DashboardLayout | DashboardLayout
+$body = new \Swagger\Client\Looker\Model\DashboardLayout(); // \Swagger\Client\Looker\Model\DashboardLayout | DashboardLayout
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -1259,12 +1259,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **dashboard_layout_id** | **string**| Id of dashboard layout |
- **body** | [**\Swagger\Client\Model\DashboardLayout**](../Model/DashboardLayout.md)| DashboardLayout |
+ **body** | [**\Swagger\Client\Looker\Model\DashboardLayout**](../Model/DashboardLayout.md)| DashboardLayout |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\DashboardLayout**](../Model/DashboardLayout.md)
+[**\Swagger\Client\Looker\Model\DashboardLayout**](../Model/DashboardLayout.md)
 
 ### Authorization
 
@@ -1278,7 +1278,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateDashboardLayoutComponent**
-> \Swagger\Client\Model\DashboardLayoutComponent updateDashboardLayoutComponent($dashboard_layout_component_id, $body, $fields)
+> \Swagger\Client\Looker\Model\DashboardLayoutComponent updateDashboardLayoutComponent($dashboard_layout_component_id, $body, $fields)
 
 Update DashboardLayoutComponent
 
@@ -1295,7 +1295,7 @@ $apiInstance = new Swagger\Client\Api\DashboardApi(
     new GuzzleHttp\Client()
 );
 $dashboard_layout_component_id = "dashboard_layout_component_id_example"; // string | Id of dashboard layout component
-$body = new \Swagger\Client\Model\DashboardLayoutComponent(); // \Swagger\Client\Model\DashboardLayoutComponent | DashboardLayoutComponent
+$body = new \Swagger\Client\Looker\Model\DashboardLayoutComponent(); // \Swagger\Client\Looker\Model\DashboardLayoutComponent | DashboardLayoutComponent
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -1312,12 +1312,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **dashboard_layout_component_id** | **string**| Id of dashboard layout component |
- **body** | [**\Swagger\Client\Model\DashboardLayoutComponent**](../Model/DashboardLayoutComponent.md)| DashboardLayoutComponent |
+ **body** | [**\Swagger\Client\Looker\Model\DashboardLayoutComponent**](../Model/DashboardLayoutComponent.md)| DashboardLayoutComponent |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\DashboardLayoutComponent**](../Model/DashboardLayoutComponent.md)
+[**\Swagger\Client\Looker\Model\DashboardLayoutComponent**](../Model/DashboardLayoutComponent.md)
 
 ### Authorization
 

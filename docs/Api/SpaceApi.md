@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 
 # **allSpaces**
-> \Swagger\Client\Model\SpaceBase[] allSpaces($fields)
+> \Swagger\Client\Looker\Model\SpaceBase[] allSpaces($fields)
 
 Get All Spaces
 
@@ -54,7 +54,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\SpaceBase[]**](../Model/SpaceBase.md)
+[**\Swagger\Client\Looker\Model\SpaceBase[]**](../Model/SpaceBase.md)
 
 ### Authorization
 
@@ -68,7 +68,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createSpace**
-> \Swagger\Client\Model\Space createSpace($body)
+> \Swagger\Client\Looker\Model\Space createSpace($body)
 
 Create Space
 
@@ -84,7 +84,7 @@ $apiInstance = new Swagger\Client\Api\SpaceApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\Space(); // \Swagger\Client\Model\Space | Space
+$body = new \Swagger\Client\Looker\Model\Space(); // \Swagger\Client\Looker\Model\Space | Space
 
 try {
     $result = $apiInstance->createSpace($body);
@@ -99,11 +99,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\Space**](../Model/Space.md)| Space | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\Space**](../Model/Space.md)| Space | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\Space**](../Model/Space.md)
+[**\Swagger\Client\Looker\Model\Space**](../Model/Space.md)
 
 ### Authorization
 
@@ -166,7 +166,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **searchSpaces**
-> \Swagger\Client\Model\Space[] searchSpaces($fields, $page, $per_page, $limit, $offset, $sorts, $name, $id, $parent_id, $creator_id)
+> \Swagger\Client\Looker\Model\Space[] searchSpaces($fields, $page, $per_page, $limit, $offset, $sorts, $name, $id, $parent_id, $creator_id)
 
 Search Spaces
 
@@ -219,7 +219,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Space[]**](../Model/Space.md)
+[**\Swagger\Client\Looker\Model\Space[]**](../Model/Space.md)
 
 ### Authorization
 
@@ -233,7 +233,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **space**
-> \Swagger\Client\Model\Space space($space_id, $fields)
+> \Swagger\Client\Looker\Model\Space space($space_id, $fields)
 
 Get Space
 
@@ -270,7 +270,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Space**](../Model/Space.md)
+[**\Swagger\Client\Looker\Model\Space**](../Model/Space.md)
 
 ### Authorization
 
@@ -284,7 +284,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **spaceAncestors**
-> \Swagger\Client\Model\Space[] spaceAncestors($space_id, $fields)
+> \Swagger\Client\Looker\Model\Space[] spaceAncestors($space_id, $fields)
 
 Get Space Ancestors
 
@@ -321,7 +321,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Space[]**](../Model/Space.md)
+[**\Swagger\Client\Looker\Model\Space[]**](../Model/Space.md)
 
 ### Authorization
 
@@ -335,7 +335,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **spaceChildren**
-> \Swagger\Client\Model\Space[] spaceChildren($space_id, $fields, $page, $per_page, $sorts)
+> \Swagger\Client\Looker\Model\Space[] spaceChildren($space_id, $fields, $page, $per_page, $sorts)
 
 Get Space Children
 
@@ -378,7 +378,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Space[]**](../Model/Space.md)
+[**\Swagger\Client\Looker\Model\Space[]**](../Model/Space.md)
 
 ### Authorization
 
@@ -392,7 +392,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **spaceChildrenSearch**
-> \Swagger\Client\Model\Space[] spaceChildrenSearch($space_id, $fields, $sorts, $name)
+> \Swagger\Client\Looker\Model\Space[] spaceChildrenSearch($space_id, $fields, $sorts, $name)
 
 Search Space Children
 
@@ -433,7 +433,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Space[]**](../Model/Space.md)
+[**\Swagger\Client\Looker\Model\Space[]**](../Model/Space.md)
 
 ### Authorization
 
@@ -447,7 +447,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **spaceDashboards**
-> \Swagger\Client\Model\Dashboard[] spaceDashboards($space_id, $fields)
+> \Swagger\Client\Looker\Model\Dashboard[] spaceDashboards($space_id, $fields)
 
 Get Space Dashboards
 
@@ -484,7 +484,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Dashboard[]**](../Model/Dashboard.md)
+[**\Swagger\Client\Looker\Model\Dashboard[]**](../Model/Dashboard.md)
 
 ### Authorization
 
@@ -498,7 +498,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **spaceLooks**
-> \Swagger\Client\Model\LookWithQuery[] spaceLooks($space_id, $fields)
+> \Swagger\Client\Looker\Model\LookWithQuery[] spaceLooks($space_id, $fields)
 
 Get Space Looks
 
@@ -535,7 +535,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\LookWithQuery[]**](../Model/LookWithQuery.md)
+[**\Swagger\Client\Looker\Model\LookWithQuery[]**](../Model/LookWithQuery.md)
 
 ### Authorization
 
@@ -549,7 +549,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **spaceParent**
-> \Swagger\Client\Model\Space spaceParent($space_id, $fields)
+> \Swagger\Client\Looker\Model\Space spaceParent($space_id, $fields)
 
 Get Space Parent
 
@@ -586,7 +586,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Space**](../Model/Space.md)
+[**\Swagger\Client\Looker\Model\Space**](../Model/Space.md)
 
 ### Authorization
 
@@ -600,7 +600,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateSpace**
-> \Swagger\Client\Model\Space updateSpace($space_id, $body)
+> \Swagger\Client\Looker\Model\Space updateSpace($space_id, $body)
 
 Update Space
 
@@ -617,7 +617,7 @@ $apiInstance = new Swagger\Client\Api\SpaceApi(
     new GuzzleHttp\Client()
 );
 $space_id = "space_id_example"; // string | Id of space
-$body = new \Swagger\Client\Model\Space(); // \Swagger\Client\Model\Space | Space
+$body = new \Swagger\Client\Looker\Model\Space(); // \Swagger\Client\Looker\Model\Space | Space
 
 try {
     $result = $apiInstance->updateSpace($space_id, $body);
@@ -633,11 +633,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **space_id** | **string**| Id of space |
- **body** | [**\Swagger\Client\Model\Space**](../Model/Space.md)| Space |
+ **body** | [**\Swagger\Client\Looker\Model\Space**](../Model/Space.md)| Space |
 
 ### Return type
 
-[**\Swagger\Client\Model\Space**](../Model/Space.md)
+[**\Swagger\Client\Looker\Model\Space**](../Model/Space.md)
 
 ### Authorization
 

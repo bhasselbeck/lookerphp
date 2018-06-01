@@ -25,7 +25,7 @@ Method | HTTP request | Description
 
 
 # **createOidcTestConfig**
-> \Swagger\Client\Model\OIDCConfig createOidcTestConfig($body)
+> \Swagger\Client\Looker\Model\OIDCConfig createOidcTestConfig($body)
 
 Create OIDC Test Configuration
 
@@ -41,7 +41,7 @@ $apiInstance = new Swagger\Client\Api\AuthApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\OIDCConfig(); // \Swagger\Client\Model\OIDCConfig | OIDC test config
+$body = new \Swagger\Client\Looker\Model\OIDCConfig(); // \Swagger\Client\Looker\Model\OIDCConfig | OIDC test config
 
 try {
     $result = $apiInstance->createOidcTestConfig($body);
@@ -56,11 +56,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\OIDCConfig**](../Model/OIDCConfig.md)| OIDC test config |
+ **body** | [**\Swagger\Client\Looker\Model\OIDCConfig**](../Model/OIDCConfig.md)| OIDC test config |
 
 ### Return type
 
-[**\Swagger\Client\Model\OIDCConfig**](../Model/OIDCConfig.md)
+[**\Swagger\Client\Looker\Model\OIDCConfig**](../Model/OIDCConfig.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createSamlTestConfig**
-> \Swagger\Client\Model\SamlConfig createSamlTestConfig($body)
+> \Swagger\Client\Looker\Model\SamlConfig createSamlTestConfig($body)
 
 Create SAML Test Configuration
 
@@ -90,7 +90,7 @@ $apiInstance = new Swagger\Client\Api\AuthApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\SamlConfig(); // \Swagger\Client\Model\SamlConfig | SAML test config
+$body = new \Swagger\Client\Looker\Model\SamlConfig(); // \Swagger\Client\Looker\Model\SamlConfig | SAML test config
 
 try {
     $result = $apiInstance->createSamlTestConfig($body);
@@ -105,11 +105,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\SamlConfig**](../Model/SamlConfig.md)| SAML test config |
+ **body** | [**\Swagger\Client\Looker\Model\SamlConfig**](../Model/SamlConfig.md)| SAML test config |
 
 ### Return type
 
-[**\Swagger\Client\Model\SamlConfig**](../Model/SamlConfig.md)
+[**\Swagger\Client\Looker\Model\SamlConfig**](../Model/SamlConfig.md)
 
 ### Authorization
 
@@ -221,7 +221,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **fetchAndParseSamlIdpMetadata**
-> \Swagger\Client\Model\SamlMetadataParseResult fetchAndParseSamlIdpMetadata($body)
+> \Swagger\Client\Looker\Model\SamlMetadataParseResult fetchAndParseSamlIdpMetadata($body)
 
 Parse SAML IdP Url
 
@@ -256,7 +256,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\SamlMetadataParseResult**](../Model/SamlMetadataParseResult.md)
+[**\Swagger\Client\Looker\Model\SamlMetadataParseResult**](../Model/SamlMetadataParseResult.md)
 
 ### Authorization
 
@@ -270,7 +270,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **ldapConfig**
-> \Swagger\Client\Model\LDAPConfig ldapConfig()
+> \Swagger\Client\Looker\Model\LDAPConfig ldapConfig()
 
 Get LDAP Configuration
 
@@ -301,7 +301,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\LDAPConfig**](../Model/LDAPConfig.md)
+[**\Swagger\Client\Looker\Model\LDAPConfig**](../Model/LDAPConfig.md)
 
 ### Authorization
 
@@ -315,7 +315,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **oidcConfig**
-> \Swagger\Client\Model\OIDCConfig oidcConfig()
+> \Swagger\Client\Looker\Model\OIDCConfig oidcConfig()
 
 Get OIDC Configuration
 
@@ -346,7 +346,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\OIDCConfig**](../Model/OIDCConfig.md)
+[**\Swagger\Client\Looker\Model\OIDCConfig**](../Model/OIDCConfig.md)
 
 ### Authorization
 
@@ -360,7 +360,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **oidcTestConfig**
-> \Swagger\Client\Model\OIDCConfig oidcTestConfig($test_slug)
+> \Swagger\Client\Looker\Model\OIDCConfig oidcTestConfig($test_slug)
 
 Get OIDC Test Configuration
 
@@ -395,7 +395,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\OIDCConfig**](../Model/OIDCConfig.md)
+[**\Swagger\Client\Looker\Model\OIDCConfig**](../Model/OIDCConfig.md)
 
 ### Authorization
 
@@ -409,7 +409,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **parseSamlIdpMetadata**
-> \Swagger\Client\Model\SamlMetadataParseResult parseSamlIdpMetadata($body)
+> \Swagger\Client\Looker\Model\SamlMetadataParseResult parseSamlIdpMetadata($body)
 
 Parse SAML IdP XML
 
@@ -444,7 +444,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\SamlMetadataParseResult**](../Model/SamlMetadataParseResult.md)
+[**\Swagger\Client\Looker\Model\SamlMetadataParseResult**](../Model/SamlMetadataParseResult.md)
 
 ### Authorization
 
@@ -458,7 +458,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **samlConfig**
-> \Swagger\Client\Model\SamlConfig samlConfig()
+> \Swagger\Client\Looker\Model\SamlConfig samlConfig()
 
 Get SAML Configuration
 
@@ -489,7 +489,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\SamlConfig**](../Model/SamlConfig.md)
+[**\Swagger\Client\Looker\Model\SamlConfig**](../Model/SamlConfig.md)
 
 ### Authorization
 
@@ -503,7 +503,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **samlTestConfig**
-> \Swagger\Client\Model\SamlConfig samlTestConfig($test_slug)
+> \Swagger\Client\Looker\Model\SamlConfig samlTestConfig($test_slug)
 
 Get SAML Test Configuration
 
@@ -538,7 +538,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\SamlConfig**](../Model/SamlConfig.md)
+[**\Swagger\Client\Looker\Model\SamlConfig**](../Model/SamlConfig.md)
 
 ### Authorization
 
@@ -552,7 +552,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **testLdapConfigAuth**
-> \Swagger\Client\Model\LDAPConfigTestResult testLdapConfigAuth($body)
+> \Swagger\Client\Looker\Model\LDAPConfigTestResult testLdapConfigAuth($body)
 
 Test LDAP Auth
 
@@ -568,7 +568,7 @@ $apiInstance = new Swagger\Client\Api\AuthApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\LDAPConfig(); // \Swagger\Client\Model\LDAPConfig | LDAP Config
+$body = new \Swagger\Client\Looker\Model\LDAPConfig(); // \Swagger\Client\Looker\Model\LDAPConfig | LDAP Config
 
 try {
     $result = $apiInstance->testLdapConfigAuth($body);
@@ -583,11 +583,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\LDAPConfig**](../Model/LDAPConfig.md)| LDAP Config |
+ **body** | [**\Swagger\Client\Looker\Model\LDAPConfig**](../Model/LDAPConfig.md)| LDAP Config |
 
 ### Return type
 
-[**\Swagger\Client\Model\LDAPConfigTestResult**](../Model/LDAPConfigTestResult.md)
+[**\Swagger\Client\Looker\Model\LDAPConfigTestResult**](../Model/LDAPConfigTestResult.md)
 
 ### Authorization
 
@@ -601,7 +601,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **testLdapConfigConnection**
-> \Swagger\Client\Model\LDAPConfigTestResult testLdapConfigConnection($body)
+> \Swagger\Client\Looker\Model\LDAPConfigTestResult testLdapConfigConnection($body)
 
 Test LDAP Connection
 
@@ -617,7 +617,7 @@ $apiInstance = new Swagger\Client\Api\AuthApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\LDAPConfig(); // \Swagger\Client\Model\LDAPConfig | LDAP Config
+$body = new \Swagger\Client\Looker\Model\LDAPConfig(); // \Swagger\Client\Looker\Model\LDAPConfig | LDAP Config
 
 try {
     $result = $apiInstance->testLdapConfigConnection($body);
@@ -632,11 +632,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\LDAPConfig**](../Model/LDAPConfig.md)| LDAP Config |
+ **body** | [**\Swagger\Client\Looker\Model\LDAPConfig**](../Model/LDAPConfig.md)| LDAP Config |
 
 ### Return type
 
-[**\Swagger\Client\Model\LDAPConfigTestResult**](../Model/LDAPConfigTestResult.md)
+[**\Swagger\Client\Looker\Model\LDAPConfigTestResult**](../Model/LDAPConfigTestResult.md)
 
 ### Authorization
 
@@ -650,7 +650,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **testLdapConfigUserAuth**
-> \Swagger\Client\Model\LDAPConfigTestResult testLdapConfigUserAuth($body)
+> \Swagger\Client\Looker\Model\LDAPConfigTestResult testLdapConfigUserAuth($body)
 
 Test LDAP User Auth
 
@@ -666,7 +666,7 @@ $apiInstance = new Swagger\Client\Api\AuthApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\LDAPConfig(); // \Swagger\Client\Model\LDAPConfig | LDAP Config
+$body = new \Swagger\Client\Looker\Model\LDAPConfig(); // \Swagger\Client\Looker\Model\LDAPConfig | LDAP Config
 
 try {
     $result = $apiInstance->testLdapConfigUserAuth($body);
@@ -681,11 +681,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\LDAPConfig**](../Model/LDAPConfig.md)| LDAP Config |
+ **body** | [**\Swagger\Client\Looker\Model\LDAPConfig**](../Model/LDAPConfig.md)| LDAP Config |
 
 ### Return type
 
-[**\Swagger\Client\Model\LDAPConfigTestResult**](../Model/LDAPConfigTestResult.md)
+[**\Swagger\Client\Looker\Model\LDAPConfigTestResult**](../Model/LDAPConfigTestResult.md)
 
 ### Authorization
 
@@ -699,7 +699,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **testLdapConfigUserInfo**
-> \Swagger\Client\Model\LDAPConfigTestResult testLdapConfigUserInfo($body)
+> \Swagger\Client\Looker\Model\LDAPConfigTestResult testLdapConfigUserInfo($body)
 
 Test LDAP User Info
 
@@ -715,7 +715,7 @@ $apiInstance = new Swagger\Client\Api\AuthApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\LDAPConfig(); // \Swagger\Client\Model\LDAPConfig | LDAP Config
+$body = new \Swagger\Client\Looker\Model\LDAPConfig(); // \Swagger\Client\Looker\Model\LDAPConfig | LDAP Config
 
 try {
     $result = $apiInstance->testLdapConfigUserInfo($body);
@@ -730,11 +730,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\LDAPConfig**](../Model/LDAPConfig.md)| LDAP Config |
+ **body** | [**\Swagger\Client\Looker\Model\LDAPConfig**](../Model/LDAPConfig.md)| LDAP Config |
 
 ### Return type
 
-[**\Swagger\Client\Model\LDAPConfigTestResult**](../Model/LDAPConfigTestResult.md)
+[**\Swagger\Client\Looker\Model\LDAPConfigTestResult**](../Model/LDAPConfigTestResult.md)
 
 ### Authorization
 
@@ -748,7 +748,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLdapConfig**
-> \Swagger\Client\Model\LDAPConfig updateLdapConfig($body)
+> \Swagger\Client\Looker\Model\LDAPConfig updateLdapConfig($body)
 
 Update LDAP Configuration
 
@@ -764,7 +764,7 @@ $apiInstance = new Swagger\Client\Api\AuthApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\LDAPConfig(); // \Swagger\Client\Model\LDAPConfig | LDAP Config
+$body = new \Swagger\Client\Looker\Model\LDAPConfig(); // \Swagger\Client\Looker\Model\LDAPConfig | LDAP Config
 
 try {
     $result = $apiInstance->updateLdapConfig($body);
@@ -779,11 +779,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\LDAPConfig**](../Model/LDAPConfig.md)| LDAP Config |
+ **body** | [**\Swagger\Client\Looker\Model\LDAPConfig**](../Model/LDAPConfig.md)| LDAP Config |
 
 ### Return type
 
-[**\Swagger\Client\Model\LDAPConfig**](../Model/LDAPConfig.md)
+[**\Swagger\Client\Looker\Model\LDAPConfig**](../Model/LDAPConfig.md)
 
 ### Authorization
 
@@ -797,7 +797,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateOidcConfig**
-> \Swagger\Client\Model\OIDCConfig updateOidcConfig($body)
+> \Swagger\Client\Looker\Model\OIDCConfig updateOidcConfig($body)
 
 Update OIDC Configuration
 
@@ -813,7 +813,7 @@ $apiInstance = new Swagger\Client\Api\AuthApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\OIDCConfig(); // \Swagger\Client\Model\OIDCConfig | OIDC Config
+$body = new \Swagger\Client\Looker\Model\OIDCConfig(); // \Swagger\Client\Looker\Model\OIDCConfig | OIDC Config
 
 try {
     $result = $apiInstance->updateOidcConfig($body);
@@ -828,11 +828,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\OIDCConfig**](../Model/OIDCConfig.md)| OIDC Config |
+ **body** | [**\Swagger\Client\Looker\Model\OIDCConfig**](../Model/OIDCConfig.md)| OIDC Config |
 
 ### Return type
 
-[**\Swagger\Client\Model\OIDCConfig**](../Model/OIDCConfig.md)
+[**\Swagger\Client\Looker\Model\OIDCConfig**](../Model/OIDCConfig.md)
 
 ### Authorization
 
@@ -846,7 +846,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateSamlConfig**
-> \Swagger\Client\Model\SamlConfig updateSamlConfig($body)
+> \Swagger\Client\Looker\Model\SamlConfig updateSamlConfig($body)
 
 Update SAML Configuration
 
@@ -862,7 +862,7 @@ $apiInstance = new Swagger\Client\Api\AuthApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\SamlConfig(); // \Swagger\Client\Model\SamlConfig | SAML Config
+$body = new \Swagger\Client\Looker\Model\SamlConfig(); // \Swagger\Client\Looker\Model\SamlConfig | SAML Config
 
 try {
     $result = $apiInstance->updateSamlConfig($body);
@@ -877,11 +877,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\SamlConfig**](../Model/SamlConfig.md)| SAML Config |
+ **body** | [**\Swagger\Client\Looker\Model\SamlConfig**](../Model/SamlConfig.md)| SAML Config |
 
 ### Return type
 
-[**\Swagger\Client\Model\SamlConfig**](../Model/SamlConfig.md)
+[**\Swagger\Client\Looker\Model\SamlConfig**](../Model/SamlConfig.md)
 
 ### Authorization
 

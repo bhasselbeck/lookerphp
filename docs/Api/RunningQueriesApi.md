@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **allRunningQueries**
-> \Swagger\Client\Model\RunningQueries[] allRunningQueries()
+> \Swagger\Client\Looker\Model\RunningQueries[] allRunningQueries()
 
 Get All Running Queries
 
@@ -40,7 +40,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\RunningQueries[]**](../Model/RunningQueries.md)
+[**\Swagger\Client\Looker\Model\RunningQueries[]**](../Model/RunningQueries.md)
 
 ### Authorization
 

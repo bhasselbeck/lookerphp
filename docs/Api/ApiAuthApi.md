@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **login**
-> \Swagger\Client\Model\AccessToken login($client_id, $client_secret)
+> \Swagger\Client\Looker\Model\AccessToken login($client_id, $client_secret)
 
 Login
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\AccessToken**](../Model/AccessToken.md)
+[**\Swagger\Client\Looker\Model\AccessToken**](../Model/AccessToken.md)
 
 ### Authorization
 
@@ -61,7 +61,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **loginUser**
-> \Swagger\Client\Model\AccessToken loginUser($user_id)
+> \Swagger\Client\Looker\Model\AccessToken loginUser($user_id)
 
 Login user
 
@@ -96,7 +96,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\AccessToken**](../Model/AccessToken.md)
+[**\Swagger\Client\Looker\Model\AccessToken**](../Model/AccessToken.md)
 
 ### Authorization
 

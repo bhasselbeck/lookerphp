@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 
 # **acceptIntegrationHubLegalAgreement**
-> \Swagger\Client\Model\IntegrationHub acceptIntegrationHubLegalAgreement($integration_hub_id)
+> \Swagger\Client\Looker\Model\IntegrationHub acceptIntegrationHubLegalAgreement($integration_hub_id)
 
 Accept Integration Hub Legal Agreement
 
@@ -52,7 +52,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\IntegrationHub**](../Model/IntegrationHub.md)
+[**\Swagger\Client\Looker\Model\IntegrationHub**](../Model/IntegrationHub.md)
 
 ### Authorization
 
@@ -66,7 +66,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allIntegrationHubs**
-> \Swagger\Client\Model\IntegrationHub[] allIntegrationHubs($fields)
+> \Swagger\Client\Looker\Model\IntegrationHub[] allIntegrationHubs($fields)
 
 Get All Integration Hubs
 
@@ -101,7 +101,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\IntegrationHub[]**](../Model/IntegrationHub.md)
+[**\Swagger\Client\Looker\Model\IntegrationHub[]**](../Model/IntegrationHub.md)
 
 ### Authorization
 
@@ -115,7 +115,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allIntegrations**
-> \Swagger\Client\Model\Integration[] allIntegrations($fields, $integration_hub_id)
+> \Swagger\Client\Looker\Model\Integration[] allIntegrations($fields, $integration_hub_id)
 
 Get All Integrations
 
@@ -152,7 +152,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Integration[]**](../Model/Integration.md)
+[**\Swagger\Client\Looker\Model\Integration[]**](../Model/Integration.md)
 
 ### Authorization
 
@@ -166,7 +166,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createIntegrationHub**
-> \Swagger\Client\Model\IntegrationHub createIntegrationHub($body, $fields)
+> \Swagger\Client\Looker\Model\IntegrationHub createIntegrationHub($body, $fields)
 
 Create Integration Hub
 
@@ -182,7 +182,7 @@ $apiInstance = new Swagger\Client\Api\IntegrationApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\IntegrationHub(); // \Swagger\Client\Model\IntegrationHub | Integration Hub
+$body = new \Swagger\Client\Looker\Model\IntegrationHub(); // \Swagger\Client\Looker\Model\IntegrationHub | Integration Hub
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -198,12 +198,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\IntegrationHub**](../Model/IntegrationHub.md)| Integration Hub | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\IntegrationHub**](../Model/IntegrationHub.md)| Integration Hub | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\IntegrationHub**](../Model/IntegrationHub.md)
+[**\Swagger\Client\Looker\Model\IntegrationHub**](../Model/IntegrationHub.md)
 
 ### Authorization
 
@@ -266,7 +266,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **fetchIntegrationForm**
-> \Swagger\Client\Model\DataActionForm fetchIntegrationForm($integration_id)
+> \Swagger\Client\Looker\Model\DataActionForm fetchIntegrationForm($integration_id)
 
 Fetch Remote Integration Form
 
@@ -301,7 +301,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DataActionForm**](../Model/DataActionForm.md)
+[**\Swagger\Client\Looker\Model\DataActionForm**](../Model/DataActionForm.md)
 
 ### Authorization
 
@@ -315,7 +315,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **integration**
-> \Swagger\Client\Model\Integration integration($integration_id, $fields)
+> \Swagger\Client\Looker\Model\Integration integration($integration_id, $fields)
 
 Get Integration
 
@@ -352,7 +352,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Integration**](../Model/Integration.md)
+[**\Swagger\Client\Looker\Model\Integration**](../Model/Integration.md)
 
 ### Authorization
 
@@ -366,7 +366,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **integrationHub**
-> \Swagger\Client\Model\IntegrationHub integrationHub($integration_hub_id, $fields)
+> \Swagger\Client\Looker\Model\IntegrationHub integrationHub($integration_hub_id, $fields)
 
 Get Integration Hub
 
@@ -403,7 +403,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\IntegrationHub**](../Model/IntegrationHub.md)
+[**\Swagger\Client\Looker\Model\IntegrationHub**](../Model/IntegrationHub.md)
 
 ### Authorization
 
@@ -417,7 +417,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateIntegration**
-> \Swagger\Client\Model\Integration updateIntegration($integration_id, $body, $fields)
+> \Swagger\Client\Looker\Model\Integration updateIntegration($integration_id, $body, $fields)
 
 Update Integration
 
@@ -434,7 +434,7 @@ $apiInstance = new Swagger\Client\Api\IntegrationApi(
     new GuzzleHttp\Client()
 );
 $integration_id = 789; // int | Id of Integration
-$body = new \Swagger\Client\Model\Integration(); // \Swagger\Client\Model\Integration | Integration
+$body = new \Swagger\Client\Looker\Model\Integration(); // \Swagger\Client\Looker\Model\Integration | Integration
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -451,12 +451,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **integration_id** | **int**| Id of Integration |
- **body** | [**\Swagger\Client\Model\Integration**](../Model/Integration.md)| Integration |
+ **body** | [**\Swagger\Client\Looker\Model\Integration**](../Model/Integration.md)| Integration |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\Integration**](../Model/Integration.md)
+[**\Swagger\Client\Looker\Model\Integration**](../Model/Integration.md)
 
 ### Authorization
 
@@ -470,7 +470,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateIntegrationHub**
-> \Swagger\Client\Model\IntegrationHub updateIntegrationHub($integration_hub_id, $body, $fields)
+> \Swagger\Client\Looker\Model\IntegrationHub updateIntegrationHub($integration_hub_id, $body, $fields)
 
 Update Integration Hub
 
@@ -487,7 +487,7 @@ $apiInstance = new Swagger\Client\Api\IntegrationApi(
     new GuzzleHttp\Client()
 );
 $integration_hub_id = 789; // int | Id of Integration Hub
-$body = new \Swagger\Client\Model\IntegrationHub(); // \Swagger\Client\Model\IntegrationHub | Integration Hub
+$body = new \Swagger\Client\Looker\Model\IntegrationHub(); // \Swagger\Client\Looker\Model\IntegrationHub | Integration Hub
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -504,12 +504,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **integration_hub_id** | **int**| Id of Integration Hub |
- **body** | [**\Swagger\Client\Model\IntegrationHub**](../Model/IntegrationHub.md)| Integration Hub |
+ **body** | [**\Swagger\Client\Looker\Model\IntegrationHub**](../Model/IntegrationHub.md)| Integration Hub |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\IntegrationHub**](../Model/IntegrationHub.md)
+[**\Swagger\Client\Looker\Model\IntegrationHub**](../Model/IntegrationHub.md)
 
 ### Authorization
 

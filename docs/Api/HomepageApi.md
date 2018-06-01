@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 
 # **allHomepageItems**
-> \Swagger\Client\Model\HomepageItem[] allHomepageItems($fields, $sorts, $homepage_section_id)
+> \Swagger\Client\Looker\Model\HomepageItem[] allHomepageItems($fields, $sorts, $homepage_section_id)
 
 Get All Homepage Items
 
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\HomepageItem[]**](../Model/HomepageItem.md)
+[**\Swagger\Client\Looker\Model\HomepageItem[]**](../Model/HomepageItem.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allHomepageSections**
-> \Swagger\Client\Model\HomepageSection[] allHomepageSections($fields, $sorts)
+> \Swagger\Client\Looker\Model\HomepageSection[] allHomepageSections($fields, $sorts)
 
 Get All Homepage sections
 
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\HomepageSection[]**](../Model/HomepageSection.md)
+[**\Swagger\Client\Looker\Model\HomepageSection[]**](../Model/HomepageSection.md)
 
 ### Authorization
 
@@ -121,7 +121,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createHomepageItem**
-> \Swagger\Client\Model\HomepageItem createHomepageItem($body, $fields)
+> \Swagger\Client\Looker\Model\HomepageItem createHomepageItem($body, $fields)
 
 Create Homepage Item
 
@@ -137,7 +137,7 @@ $apiInstance = new Swagger\Client\Api\HomepageApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\HomepageItem(); // \Swagger\Client\Model\HomepageItem | Homepage Item
+$body = new \Swagger\Client\Looker\Model\HomepageItem(); // \Swagger\Client\Looker\Model\HomepageItem | Homepage Item
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -153,12 +153,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\HomepageItem**](../Model/HomepageItem.md)| Homepage Item | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\HomepageItem**](../Model/HomepageItem.md)| Homepage Item | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\HomepageItem**](../Model/HomepageItem.md)
+[**\Swagger\Client\Looker\Model\HomepageItem**](../Model/HomepageItem.md)
 
 ### Authorization
 
@@ -172,7 +172,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createHomepageSection**
-> \Swagger\Client\Model\HomepageSection createHomepageSection($body, $fields)
+> \Swagger\Client\Looker\Model\HomepageSection createHomepageSection($body, $fields)
 
 Create Homepage section
 
@@ -188,7 +188,7 @@ $apiInstance = new Swagger\Client\Api\HomepageApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\HomepageSection(); // \Swagger\Client\Model\HomepageSection | Homepage section
+$body = new \Swagger\Client\Looker\Model\HomepageSection(); // \Swagger\Client\Looker\Model\HomepageSection | Homepage section
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -204,12 +204,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\HomepageSection**](../Model/HomepageSection.md)| Homepage section | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\HomepageSection**](../Model/HomepageSection.md)| Homepage section | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\HomepageSection**](../Model/HomepageSection.md)
+[**\Swagger\Client\Looker\Model\HomepageSection**](../Model/HomepageSection.md)
 
 ### Authorization
 
@@ -321,7 +321,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **homepageItem**
-> \Swagger\Client\Model\HomepageItem homepageItem($homepage_item_id, $fields)
+> \Swagger\Client\Looker\Model\HomepageItem homepageItem($homepage_item_id, $fields)
 
 Get Homepage Item
 
@@ -358,7 +358,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\HomepageItem**](../Model/HomepageItem.md)
+[**\Swagger\Client\Looker\Model\HomepageItem**](../Model/HomepageItem.md)
 
 ### Authorization
 
@@ -372,7 +372,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **homepageSection**
-> \Swagger\Client\Model\HomepageSection homepageSection($homepage_section_id, $fields)
+> \Swagger\Client\Looker\Model\HomepageSection homepageSection($homepage_section_id, $fields)
 
 Get Homepage section
 
@@ -409,7 +409,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\HomepageSection**](../Model/HomepageSection.md)
+[**\Swagger\Client\Looker\Model\HomepageSection**](../Model/HomepageSection.md)
 
 ### Authorization
 
@@ -423,7 +423,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateHomepageItem**
-> \Swagger\Client\Model\HomepageItem updateHomepageItem($homepage_item_id, $body, $fields)
+> \Swagger\Client\Looker\Model\HomepageItem updateHomepageItem($homepage_item_id, $body, $fields)
 
 Update Homepage Item
 
@@ -440,7 +440,7 @@ $apiInstance = new Swagger\Client\Api\HomepageApi(
     new GuzzleHttp\Client()
 );
 $homepage_item_id = 789; // int | Id of homepage item
-$body = new \Swagger\Client\Model\HomepageItem(); // \Swagger\Client\Model\HomepageItem | Homepage Item
+$body = new \Swagger\Client\Looker\Model\HomepageItem(); // \Swagger\Client\Looker\Model\HomepageItem | Homepage Item
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -457,12 +457,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **homepage_item_id** | **int**| Id of homepage item |
- **body** | [**\Swagger\Client\Model\HomepageItem**](../Model/HomepageItem.md)| Homepage Item |
+ **body** | [**\Swagger\Client\Looker\Model\HomepageItem**](../Model/HomepageItem.md)| Homepage Item |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\HomepageItem**](../Model/HomepageItem.md)
+[**\Swagger\Client\Looker\Model\HomepageItem**](../Model/HomepageItem.md)
 
 ### Authorization
 
@@ -476,7 +476,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateHomepageSection**
-> \Swagger\Client\Model\HomepageSection updateHomepageSection($homepage_section_id, $body, $fields)
+> \Swagger\Client\Looker\Model\HomepageSection updateHomepageSection($homepage_section_id, $body, $fields)
 
 Update Homepage section
 
@@ -493,7 +493,7 @@ $apiInstance = new Swagger\Client\Api\HomepageApi(
     new GuzzleHttp\Client()
 );
 $homepage_section_id = 789; // int | Id of homepage section
-$body = new \Swagger\Client\Model\HomepageSection(); // \Swagger\Client\Model\HomepageSection | Homepage section
+$body = new \Swagger\Client\Looker\Model\HomepageSection(); // \Swagger\Client\Looker\Model\HomepageSection | Homepage section
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -510,12 +510,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **homepage_section_id** | **int**| Id of homepage section |
- **body** | [**\Swagger\Client\Model\HomepageSection**](../Model/HomepageSection.md)| Homepage section |
+ **body** | [**\Swagger\Client\Looker\Model\HomepageSection**](../Model/HomepageSection.md)| Homepage section |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\HomepageSection**](../Model/HomepageSection.md)
+[**\Swagger\Client\Looker\Model\HomepageSection**](../Model/HomepageSection.md)
 
 ### Authorization
 

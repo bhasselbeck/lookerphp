@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **string** | Unique Id | [optional] 
 **query_id** | **int** | Id of query | [optional] 
-**query** | [**\Swagger\Client\Model\Query**](Query.md) | Query | [optional] 
+**query** | [**\Swagger\Client\Looker\Model\Query**](Query.md) | Query | [optional] 
 **generate_links** | **bool** | whether or not to generate links in the query response. | [optional] 
 **force_production** | **bool** | Use production models to run query (even is user is in dev mode). | [optional] 
 **path_prefix** | **string** | Prefix to use for drill links. | [optional] 

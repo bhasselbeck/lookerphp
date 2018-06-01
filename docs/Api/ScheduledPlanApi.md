@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 
 # **allScheduledPlans**
-> \Swagger\Client\Model\ScheduledPlan[] allScheduledPlans($user_id, $fields)
+> \Swagger\Client\Looker\Model\ScheduledPlan[] allScheduledPlans($user_id, $fields)
 
 Get All Scheduled Plans
 
@@ -54,7 +54,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ScheduledPlan[]**](../Model/ScheduledPlan.md)
+[**\Swagger\Client\Looker\Model\ScheduledPlan[]**](../Model/ScheduledPlan.md)
 
 ### Authorization
 
@@ -68,7 +68,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createScheduledPlan**
-> \Swagger\Client\Model\ScheduledPlan createScheduledPlan($body)
+> \Swagger\Client\Looker\Model\ScheduledPlan createScheduledPlan($body)
 
 Create Scheduled Plan
 
@@ -84,7 +84,7 @@ $apiInstance = new Swagger\Client\Api\ScheduledPlanApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\ScheduledPlan(); // \Swagger\Client\Model\ScheduledPlan | Scheduled Plan
+$body = new \Swagger\Client\Looker\Model\ScheduledPlan(); // \Swagger\Client\Looker\Model\ScheduledPlan | Scheduled Plan
 
 try {
     $result = $apiInstance->createScheduledPlan($body);
@@ -99,11 +99,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ScheduledPlan**](../Model/ScheduledPlan.md)| Scheduled Plan | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\ScheduledPlan**](../Model/ScheduledPlan.md)| Scheduled Plan | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\ScheduledPlan**](../Model/ScheduledPlan.md)
+[**\Swagger\Client\Looker\Model\ScheduledPlan**](../Model/ScheduledPlan.md)
 
 ### Authorization
 
@@ -166,7 +166,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **scheduledPlan**
-> \Swagger\Client\Model\ScheduledPlan scheduledPlan($scheduled_plan_id, $fields)
+> \Swagger\Client\Looker\Model\ScheduledPlan scheduledPlan($scheduled_plan_id, $fields)
 
 Get Scheduled Plan
 
@@ -203,7 +203,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ScheduledPlan**](../Model/ScheduledPlan.md)
+[**\Swagger\Client\Looker\Model\ScheduledPlan**](../Model/ScheduledPlan.md)
 
 ### Authorization
 
@@ -217,7 +217,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **scheduledPlanRunOnce**
-> \Swagger\Client\Model\ScheduledPlan scheduledPlanRunOnce($body)
+> \Swagger\Client\Looker\Model\ScheduledPlan scheduledPlanRunOnce($body)
 
 Run Scheduled Plan Once
 
@@ -233,7 +233,7 @@ $apiInstance = new Swagger\Client\Api\ScheduledPlanApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\ScheduledPlan(); // \Swagger\Client\Model\ScheduledPlan | Scheduled Plan
+$body = new \Swagger\Client\Looker\Model\ScheduledPlan(); // \Swagger\Client\Looker\Model\ScheduledPlan | Scheduled Plan
 
 try {
     $result = $apiInstance->scheduledPlanRunOnce($body);
@@ -248,11 +248,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ScheduledPlan**](../Model/ScheduledPlan.md)| Scheduled Plan | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\ScheduledPlan**](../Model/ScheduledPlan.md)| Scheduled Plan | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\ScheduledPlan**](../Model/ScheduledPlan.md)
+[**\Swagger\Client\Looker\Model\ScheduledPlan**](../Model/ScheduledPlan.md)
 
 ### Authorization
 
@@ -266,7 +266,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **scheduledPlansForDashboard**
-> \Swagger\Client\Model\ScheduledPlan[] scheduledPlansForDashboard($dashboard_id, $user_id, $fields)
+> \Swagger\Client\Looker\Model\ScheduledPlan[] scheduledPlansForDashboard($dashboard_id, $user_id, $fields)
 
 Scheduled Plans for Dashboard
 
@@ -305,7 +305,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ScheduledPlan[]**](../Model/ScheduledPlan.md)
+[**\Swagger\Client\Looker\Model\ScheduledPlan[]**](../Model/ScheduledPlan.md)
 
 ### Authorization
 
@@ -319,7 +319,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **scheduledPlansForLook**
-> \Swagger\Client\Model\ScheduledPlan[] scheduledPlansForLook($look_id, $user_id, $fields)
+> \Swagger\Client\Looker\Model\ScheduledPlan[] scheduledPlansForLook($look_id, $user_id, $fields)
 
 Scheduled Plans for Look
 
@@ -358,7 +358,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ScheduledPlan[]**](../Model/ScheduledPlan.md)
+[**\Swagger\Client\Looker\Model\ScheduledPlan[]**](../Model/ScheduledPlan.md)
 
 ### Authorization
 
@@ -372,7 +372,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **scheduledPlansForLookmlDashboard**
-> \Swagger\Client\Model\ScheduledPlan[] scheduledPlansForLookmlDashboard($lookml_dashboard_id, $user_id, $fields)
+> \Swagger\Client\Looker\Model\ScheduledPlan[] scheduledPlansForLookmlDashboard($lookml_dashboard_id, $user_id, $fields)
 
 Scheduled Plans for LookML Dashboard
 
@@ -411,7 +411,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ScheduledPlan[]**](../Model/ScheduledPlan.md)
+[**\Swagger\Client\Looker\Model\ScheduledPlan[]**](../Model/ScheduledPlan.md)
 
 ### Authorization
 
@@ -425,7 +425,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **scheduledPlansForSpace**
-> \Swagger\Client\Model\ScheduledPlan[] scheduledPlansForSpace($space_id, $fields)
+> \Swagger\Client\Looker\Model\ScheduledPlan[] scheduledPlansForSpace($space_id, $fields)
 
 Scheduled Plans for Space
 
@@ -462,7 +462,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ScheduledPlan[]**](../Model/ScheduledPlan.md)
+[**\Swagger\Client\Looker\Model\ScheduledPlan[]**](../Model/ScheduledPlan.md)
 
 ### Authorization
 
@@ -476,7 +476,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateScheduledPlan**
-> \Swagger\Client\Model\ScheduledPlan updateScheduledPlan($scheduled_plan_id, $body)
+> \Swagger\Client\Looker\Model\ScheduledPlan updateScheduledPlan($scheduled_plan_id, $body)
 
 Update Scheduled Plan
 
@@ -493,7 +493,7 @@ $apiInstance = new Swagger\Client\Api\ScheduledPlanApi(
     new GuzzleHttp\Client()
 );
 $scheduled_plan_id = 789; // int | Scheduled Plan Id
-$body = new \Swagger\Client\Model\ScheduledPlan(); // \Swagger\Client\Model\ScheduledPlan | Scheduled Plan
+$body = new \Swagger\Client\Looker\Model\ScheduledPlan(); // \Swagger\Client\Looker\Model\ScheduledPlan | Scheduled Plan
 
 try {
     $result = $apiInstance->updateScheduledPlan($scheduled_plan_id, $body);
@@ -509,11 +509,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **scheduled_plan_id** | **int**| Scheduled Plan Id |
- **body** | [**\Swagger\Client\Model\ScheduledPlan**](../Model/ScheduledPlan.md)| Scheduled Plan |
+ **body** | [**\Swagger\Client\Looker\Model\ScheduledPlan**](../Model/ScheduledPlan.md)| Scheduled Plan |
 
 ### Return type
 
-[**\Swagger\Client\Model\ScheduledPlan**](../Model/ScheduledPlan.md)
+[**\Swagger\Client\Looker\Model\ScheduledPlan**](../Model/ScheduledPlan.md)
 
 ### Authorization
 

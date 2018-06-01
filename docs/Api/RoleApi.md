@@ -27,7 +27,7 @@ Method | HTTP request | Description
 
 
 # **allModelSets**
-> \Swagger\Client\Model\ModelSet[] allModelSets($fields)
+> \Swagger\Client\Looker\Model\ModelSet[] allModelSets($fields)
 
 Get All Model Sets
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ModelSet[]**](../Model/ModelSet.md)
+[**\Swagger\Client\Looker\Model\ModelSet[]**](../Model/ModelSet.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allPermissionSets**
-> \Swagger\Client\Model\PermissionSet[] allPermissionSets($fields)
+> \Swagger\Client\Looker\Model\PermissionSet[] allPermissionSets($fields)
 
 Get All Permission Sets
 
@@ -111,7 +111,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\PermissionSet[]**](../Model/PermissionSet.md)
+[**\Swagger\Client\Looker\Model\PermissionSet[]**](../Model/PermissionSet.md)
 
 ### Authorization
 
@@ -125,7 +125,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allPermissions**
-> \Swagger\Client\Model\Permission[] allPermissions()
+> \Swagger\Client\Looker\Model\Permission[] allPermissions()
 
 Get All Permissions
 
@@ -156,7 +156,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\Permission[]**](../Model/Permission.md)
+[**\Swagger\Client\Looker\Model\Permission[]**](../Model/Permission.md)
 
 ### Authorization
 
@@ -170,7 +170,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allRoles**
-> \Swagger\Client\Model\Role[] allRoles($fields, $ids)
+> \Swagger\Client\Looker\Model\Role[] allRoles($fields, $ids)
 
 Get All Roles
 
@@ -207,7 +207,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Role[]**](../Model/Role.md)
+[**\Swagger\Client\Looker\Model\Role[]**](../Model/Role.md)
 
 ### Authorization
 
@@ -221,7 +221,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createModelSet**
-> \Swagger\Client\Model\ModelSet createModelSet($body)
+> \Swagger\Client\Looker\Model\ModelSet createModelSet($body)
 
 Create Model Set
 
@@ -237,7 +237,7 @@ $apiInstance = new Swagger\Client\Api\RoleApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\ModelSet(); // \Swagger\Client\Model\ModelSet | ModelSet
+$body = new \Swagger\Client\Looker\Model\ModelSet(); // \Swagger\Client\Looker\Model\ModelSet | ModelSet
 
 try {
     $result = $apiInstance->createModelSet($body);
@@ -252,11 +252,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ModelSet**](../Model/ModelSet.md)| ModelSet | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\ModelSet**](../Model/ModelSet.md)| ModelSet | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\ModelSet**](../Model/ModelSet.md)
+[**\Swagger\Client\Looker\Model\ModelSet**](../Model/ModelSet.md)
 
 ### Authorization
 
@@ -270,7 +270,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createPermissionSet**
-> \Swagger\Client\Model\PermissionSet createPermissionSet($body)
+> \Swagger\Client\Looker\Model\PermissionSet createPermissionSet($body)
 
 Create Permission Set
 
@@ -286,7 +286,7 @@ $apiInstance = new Swagger\Client\Api\RoleApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\PermissionSet(); // \Swagger\Client\Model\PermissionSet | Permission Set
+$body = new \Swagger\Client\Looker\Model\PermissionSet(); // \Swagger\Client\Looker\Model\PermissionSet | Permission Set
 
 try {
     $result = $apiInstance->createPermissionSet($body);
@@ -301,11 +301,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\PermissionSet**](../Model/PermissionSet.md)| Permission Set | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\PermissionSet**](../Model/PermissionSet.md)| Permission Set | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\PermissionSet**](../Model/PermissionSet.md)
+[**\Swagger\Client\Looker\Model\PermissionSet**](../Model/PermissionSet.md)
 
 ### Authorization
 
@@ -319,7 +319,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createRole**
-> \Swagger\Client\Model\Role createRole($body)
+> \Swagger\Client\Looker\Model\Role createRole($body)
 
 Create Role
 
@@ -335,7 +335,7 @@ $apiInstance = new Swagger\Client\Api\RoleApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\Role(); // \Swagger\Client\Model\Role | Role
+$body = new \Swagger\Client\Looker\Model\Role(); // \Swagger\Client\Looker\Model\Role | Role
 
 try {
     $result = $apiInstance->createRole($body);
@@ -350,11 +350,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\Role**](../Model/Role.md)| Role | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\Role**](../Model/Role.md)| Role | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\Role**](../Model/Role.md)
+[**\Swagger\Client\Looker\Model\Role**](../Model/Role.md)
 
 ### Authorization
 
@@ -515,7 +515,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **modelSet**
-> \Swagger\Client\Model\ModelSet modelSet($model_set_id, $fields)
+> \Swagger\Client\Looker\Model\ModelSet modelSet($model_set_id, $fields)
 
 Get Model Set
 
@@ -552,7 +552,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ModelSet**](../Model/ModelSet.md)
+[**\Swagger\Client\Looker\Model\ModelSet**](../Model/ModelSet.md)
 
 ### Authorization
 
@@ -566,7 +566,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **permissionSet**
-> \Swagger\Client\Model\PermissionSet permissionSet($permission_set_id, $fields)
+> \Swagger\Client\Looker\Model\PermissionSet permissionSet($permission_set_id, $fields)
 
 Get Permission Set
 
@@ -603,7 +603,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\PermissionSet**](../Model/PermissionSet.md)
+[**\Swagger\Client\Looker\Model\PermissionSet**](../Model/PermissionSet.md)
 
 ### Authorization
 
@@ -617,7 +617,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **role**
-> \Swagger\Client\Model\Role role($role_id)
+> \Swagger\Client\Looker\Model\Role role($role_id)
 
 Get Role
 
@@ -652,7 +652,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Role**](../Model/Role.md)
+[**\Swagger\Client\Looker\Model\Role**](../Model/Role.md)
 
 ### Authorization
 
@@ -666,7 +666,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **roleGroups**
-> \Swagger\Client\Model\Group[] roleGroups($role_id, $fields)
+> \Swagger\Client\Looker\Model\Group[] roleGroups($role_id, $fields)
 
 Get Role Groups
 
@@ -703,7 +703,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Group[]**](../Model/Group.md)
+[**\Swagger\Client\Looker\Model\Group[]**](../Model/Group.md)
 
 ### Authorization
 
@@ -717,7 +717,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **roleUsers**
-> \Swagger\Client\Model\User[] roleUsers($role_id, $fields, $direct_association_only)
+> \Swagger\Client\Looker\Model\User[] roleUsers($role_id, $fields, $direct_association_only)
 
 Get Role Users
 
@@ -756,7 +756,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\User[]**](../Model/User.md)
+[**\Swagger\Client\Looker\Model\User[]**](../Model/User.md)
 
 ### Authorization
 
@@ -770,7 +770,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setRoleGroups**
-> \Swagger\Client\Model\Group[] setRoleGroups($role_id, $body)
+> \Swagger\Client\Looker\Model\Group[] setRoleGroups($role_id, $body)
 
 Update Role Groups
 
@@ -787,7 +787,7 @@ $apiInstance = new Swagger\Client\Api\RoleApi(
     new GuzzleHttp\Client()
 );
 $role_id = 789; // int | Id of Role
-$body = array(new \Swagger\Client\Model\int[]()); // int[] | Array of Group Ids
+$body = array(new \Swagger\Client\Looker\Model\int[]()); // int[] | Array of Group Ids
 
 try {
     $result = $apiInstance->setRoleGroups($role_id, $body);
@@ -807,7 +807,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Group[]**](../Model/Group.md)
+[**\Swagger\Client\Looker\Model\Group[]**](../Model/Group.md)
 
 ### Authorization
 
@@ -821,7 +821,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setRoleUsers**
-> \Swagger\Client\Model\User[] setRoleUsers($role_id, $body)
+> \Swagger\Client\Looker\Model\User[] setRoleUsers($role_id, $body)
 
 Update Role Users
 
@@ -838,7 +838,7 @@ $apiInstance = new Swagger\Client\Api\RoleApi(
     new GuzzleHttp\Client()
 );
 $role_id = 789; // int | id of role
-$body = array(new \Swagger\Client\Model\int[]()); // int[] | array of user ids for role
+$body = array(new \Swagger\Client\Looker\Model\int[]()); // int[] | array of user ids for role
 
 try {
     $result = $apiInstance->setRoleUsers($role_id, $body);
@@ -858,7 +858,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\User[]**](../Model/User.md)
+[**\Swagger\Client\Looker\Model\User[]**](../Model/User.md)
 
 ### Authorization
 
@@ -872,7 +872,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateModelSet**
-> \Swagger\Client\Model\ModelSet updateModelSet($model_set_id, $body)
+> \Swagger\Client\Looker\Model\ModelSet updateModelSet($model_set_id, $body)
 
 Update Model Set
 
@@ -889,7 +889,7 @@ $apiInstance = new Swagger\Client\Api\RoleApi(
     new GuzzleHttp\Client()
 );
 $model_set_id = 789; // int | id of model set
-$body = new \Swagger\Client\Model\ModelSet(); // \Swagger\Client\Model\ModelSet | ModelSet
+$body = new \Swagger\Client\Looker\Model\ModelSet(); // \Swagger\Client\Looker\Model\ModelSet | ModelSet
 
 try {
     $result = $apiInstance->updateModelSet($model_set_id, $body);
@@ -905,11 +905,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model_set_id** | **int**| id of model set |
- **body** | [**\Swagger\Client\Model\ModelSet**](../Model/ModelSet.md)| ModelSet |
+ **body** | [**\Swagger\Client\Looker\Model\ModelSet**](../Model/ModelSet.md)| ModelSet |
 
 ### Return type
 
-[**\Swagger\Client\Model\ModelSet**](../Model/ModelSet.md)
+[**\Swagger\Client\Looker\Model\ModelSet**](../Model/ModelSet.md)
 
 ### Authorization
 
@@ -923,7 +923,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updatePermissionSet**
-> \Swagger\Client\Model\PermissionSet updatePermissionSet($permission_set_id, $body)
+> \Swagger\Client\Looker\Model\PermissionSet updatePermissionSet($permission_set_id, $body)
 
 Update Permission Set
 
@@ -940,7 +940,7 @@ $apiInstance = new Swagger\Client\Api\RoleApi(
     new GuzzleHttp\Client()
 );
 $permission_set_id = 789; // int | id of permission set
-$body = new \Swagger\Client\Model\PermissionSet(); // \Swagger\Client\Model\PermissionSet | Permission Set
+$body = new \Swagger\Client\Looker\Model\PermissionSet(); // \Swagger\Client\Looker\Model\PermissionSet | Permission Set
 
 try {
     $result = $apiInstance->updatePermissionSet($permission_set_id, $body);
@@ -956,11 +956,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **permission_set_id** | **int**| id of permission set |
- **body** | [**\Swagger\Client\Model\PermissionSet**](../Model/PermissionSet.md)| Permission Set |
+ **body** | [**\Swagger\Client\Looker\Model\PermissionSet**](../Model/PermissionSet.md)| Permission Set |
 
 ### Return type
 
-[**\Swagger\Client\Model\PermissionSet**](../Model/PermissionSet.md)
+[**\Swagger\Client\Looker\Model\PermissionSet**](../Model/PermissionSet.md)
 
 ### Authorization
 
@@ -974,7 +974,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateRole**
-> \Swagger\Client\Model\Role updateRole($role_id, $body)
+> \Swagger\Client\Looker\Model\Role updateRole($role_id, $body)
 
 Update Role
 
@@ -991,7 +991,7 @@ $apiInstance = new Swagger\Client\Api\RoleApi(
     new GuzzleHttp\Client()
 );
 $role_id = 789; // int | id of role
-$body = new \Swagger\Client\Model\Role(); // \Swagger\Client\Model\Role | Role
+$body = new \Swagger\Client\Looker\Model\Role(); // \Swagger\Client\Looker\Model\Role | Role
 
 try {
     $result = $apiInstance->updateRole($role_id, $body);
@@ -1007,11 +1007,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **role_id** | **int**| id of role |
- **body** | [**\Swagger\Client\Model\Role**](../Model/Role.md)| Role |
+ **body** | [**\Swagger\Client\Looker\Model\Role**](../Model/Role.md)| Role |
 
 ### Return type
 
-[**\Swagger\Client\Model\Role**](../Model/Role.md)
+[**\Swagger\Client\Looker\Model\Role**](../Model/Role.md)
 
 ### Authorization
 

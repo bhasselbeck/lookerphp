@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 
 # **allContentMetadataAccesss**
-> \Swagger\Client\Model\ContentMetaGroupUser[] allContentMetadataAccesss($content_metadata_id, $fields)
+> \Swagger\Client\Looker\Model\ContentMetaGroupUser[] allContentMetadataAccesss($content_metadata_id, $fields)
 
 Get All Content Metadata Accesss
 
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ContentMetaGroupUser[]**](../Model/ContentMetaGroupUser.md)
+[**\Swagger\Client\Looker\Model\ContentMetaGroupUser[]**](../Model/ContentMetaGroupUser.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allContentMetadatas**
-> \Swagger\Client\Model\ContentMeta[] allContentMetadatas($parent_id, $fields)
+> \Swagger\Client\Looker\Model\ContentMeta[] allContentMetadatas($parent_id, $fields)
 
 Get All Content Metadatas
 
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ContentMeta[]**](../Model/ContentMeta.md)
+[**\Swagger\Client\Looker\Model\ContentMeta[]**](../Model/ContentMeta.md)
 
 ### Authorization
 
@@ -121,7 +121,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **contentFavorite**
-> \Swagger\Client\Model\ContentFavorite contentFavorite($content_favorite_id, $fields)
+> \Swagger\Client\Looker\Model\ContentFavorite contentFavorite($content_favorite_id, $fields)
 
 Get Favorite Content
 
@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ContentFavorite**](../Model/ContentFavorite.md)
+[**\Swagger\Client\Looker\Model\ContentFavorite**](../Model/ContentFavorite.md)
 
 ### Authorization
 
@@ -172,7 +172,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **contentMetadata**
-> \Swagger\Client\Model\ContentMeta contentMetadata($content_metadata_id, $fields)
+> \Swagger\Client\Looker\Model\ContentMeta contentMetadata($content_metadata_id, $fields)
 
 Get Content Metadata
 
@@ -209,7 +209,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ContentMeta**](../Model/ContentMeta.md)
+[**\Swagger\Client\Looker\Model\ContentMeta**](../Model/ContentMeta.md)
 
 ### Authorization
 
@@ -223,7 +223,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createContentFavorite**
-> \Swagger\Client\Model\ContentFavorite createContentFavorite($body)
+> \Swagger\Client\Looker\Model\ContentFavorite createContentFavorite($body)
 
 Create Favorite Content
 
@@ -239,7 +239,7 @@ $apiInstance = new Swagger\Client\Api\ContentApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\ContentFavorite(); // \Swagger\Client\Model\ContentFavorite | Favorite Content
+$body = new \Swagger\Client\Looker\Model\ContentFavorite(); // \Swagger\Client\Looker\Model\ContentFavorite | Favorite Content
 
 try {
     $result = $apiInstance->createContentFavorite($body);
@@ -254,11 +254,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ContentFavorite**](../Model/ContentFavorite.md)| Favorite Content | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\ContentFavorite**](../Model/ContentFavorite.md)| Favorite Content | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\ContentFavorite**](../Model/ContentFavorite.md)
+[**\Swagger\Client\Looker\Model\ContentFavorite**](../Model/ContentFavorite.md)
 
 ### Authorization
 
@@ -272,7 +272,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createContentMetadataAccess**
-> \Swagger\Client\Model\ContentMetaGroupUser createContentMetadataAccess($body)
+> \Swagger\Client\Looker\Model\ContentMetaGroupUser createContentMetadataAccess($body)
 
 Create Content Metadata Access
 
@@ -288,7 +288,7 @@ $apiInstance = new Swagger\Client\Api\ContentApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\ContentMetaGroupUser(); // \Swagger\Client\Model\ContentMetaGroupUser | Content Metadata Access
+$body = new \Swagger\Client\Looker\Model\ContentMetaGroupUser(); // \Swagger\Client\Looker\Model\ContentMetaGroupUser | Content Metadata Access
 
 try {
     $result = $apiInstance->createContentMetadataAccess($body);
@@ -303,11 +303,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ContentMetaGroupUser**](../Model/ContentMetaGroupUser.md)| Content Metadata Access | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\ContentMetaGroupUser**](../Model/ContentMetaGroupUser.md)| Content Metadata Access | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\ContentMetaGroupUser**](../Model/ContentMetaGroupUser.md)
+[**\Swagger\Client\Looker\Model\ContentMetaGroupUser**](../Model/ContentMetaGroupUser.md)
 
 ### Authorization
 
@@ -419,7 +419,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **searchContentFavorites**
-> \Swagger\Client\Model\ContentFavorite[] searchContentFavorites($user_id, $limit, $offset, $sorts, $fields)
+> \Swagger\Client\Looker\Model\ContentFavorite[] searchContentFavorites($user_id, $limit, $offset, $sorts, $fields)
 
 Search Favorite Contents
 
@@ -462,7 +462,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ContentFavorite[]**](../Model/ContentFavorite.md)
+[**\Swagger\Client\Looker\Model\ContentFavorite[]**](../Model/ContentFavorite.md)
 
 ### Authorization
 
@@ -476,7 +476,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **searchContentViews**
-> \Swagger\Client\Model\ContentView[] searchContentViews($view_count, $group_id, $look_id, $dashboard_id, $content_metadata_id, $start_of_week_date, $all_time, $user_id, $limit, $offset, $sorts, $fields)
+> \Swagger\Client\Looker\Model\ContentView[] searchContentViews($view_count, $group_id, $look_id, $dashboard_id, $content_metadata_id, $start_of_week_date, $all_time, $user_id, $limit, $offset, $sorts, $fields)
 
 Search Content Views
 
@@ -533,7 +533,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ContentView[]**](../Model/ContentView.md)
+[**\Swagger\Client\Looker\Model\ContentView[]**](../Model/ContentView.md)
 
 ### Authorization
 
@@ -547,7 +547,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateContentMetadata**
-> \Swagger\Client\Model\ContentMeta updateContentMetadata($content_metadata_id, $body)
+> \Swagger\Client\Looker\Model\ContentMeta updateContentMetadata($content_metadata_id, $body)
 
 Update Content Metadata
 
@@ -564,7 +564,7 @@ $apiInstance = new Swagger\Client\Api\ContentApi(
     new GuzzleHttp\Client()
 );
 $content_metadata_id = 789; // int | Id of content metadata
-$body = new \Swagger\Client\Model\ContentMeta(); // \Swagger\Client\Model\ContentMeta | Content Metadata
+$body = new \Swagger\Client\Looker\Model\ContentMeta(); // \Swagger\Client\Looker\Model\ContentMeta | Content Metadata
 
 try {
     $result = $apiInstance->updateContentMetadata($content_metadata_id, $body);
@@ -580,11 +580,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **content_metadata_id** | **int**| Id of content metadata |
- **body** | [**\Swagger\Client\Model\ContentMeta**](../Model/ContentMeta.md)| Content Metadata |
+ **body** | [**\Swagger\Client\Looker\Model\ContentMeta**](../Model/ContentMeta.md)| Content Metadata |
 
 ### Return type
 
-[**\Swagger\Client\Model\ContentMeta**](../Model/ContentMeta.md)
+[**\Swagger\Client\Looker\Model\ContentMeta**](../Model/ContentMeta.md)
 
 ### Authorization
 
@@ -598,7 +598,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateContentMetadataAccess**
-> \Swagger\Client\Model\ContentMetaGroupUser updateContentMetadataAccess($content_metadata_access_id, $body)
+> \Swagger\Client\Looker\Model\ContentMetaGroupUser updateContentMetadataAccess($content_metadata_access_id, $body)
 
 Update Content Metadata Access
 
@@ -615,7 +615,7 @@ $apiInstance = new Swagger\Client\Api\ContentApi(
     new GuzzleHttp\Client()
 );
 $content_metadata_access_id = 789; // int | Id of content metadata access
-$body = new \Swagger\Client\Model\ContentMetaGroupUser(); // \Swagger\Client\Model\ContentMetaGroupUser | Content Metadata Access
+$body = new \Swagger\Client\Looker\Model\ContentMetaGroupUser(); // \Swagger\Client\Looker\Model\ContentMetaGroupUser | Content Metadata Access
 
 try {
     $result = $apiInstance->updateContentMetadataAccess($content_metadata_access_id, $body);
@@ -631,11 +631,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **content_metadata_access_id** | **int**| Id of content metadata access |
- **body** | [**\Swagger\Client\Model\ContentMetaGroupUser**](../Model/ContentMetaGroupUser.md)| Content Metadata Access |
+ **body** | [**\Swagger\Client\Looker\Model\ContentMetaGroupUser**](../Model/ContentMetaGroupUser.md)| Content Metadata Access |
 
 ### Return type
 
-[**\Swagger\Client\Model\ContentMetaGroupUser**](../Model/ContentMetaGroupUser.md)
+[**\Swagger\Client\Looker\Model\ContentMetaGroupUser**](../Model/ContentMetaGroupUser.md)
 
 ### Authorization
 

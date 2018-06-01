@@ -21,12 +21,12 @@ Name | Type | Description | Notes
 **subtitle_text** | **string** | Text tile subtitle text | [optional] 
 **body_text** | **string** | Text tile body text | [optional] 
 **body_text_as_html** | **string** | Text tile body text as Html | [optional] 
-**look** | [**\Swagger\Client\Model\LookWithQuery**](LookWithQuery.md) | Look | [optional] 
-**query** | [**\Swagger\Client\Model\Query**](Query.md) | Query | [optional] 
+**look** | [**\Swagger\Client\Looker\Model\LookWithQuery**](LookWithQuery.md) | Look | [optional] 
+**query** | [**\Swagger\Client\Looker\Model\Query**](Query.md) | Query | [optional] 
 **edit_uri** | **string** | Relative path of URI of LookML file to edit the dashboard element (LookML dashboard only). | [optional] 
 **merge_result_id** | **string** | ID of merge result | [optional] 
 **result_maker_id** | **int** | ID of the ResultMakerLookup entry. | [optional] 
-**result_maker** | [**\Swagger\Client\Model\ResultMakerWithIdVisConfigAndDynamicFields**](ResultMakerWithIdVisConfigAndDynamicFields.md) | Data about the result maker. | [optional] 
+**result_maker** | [**\Swagger\Client\Looker\Model\ResultMakerWithIdVisConfigAndDynamicFields**](ResultMakerWithIdVisConfigAndDynamicFields.md) | Data about the result maker. | [optional] 
 **can** | **map[string,bool]** | Operations the current user is able to perform on this object | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

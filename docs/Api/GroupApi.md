@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 
 # **addGroupGroup**
-> \Swagger\Client\Model\Group addGroupGroup($group_id, $body)
+> \Swagger\Client\Looker\Model\Group addGroupGroup($group_id, $body)
 
 Add a Group to Group
 
@@ -37,7 +37,7 @@ $apiInstance = new Swagger\Client\Api\GroupApi(
     new GuzzleHttp\Client()
 );
 $group_id = 789; // int | Id of group
-$body = new \Swagger\Client\Model\GroupIdForGroupInclusion(); // \Swagger\Client\Model\GroupIdForGroupInclusion | Group id to add
+$body = new \Swagger\Client\Looker\Model\GroupIdForGroupInclusion(); // \Swagger\Client\Looker\Model\GroupIdForGroupInclusion | Group id to add
 
 try {
     $result = $apiInstance->addGroupGroup($group_id, $body);
@@ -53,11 +53,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **group_id** | **int**| Id of group |
- **body** | [**\Swagger\Client\Model\GroupIdForGroupInclusion**](../Model/GroupIdForGroupInclusion.md)| Group id to add | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\GroupIdForGroupInclusion**](../Model/GroupIdForGroupInclusion.md)| Group id to add | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\Group**](../Model/Group.md)
+[**\Swagger\Client\Looker\Model\Group**](../Model/Group.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **addGroupUser**
-> \Swagger\Client\Model\User addGroupUser($group_id, $body)
+> \Swagger\Client\Looker\Model\User addGroupUser($group_id, $body)
 
 Add a User to Group
 
@@ -88,7 +88,7 @@ $apiInstance = new Swagger\Client\Api\GroupApi(
     new GuzzleHttp\Client()
 );
 $group_id = 789; // int | Id of group
-$body = new \Swagger\Client\Model\GroupIdForGroupUserInclusion(); // \Swagger\Client\Model\GroupIdForGroupUserInclusion | User id to add
+$body = new \Swagger\Client\Looker\Model\GroupIdForGroupUserInclusion(); // \Swagger\Client\Looker\Model\GroupIdForGroupUserInclusion | User id to add
 
 try {
     $result = $apiInstance->addGroupUser($group_id, $body);
@@ -104,11 +104,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **group_id** | **int**| Id of group |
- **body** | [**\Swagger\Client\Model\GroupIdForGroupUserInclusion**](../Model/GroupIdForGroupUserInclusion.md)| User id to add | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\GroupIdForGroupUserInclusion**](../Model/GroupIdForGroupUserInclusion.md)| User id to add | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\User**](../Model/User.md)
+[**\Swagger\Client\Looker\Model\User**](../Model/User.md)
 
 ### Authorization
 
@@ -122,7 +122,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allGroupGroups**
-> \Swagger\Client\Model\Group[] allGroupGroups($group_id, $fields)
+> \Swagger\Client\Looker\Model\Group[] allGroupGroups($group_id, $fields)
 
 Get All Groups in Group
 
@@ -159,7 +159,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Group[]**](../Model/Group.md)
+[**\Swagger\Client\Looker\Model\Group[]**](../Model/Group.md)
 
 ### Authorization
 
@@ -173,7 +173,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allGroupUsers**
-> \Swagger\Client\Model\User[] allGroupUsers($group_id, $fields, $page, $per_page, $sorts)
+> \Swagger\Client\Looker\Model\User[] allGroupUsers($group_id, $fields, $page, $per_page, $sorts)
 
 Get All Users in Group
 
@@ -216,7 +216,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\User[]**](../Model/User.md)
+[**\Swagger\Client\Looker\Model\User[]**](../Model/User.md)
 
 ### Authorization
 
@@ -230,7 +230,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allGroups**
-> \Swagger\Client\Model\Group[] allGroups($fields, $page, $per_page, $sorts, $ids, $content_metadata_id, $can_add_to_content_metadata)
+> \Swagger\Client\Looker\Model\Group[] allGroups($fields, $page, $per_page, $sorts, $ids, $content_metadata_id, $can_add_to_content_metadata)
 
 Get All Groups
 
@@ -277,7 +277,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Group[]**](../Model/Group.md)
+[**\Swagger\Client\Looker\Model\Group[]**](../Model/Group.md)
 
 ### Authorization
 
@@ -291,7 +291,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createGroup**
-> \Swagger\Client\Model\Group createGroup($body, $fields)
+> \Swagger\Client\Looker\Model\Group createGroup($body, $fields)
 
 Create Group
 
@@ -307,7 +307,7 @@ $apiInstance = new Swagger\Client\Api\GroupApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\Group(); // \Swagger\Client\Model\Group | Group
+$body = new \Swagger\Client\Looker\Model\Group(); // \Swagger\Client\Looker\Model\Group | Group
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -323,12 +323,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\Group**](../Model/Group.md)| Group | [optional]
+ **body** | [**\Swagger\Client\Looker\Model\Group**](../Model/Group.md)| Group | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\Group**](../Model/Group.md)
+[**\Swagger\Client\Looker\Model\Group**](../Model/Group.md)
 
 ### Authorization
 
@@ -541,7 +541,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **group**
-> \Swagger\Client\Model\Group group($group_id, $fields)
+> \Swagger\Client\Looker\Model\Group group($group_id, $fields)
 
 Get Group
 
@@ -578,7 +578,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Group**](../Model/Group.md)
+[**\Swagger\Client\Looker\Model\Group**](../Model/Group.md)
 
 ### Authorization
 
@@ -592,7 +592,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateGroup**
-> \Swagger\Client\Model\Group updateGroup($group_id, $body, $fields)
+> \Swagger\Client\Looker\Model\Group updateGroup($group_id, $body, $fields)
 
 Update Group
 
@@ -609,7 +609,7 @@ $apiInstance = new Swagger\Client\Api\GroupApi(
     new GuzzleHttp\Client()
 );
 $group_id = 789; // int | Id of group
-$body = new \Swagger\Client\Model\Group(); // \Swagger\Client\Model\Group | Group
+$body = new \Swagger\Client\Looker\Model\Group(); // \Swagger\Client\Looker\Model\Group | Group
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -626,12 +626,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **group_id** | **int**| Id of group |
- **body** | [**\Swagger\Client\Model\Group**](../Model/Group.md)| Group |
+ **body** | [**\Swagger\Client\Looker\Model\Group**](../Model/Group.md)| Group |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\Group**](../Model/Group.md)
+[**\Swagger\Client\Looker\Model\Group**](../Model/Group.md)
 
 ### Authorization
 
@@ -645,7 +645,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateUserAttributeGroupValue**
-> \Swagger\Client\Model\UserAttributeGroupValue updateUserAttributeGroupValue($group_id, $user_attribute_id, $body)
+> \Swagger\Client\Looker\Model\UserAttributeGroupValue updateUserAttributeGroupValue($group_id, $user_attribute_id, $body)
 
 Set User Attribute Group Value
 
@@ -663,7 +663,7 @@ $apiInstance = new Swagger\Client\Api\GroupApi(
 );
 $group_id = 789; // int | Id of group
 $user_attribute_id = 789; // int | Id of user attribute
-$body = new \Swagger\Client\Model\UserAttributeGroupValue(); // \Swagger\Client\Model\UserAttributeGroupValue | New value for group.
+$body = new \Swagger\Client\Looker\Model\UserAttributeGroupValue(); // \Swagger\Client\Looker\Model\UserAttributeGroupValue | New value for group.
 
 try {
     $result = $apiInstance->updateUserAttributeGroupValue($group_id, $user_attribute_id, $body);
@@ -680,11 +680,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **group_id** | **int**| Id of group |
  **user_attribute_id** | **int**| Id of user attribute |
- **body** | [**\Swagger\Client\Model\UserAttributeGroupValue**](../Model/UserAttributeGroupValue.md)| New value for group. |
+ **body** | [**\Swagger\Client\Looker\Model\UserAttributeGroupValue**](../Model/UserAttributeGroupValue.md)| New value for group. |
 
 ### Return type
 
-[**\Swagger\Client\Model\UserAttributeGroupValue**](../Model/UserAttributeGroupValue.md)
+[**\Swagger\Client\Looker\Model\UserAttributeGroupValue**](../Model/UserAttributeGroupValue.md)
 
 ### Authorization
 

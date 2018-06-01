@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **allWorkspaces**
-> \Swagger\Client\Model\Workspace[] allWorkspaces()
+> \Swagger\Client\Looker\Model\Workspace[] allWorkspaces()
 
 Get All Workspaces
 
@@ -40,7 +40,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\Workspace[]**](../Model/Workspace.md)
+[**\Swagger\Client\Looker\Model\Workspace[]**](../Model/Workspace.md)
 
 ### Authorization
 
@@ -54,7 +54,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **workspace**
-> \Swagger\Client\Model\Workspace workspace($workspace_id)
+> \Swagger\Client\Looker\Model\Workspace workspace($workspace_id)
 
 Get Workspace
 
@@ -89,7 +89,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Workspace**](../Model/Workspace.md)
+[**\Swagger\Client\Looker\Model\Workspace**](../Model/Workspace.md)
 
 ### Authorization
 
