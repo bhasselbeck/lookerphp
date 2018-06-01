@@ -1,4 +1,4 @@
-# Swagger\Client\UserAttributeApi
+# Looker\UserAttributeApi
 
 All URIs are relative to *https://ethosce.looker.com:19999/api/3.1*
 
@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 
 # **allUserAttributeGroupValues**
-> \Swagger\Client\Looker\Model\UserAttributeGroupValue[] allUserAttributeGroupValues($user_attribute_id, $fields)
+> \Looker\Model\UserAttributeGroupValue[] allUserAttributeGroupValues($user_attribute_id, $fields)
 
 Get User Attribute Group Values
 
@@ -25,7 +25,7 @@ Get User Attribute Group Values
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserAttributeApi(
+$apiInstance = new Looker\Api\UserAttributeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\UserAttributeGroupValue[]**](../Model/UserAttributeGroupValue.md)
+[**\Looker\Model\UserAttributeGroupValue[]**](../Model/UserAttributeGroupValue.md)
 
 ### Authorization
 
@@ -65,7 +65,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allUserAttributes**
-> \Swagger\Client\Looker\Model\UserAttribute[] allUserAttributes($fields, $sorts)
+> \Looker\Model\UserAttribute[] allUserAttributes($fields, $sorts)
 
 Get All User Attributes
 
@@ -76,7 +76,7 @@ Get All User Attributes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserAttributeApi(
+$apiInstance = new Looker\Api\UserAttributeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -102,7 +102,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\UserAttribute[]**](../Model/UserAttribute.md)
+[**\Looker\Model\UserAttribute[]**](../Model/UserAttribute.md)
 
 ### Authorization
 
@@ -116,7 +116,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createUserAttribute**
-> \Swagger\Client\Looker\Model\UserAttribute createUserAttribute($body, $fields)
+> \Looker\Model\UserAttribute createUserAttribute($body, $fields)
 
 Create User Attribute
 
@@ -127,12 +127,12 @@ Create User Attribute
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserAttributeApi(
+$apiInstance = new Looker\Api\UserAttributeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\UserAttribute(); // \Swagger\Client\Looker\Model\UserAttribute | User Attribute
+$body = new \Looker\Model\UserAttribute(); // \Looker\Model\UserAttribute | User Attribute
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -148,12 +148,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\UserAttribute**](../Model/UserAttribute.md)| User Attribute | [optional]
+ **body** | [**\Looker\Model\UserAttribute**](../Model/UserAttribute.md)| User Attribute | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\UserAttribute**](../Model/UserAttribute.md)
+[**\Looker\Model\UserAttribute**](../Model/UserAttribute.md)
 
 ### Authorization
 
@@ -178,7 +178,7 @@ Delete User Attribute
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserAttributeApi(
+$apiInstance = new Looker\Api\UserAttributeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -216,7 +216,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setUserAttributeGroupValues**
-> \Swagger\Client\Looker\Model\UserAttributeGroupValue[] setUserAttributeGroupValues($user_attribute_id, $body)
+> \Looker\Model\UserAttributeGroupValue[] setUserAttributeGroupValues($user_attribute_id, $body)
 
 Set User Attribute Group Values
 
@@ -227,13 +227,13 @@ Set User Attribute Group Values
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserAttributeApi(
+$apiInstance = new Looker\Api\UserAttributeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $user_attribute_id = 789; // int | Id of user attribute
-$body = array(new \Swagger\Client\Looker\Model\UserAttributeGroupValue()); // \Swagger\Client\Looker\Model\UserAttributeGroupValue[] | Array of group values.
+$body = array(new \Looker\Model\UserAttributeGroupValue()); // \Looker\Model\UserAttributeGroupValue[] | Array of group values.
 
 try {
     $result = $apiInstance->setUserAttributeGroupValues($user_attribute_id, $body);
@@ -249,11 +249,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_attribute_id** | **int**| Id of user attribute |
- **body** | [**\Swagger\Client\Looker\Model\UserAttributeGroupValue[]**](../Model/UserAttributeGroupValue.md)| Array of group values. |
+ **body** | [**\Looker\Model\UserAttributeGroupValue[]**](../Model/UserAttributeGroupValue.md)| Array of group values. |
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\UserAttributeGroupValue[]**](../Model/UserAttributeGroupValue.md)
+[**\Looker\Model\UserAttributeGroupValue[]**](../Model/UserAttributeGroupValue.md)
 
 ### Authorization
 
@@ -267,7 +267,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateUserAttribute**
-> \Swagger\Client\Looker\Model\UserAttribute updateUserAttribute($user_attribute_id, $body, $fields)
+> \Looker\Model\UserAttribute updateUserAttribute($user_attribute_id, $body, $fields)
 
 Update User Attribute
 
@@ -278,13 +278,13 @@ Update User Attribute
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserAttributeApi(
+$apiInstance = new Looker\Api\UserAttributeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $user_attribute_id = 789; // int | Id of user attribute
-$body = new \Swagger\Client\Looker\Model\UserAttribute(); // \Swagger\Client\Looker\Model\UserAttribute | User Attribute
+$body = new \Looker\Model\UserAttribute(); // \Looker\Model\UserAttribute | User Attribute
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -301,12 +301,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_attribute_id** | **int**| Id of user attribute |
- **body** | [**\Swagger\Client\Looker\Model\UserAttribute**](../Model/UserAttribute.md)| User Attribute |
+ **body** | [**\Looker\Model\UserAttribute**](../Model/UserAttribute.md)| User Attribute |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\UserAttribute**](../Model/UserAttribute.md)
+[**\Looker\Model\UserAttribute**](../Model/UserAttribute.md)
 
 ### Authorization
 
@@ -320,7 +320,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userAttribute**
-> \Swagger\Client\Looker\Model\UserAttribute userAttribute($user_attribute_id, $fields)
+> \Looker\Model\UserAttribute userAttribute($user_attribute_id, $fields)
 
 Get User Attribute
 
@@ -331,7 +331,7 @@ Get User Attribute
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserAttributeApi(
+$apiInstance = new Looker\Api\UserAttributeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -357,7 +357,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\UserAttribute**](../Model/UserAttribute.md)
+[**\Looker\Model\UserAttribute**](../Model/UserAttribute.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# Swagger\Client\ScheduledPlanApi
+# Looker\ScheduledPlanApi
 
 All URIs are relative to *https://ethosce.looker.com:19999/api/3.1*
 
@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 
 # **allScheduledPlans**
-> \Swagger\Client\Looker\Model\ScheduledPlan[] allScheduledPlans($user_id, $fields)
+> \Looker\Model\ScheduledPlan[] allScheduledPlans($user_id, $fields)
 
 Get All Scheduled Plans
 
@@ -28,7 +28,7 @@ Get All Scheduled Plans
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ScheduledPlanApi(
+$apiInstance = new Looker\Api\ScheduledPlanApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -54,7 +54,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ScheduledPlan[]**](../Model/ScheduledPlan.md)
+[**\Looker\Model\ScheduledPlan[]**](../Model/ScheduledPlan.md)
 
 ### Authorization
 
@@ -68,7 +68,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createScheduledPlan**
-> \Swagger\Client\Looker\Model\ScheduledPlan createScheduledPlan($body)
+> \Looker\Model\ScheduledPlan createScheduledPlan($body)
 
 Create Scheduled Plan
 
@@ -79,12 +79,12 @@ Create Scheduled Plan
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ScheduledPlanApi(
+$apiInstance = new Looker\Api\ScheduledPlanApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\ScheduledPlan(); // \Swagger\Client\Looker\Model\ScheduledPlan | Scheduled Plan
+$body = new \Looker\Model\ScheduledPlan(); // \Looker\Model\ScheduledPlan | Scheduled Plan
 
 try {
     $result = $apiInstance->createScheduledPlan($body);
@@ -99,11 +99,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\ScheduledPlan**](../Model/ScheduledPlan.md)| Scheduled Plan | [optional]
+ **body** | [**\Looker\Model\ScheduledPlan**](../Model/ScheduledPlan.md)| Scheduled Plan | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ScheduledPlan**](../Model/ScheduledPlan.md)
+[**\Looker\Model\ScheduledPlan**](../Model/ScheduledPlan.md)
 
 ### Authorization
 
@@ -128,7 +128,7 @@ Delete Scheduled Plan
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ScheduledPlanApi(
+$apiInstance = new Looker\Api\ScheduledPlanApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -166,7 +166,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **scheduledPlan**
-> \Swagger\Client\Looker\Model\ScheduledPlan scheduledPlan($scheduled_plan_id, $fields)
+> \Looker\Model\ScheduledPlan scheduledPlan($scheduled_plan_id, $fields)
 
 Get Scheduled Plan
 
@@ -177,7 +177,7 @@ Get Scheduled Plan
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ScheduledPlanApi(
+$apiInstance = new Looker\Api\ScheduledPlanApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -203,7 +203,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ScheduledPlan**](../Model/ScheduledPlan.md)
+[**\Looker\Model\ScheduledPlan**](../Model/ScheduledPlan.md)
 
 ### Authorization
 
@@ -217,7 +217,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **scheduledPlanRunOnce**
-> \Swagger\Client\Looker\Model\ScheduledPlan scheduledPlanRunOnce($body)
+> \Looker\Model\ScheduledPlan scheduledPlanRunOnce($body)
 
 Run Scheduled Plan Once
 
@@ -228,12 +228,12 @@ Run Scheduled Plan Once
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ScheduledPlanApi(
+$apiInstance = new Looker\Api\ScheduledPlanApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\ScheduledPlan(); // \Swagger\Client\Looker\Model\ScheduledPlan | Scheduled Plan
+$body = new \Looker\Model\ScheduledPlan(); // \Looker\Model\ScheduledPlan | Scheduled Plan
 
 try {
     $result = $apiInstance->scheduledPlanRunOnce($body);
@@ -248,11 +248,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\ScheduledPlan**](../Model/ScheduledPlan.md)| Scheduled Plan | [optional]
+ **body** | [**\Looker\Model\ScheduledPlan**](../Model/ScheduledPlan.md)| Scheduled Plan | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ScheduledPlan**](../Model/ScheduledPlan.md)
+[**\Looker\Model\ScheduledPlan**](../Model/ScheduledPlan.md)
 
 ### Authorization
 
@@ -266,7 +266,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **scheduledPlansForDashboard**
-> \Swagger\Client\Looker\Model\ScheduledPlan[] scheduledPlansForDashboard($dashboard_id, $user_id, $fields)
+> \Looker\Model\ScheduledPlan[] scheduledPlansForDashboard($dashboard_id, $user_id, $fields)
 
 Scheduled Plans for Dashboard
 
@@ -277,7 +277,7 @@ Scheduled Plans for Dashboard
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ScheduledPlanApi(
+$apiInstance = new Looker\Api\ScheduledPlanApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -305,7 +305,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ScheduledPlan[]**](../Model/ScheduledPlan.md)
+[**\Looker\Model\ScheduledPlan[]**](../Model/ScheduledPlan.md)
 
 ### Authorization
 
@@ -319,7 +319,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **scheduledPlansForLook**
-> \Swagger\Client\Looker\Model\ScheduledPlan[] scheduledPlansForLook($look_id, $user_id, $fields)
+> \Looker\Model\ScheduledPlan[] scheduledPlansForLook($look_id, $user_id, $fields)
 
 Scheduled Plans for Look
 
@@ -330,7 +330,7 @@ Scheduled Plans for Look
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ScheduledPlanApi(
+$apiInstance = new Looker\Api\ScheduledPlanApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -358,7 +358,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ScheduledPlan[]**](../Model/ScheduledPlan.md)
+[**\Looker\Model\ScheduledPlan[]**](../Model/ScheduledPlan.md)
 
 ### Authorization
 
@@ -372,7 +372,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **scheduledPlansForLookmlDashboard**
-> \Swagger\Client\Looker\Model\ScheduledPlan[] scheduledPlansForLookmlDashboard($lookml_dashboard_id, $user_id, $fields)
+> \Looker\Model\ScheduledPlan[] scheduledPlansForLookmlDashboard($lookml_dashboard_id, $user_id, $fields)
 
 Scheduled Plans for LookML Dashboard
 
@@ -383,7 +383,7 @@ Scheduled Plans for LookML Dashboard
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ScheduledPlanApi(
+$apiInstance = new Looker\Api\ScheduledPlanApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -411,7 +411,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ScheduledPlan[]**](../Model/ScheduledPlan.md)
+[**\Looker\Model\ScheduledPlan[]**](../Model/ScheduledPlan.md)
 
 ### Authorization
 
@@ -425,7 +425,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **scheduledPlansForSpace**
-> \Swagger\Client\Looker\Model\ScheduledPlan[] scheduledPlansForSpace($space_id, $fields)
+> \Looker\Model\ScheduledPlan[] scheduledPlansForSpace($space_id, $fields)
 
 Scheduled Plans for Space
 
@@ -436,7 +436,7 @@ Scheduled Plans for Space
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ScheduledPlanApi(
+$apiInstance = new Looker\Api\ScheduledPlanApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -462,7 +462,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ScheduledPlan[]**](../Model/ScheduledPlan.md)
+[**\Looker\Model\ScheduledPlan[]**](../Model/ScheduledPlan.md)
 
 ### Authorization
 
@@ -476,7 +476,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateScheduledPlan**
-> \Swagger\Client\Looker\Model\ScheduledPlan updateScheduledPlan($scheduled_plan_id, $body)
+> \Looker\Model\ScheduledPlan updateScheduledPlan($scheduled_plan_id, $body)
 
 Update Scheduled Plan
 
@@ -487,13 +487,13 @@ Update Scheduled Plan
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ScheduledPlanApi(
+$apiInstance = new Looker\Api\ScheduledPlanApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $scheduled_plan_id = 789; // int | Scheduled Plan Id
-$body = new \Swagger\Client\Looker\Model\ScheduledPlan(); // \Swagger\Client\Looker\Model\ScheduledPlan | Scheduled Plan
+$body = new \Looker\Model\ScheduledPlan(); // \Looker\Model\ScheduledPlan | Scheduled Plan
 
 try {
     $result = $apiInstance->updateScheduledPlan($scheduled_plan_id, $body);
@@ -509,11 +509,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **scheduled_plan_id** | **int**| Scheduled Plan Id |
- **body** | [**\Swagger\Client\Looker\Model\ScheduledPlan**](../Model/ScheduledPlan.md)| Scheduled Plan |
+ **body** | [**\Looker\Model\ScheduledPlan**](../Model/ScheduledPlan.md)| Scheduled Plan |
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ScheduledPlan**](../Model/ScheduledPlan.md)
+[**\Looker\Model\ScheduledPlan**](../Model/ScheduledPlan.md)
 
 ### Authorization
 

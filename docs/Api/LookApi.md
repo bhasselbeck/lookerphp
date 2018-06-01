@@ -1,4 +1,4 @@
-# Swagger\Client\LookApi
+# Looker\LookApi
 
 All URIs are relative to *https://ethosce.looker.com:19999/api/3.1*
 
@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 
 # **allLooks**
-> \Swagger\Client\Looker\Model\Look[] allLooks($fields)
+> \Looker\Model\Look[] allLooks($fields)
 
 Get All Looks
 
@@ -25,7 +25,7 @@ Get All Looks
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LookApi(
+$apiInstance = new Looker\Api\LookApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Look[]**](../Model/Look.md)
+[**\Looker\Model\Look[]**](../Model/Look.md)
 
 ### Authorization
 
@@ -63,7 +63,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createLook**
-> \Swagger\Client\Looker\Model\LookWithQuery createLook($body, $fields)
+> \Looker\Model\LookWithQuery createLook($body, $fields)
 
 Create Look
 
@@ -74,12 +74,12 @@ Create Look
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LookApi(
+$apiInstance = new Looker\Api\LookApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\LookWithQuery(); // \Swagger\Client\Looker\Model\LookWithQuery | Look
+$body = new \Looker\Model\LookWithQuery(); // \Looker\Model\LookWithQuery | Look
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -95,12 +95,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\LookWithQuery**](../Model/LookWithQuery.md)| Look | [optional]
+ **body** | [**\Looker\Model\LookWithQuery**](../Model/LookWithQuery.md)| Look | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\LookWithQuery**](../Model/LookWithQuery.md)
+[**\Looker\Model\LookWithQuery**](../Model/LookWithQuery.md)
 
 ### Authorization
 
@@ -125,7 +125,7 @@ Delete Look
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LookApi(
+$apiInstance = new Looker\Api\LookApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -163,7 +163,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **look**
-> \Swagger\Client\Looker\Model\LookWithQuery look($look_id, $fields)
+> \Looker\Model\LookWithQuery look($look_id, $fields)
 
 Get Look
 
@@ -174,7 +174,7 @@ Get Look
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LookApi(
+$apiInstance = new Looker\Api\LookApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -200,7 +200,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\LookWithQuery**](../Model/LookWithQuery.md)
+[**\Looker\Model\LookWithQuery**](../Model/LookWithQuery.md)
 
 ### Authorization
 
@@ -225,7 +225,7 @@ Run Look
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LookApi(
+$apiInstance = new Looker\Api\LookApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -289,7 +289,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **searchLooks**
-> \Swagger\Client\Looker\Model\Look[] searchLooks($fields, $page, $per_page, $limit, $offset, $sorts, $title, $description, $content_favorite_id, $space_id, $user_id, $view_count)
+> \Looker\Model\Look[] searchLooks($fields, $page, $per_page, $limit, $offset, $sorts, $title, $description, $content_favorite_id, $space_id, $user_id, $view_count)
 
 Search Looks
 
@@ -300,7 +300,7 @@ Search looks.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LookApi(
+$apiInstance = new Looker\Api\LookApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -346,7 +346,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Look[]**](../Model/Look.md)
+[**\Looker\Model\Look[]**](../Model/Look.md)
 
 ### Authorization
 
@@ -360,7 +360,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLook**
-> \Swagger\Client\Looker\Model\LookWithQuery updateLook($look_id, $body, $fields)
+> \Looker\Model\LookWithQuery updateLook($look_id, $body, $fields)
 
 Update Look
 
@@ -371,13 +371,13 @@ Update Look
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LookApi(
+$apiInstance = new Looker\Api\LookApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $look_id = 789; // int | Id of look
-$body = new \Swagger\Client\Looker\Model\LookWithQuery(); // \Swagger\Client\Looker\Model\LookWithQuery | Look
+$body = new \Looker\Model\LookWithQuery(); // \Looker\Model\LookWithQuery | Look
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -394,12 +394,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **look_id** | **int**| Id of look |
- **body** | [**\Swagger\Client\Looker\Model\LookWithQuery**](../Model/LookWithQuery.md)| Look |
+ **body** | [**\Looker\Model\LookWithQuery**](../Model/LookWithQuery.md)| Look |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\LookWithQuery**](../Model/LookWithQuery.md)
+[**\Looker\Model\LookWithQuery**](../Model/LookWithQuery.md)
 
 ### Authorization
 

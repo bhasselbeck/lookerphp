@@ -1,4 +1,4 @@
-# Swagger\Client\DatagroupApi
+# Looker\DatagroupApi
 
 All URIs are relative to *https://ethosce.looker.com:19999/api/3.1*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **allDatagroups**
-> \Swagger\Client\Looker\Model\Datagroup[] allDatagroups()
+> \Looker\Model\Datagroup[] allDatagroups()
 
 Get All Datagroups
 
@@ -21,7 +21,7 @@ Get All Datagroups
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DatagroupApi(
+$apiInstance = new Looker\Api\DatagroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -41,7 +41,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Datagroup[]**](../Model/Datagroup.md)
+[**\Looker\Model\Datagroup[]**](../Model/Datagroup.md)
 
 ### Authorization
 
@@ -55,7 +55,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **datagroup**
-> \Swagger\Client\Looker\Model\Datagroup datagroup($datagroup_id)
+> \Looker\Model\Datagroup datagroup($datagroup_id)
 
 Get Datagroup
 
@@ -66,7 +66,7 @@ Get Datagroup
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DatagroupApi(
+$apiInstance = new Looker\Api\DatagroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -90,7 +90,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Datagroup**](../Model/Datagroup.md)
+[**\Looker\Model\Datagroup**](../Model/Datagroup.md)
 
 ### Authorization
 
@@ -104,7 +104,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateDatagroup**
-> \Swagger\Client\Looker\Model\Datagroup updateDatagroup($datagroup_id, $body)
+> \Looker\Model\Datagroup updateDatagroup($datagroup_id, $body)
 
 Update Datagroup
 
@@ -115,13 +115,13 @@ Update Datagroup
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DatagroupApi(
+$apiInstance = new Looker\Api\DatagroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $datagroup_id = "datagroup_id_example"; // string | ID of datagroup.
-$body = new \Swagger\Client\Looker\Model\Datagroup(); // \Swagger\Client\Looker\Model\Datagroup | Datagroup
+$body = new \Looker\Model\Datagroup(); // \Looker\Model\Datagroup | Datagroup
 
 try {
     $result = $apiInstance->updateDatagroup($datagroup_id, $body);
@@ -137,11 +137,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **datagroup_id** | **string**| ID of datagroup. |
- **body** | [**\Swagger\Client\Looker\Model\Datagroup**](../Model/Datagroup.md)| Datagroup |
+ **body** | [**\Looker\Model\Datagroup**](../Model/Datagroup.md)| Datagroup |
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Datagroup**](../Model/Datagroup.md)
+[**\Looker\Model\Datagroup**](../Model/Datagroup.md)
 
 ### Authorization
 

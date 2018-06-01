@@ -1,4 +1,4 @@
-# Swagger\Client\IntegrationApi
+# Looker\IntegrationApi
 
 All URIs are relative to *https://ethosce.looker.com:19999/api/3.1*
 
@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 
 # **acceptIntegrationHubLegalAgreement**
-> \Swagger\Client\Looker\Model\IntegrationHub acceptIntegrationHubLegalAgreement($integration_hub_id)
+> \Looker\Model\IntegrationHub acceptIntegrationHubLegalAgreement($integration_hub_id)
 
 Accept Integration Hub Legal Agreement
 
@@ -28,7 +28,7 @@ Accepts the legal agreement for a given integration hub. This only works for int
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\IntegrationApi(
+$apiInstance = new Looker\Api\IntegrationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -52,7 +52,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\IntegrationHub**](../Model/IntegrationHub.md)
+[**\Looker\Model\IntegrationHub**](../Model/IntegrationHub.md)
 
 ### Authorization
 
@@ -66,7 +66,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allIntegrationHubs**
-> \Swagger\Client\Looker\Model\IntegrationHub[] allIntegrationHubs($fields)
+> \Looker\Model\IntegrationHub[] allIntegrationHubs($fields)
 
 Get All Integration Hubs
 
@@ -77,7 +77,7 @@ Get All Integration Hubs
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\IntegrationApi(
+$apiInstance = new Looker\Api\IntegrationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -101,7 +101,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\IntegrationHub[]**](../Model/IntegrationHub.md)
+[**\Looker\Model\IntegrationHub[]**](../Model/IntegrationHub.md)
 
 ### Authorization
 
@@ -115,7 +115,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allIntegrations**
-> \Swagger\Client\Looker\Model\Integration[] allIntegrations($fields, $integration_hub_id)
+> \Looker\Model\Integration[] allIntegrations($fields, $integration_hub_id)
 
 Get All Integrations
 
@@ -126,7 +126,7 @@ Get All Integrations
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\IntegrationApi(
+$apiInstance = new Looker\Api\IntegrationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -152,7 +152,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Integration[]**](../Model/Integration.md)
+[**\Looker\Model\Integration[]**](../Model/Integration.md)
 
 ### Authorization
 
@@ -166,7 +166,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createIntegrationHub**
-> \Swagger\Client\Looker\Model\IntegrationHub createIntegrationHub($body, $fields)
+> \Looker\Model\IntegrationHub createIntegrationHub($body, $fields)
 
 Create Integration Hub
 
@@ -177,12 +177,12 @@ Create Integration Hub
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\IntegrationApi(
+$apiInstance = new Looker\Api\IntegrationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\IntegrationHub(); // \Swagger\Client\Looker\Model\IntegrationHub | Integration Hub
+$body = new \Looker\Model\IntegrationHub(); // \Looker\Model\IntegrationHub | Integration Hub
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -198,12 +198,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\IntegrationHub**](../Model/IntegrationHub.md)| Integration Hub | [optional]
+ **body** | [**\Looker\Model\IntegrationHub**](../Model/IntegrationHub.md)| Integration Hub | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\IntegrationHub**](../Model/IntegrationHub.md)
+[**\Looker\Model\IntegrationHub**](../Model/IntegrationHub.md)
 
 ### Authorization
 
@@ -228,7 +228,7 @@ Delete Integration Hub
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\IntegrationApi(
+$apiInstance = new Looker\Api\IntegrationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -266,7 +266,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **fetchIntegrationForm**
-> \Swagger\Client\Looker\Model\DataActionForm fetchIntegrationForm($integration_id)
+> \Looker\Model\DataActionForm fetchIntegrationForm($integration_id)
 
 Fetch Remote Integration Form
 
@@ -277,7 +277,7 @@ Returns the Integration form for presentation to the user.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\IntegrationApi(
+$apiInstance = new Looker\Api\IntegrationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -301,7 +301,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\DataActionForm**](../Model/DataActionForm.md)
+[**\Looker\Model\DataActionForm**](../Model/DataActionForm.md)
 
 ### Authorization
 
@@ -315,7 +315,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **integration**
-> \Swagger\Client\Looker\Model\Integration integration($integration_id, $fields)
+> \Looker\Model\Integration integration($integration_id, $fields)
 
 Get Integration
 
@@ -326,7 +326,7 @@ Get Integration
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\IntegrationApi(
+$apiInstance = new Looker\Api\IntegrationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -352,7 +352,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Integration**](../Model/Integration.md)
+[**\Looker\Model\Integration**](../Model/Integration.md)
 
 ### Authorization
 
@@ -366,7 +366,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **integrationHub**
-> \Swagger\Client\Looker\Model\IntegrationHub integrationHub($integration_hub_id, $fields)
+> \Looker\Model\IntegrationHub integrationHub($integration_hub_id, $fields)
 
 Get Integration Hub
 
@@ -377,7 +377,7 @@ Get Integration Hub
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\IntegrationApi(
+$apiInstance = new Looker\Api\IntegrationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -403,7 +403,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\IntegrationHub**](../Model/IntegrationHub.md)
+[**\Looker\Model\IntegrationHub**](../Model/IntegrationHub.md)
 
 ### Authorization
 
@@ -417,7 +417,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateIntegration**
-> \Swagger\Client\Looker\Model\Integration updateIntegration($integration_id, $body, $fields)
+> \Looker\Model\Integration updateIntegration($integration_id, $body, $fields)
 
 Update Integration
 
@@ -428,13 +428,13 @@ Update Integration
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\IntegrationApi(
+$apiInstance = new Looker\Api\IntegrationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $integration_id = 789; // int | Id of Integration
-$body = new \Swagger\Client\Looker\Model\Integration(); // \Swagger\Client\Looker\Model\Integration | Integration
+$body = new \Looker\Model\Integration(); // \Looker\Model\Integration | Integration
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -451,12 +451,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **integration_id** | **int**| Id of Integration |
- **body** | [**\Swagger\Client\Looker\Model\Integration**](../Model/Integration.md)| Integration |
+ **body** | [**\Looker\Model\Integration**](../Model/Integration.md)| Integration |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Integration**](../Model/Integration.md)
+[**\Looker\Model\Integration**](../Model/Integration.md)
 
 ### Authorization
 
@@ -470,7 +470,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateIntegrationHub**
-> \Swagger\Client\Looker\Model\IntegrationHub updateIntegrationHub($integration_hub_id, $body, $fields)
+> \Looker\Model\IntegrationHub updateIntegrationHub($integration_hub_id, $body, $fields)
 
 Update Integration Hub
 
@@ -481,13 +481,13 @@ Update Integration Hub
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\IntegrationApi(
+$apiInstance = new Looker\Api\IntegrationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $integration_hub_id = 789; // int | Id of Integration Hub
-$body = new \Swagger\Client\Looker\Model\IntegrationHub(); // \Swagger\Client\Looker\Model\IntegrationHub | Integration Hub
+$body = new \Looker\Model\IntegrationHub(); // \Looker\Model\IntegrationHub | Integration Hub
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -504,12 +504,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **integration_hub_id** | **int**| Id of Integration Hub |
- **body** | [**\Swagger\Client\Looker\Model\IntegrationHub**](../Model/IntegrationHub.md)| Integration Hub |
+ **body** | [**\Looker\Model\IntegrationHub**](../Model/IntegrationHub.md)| Integration Hub |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\IntegrationHub**](../Model/IntegrationHub.md)
+[**\Looker\Model\IntegrationHub**](../Model/IntegrationHub.md)
 
 ### Authorization
 

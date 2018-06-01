@@ -1,4 +1,4 @@
-# Swagger\Client\AuthApi
+# Looker\AuthApi
 
 All URIs are relative to *https://ethosce.looker.com:19999/api/3.1*
 
@@ -25,7 +25,7 @@ Method | HTTP request | Description
 
 
 # **createOidcTestConfig**
-> \Swagger\Client\Looker\Model\OIDCConfig createOidcTestConfig($body)
+> \Looker\Model\OIDCConfig createOidcTestConfig($body)
 
 Create OIDC Test Configuration
 
@@ -36,12 +36,12 @@ Create OIDC Test Configuration
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AuthApi(
+$apiInstance = new Looker\Api\AuthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\OIDCConfig(); // \Swagger\Client\Looker\Model\OIDCConfig | OIDC test config
+$body = new \Looker\Model\OIDCConfig(); // \Looker\Model\OIDCConfig | OIDC test config
 
 try {
     $result = $apiInstance->createOidcTestConfig($body);
@@ -56,11 +56,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\OIDCConfig**](../Model/OIDCConfig.md)| OIDC test config |
+ **body** | [**\Looker\Model\OIDCConfig**](../Model/OIDCConfig.md)| OIDC test config |
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\OIDCConfig**](../Model/OIDCConfig.md)
+[**\Looker\Model\OIDCConfig**](../Model/OIDCConfig.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createSamlTestConfig**
-> \Swagger\Client\Looker\Model\SamlConfig createSamlTestConfig($body)
+> \Looker\Model\SamlConfig createSamlTestConfig($body)
 
 Create SAML Test Configuration
 
@@ -85,12 +85,12 @@ Create SAML Test Configuration
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AuthApi(
+$apiInstance = new Looker\Api\AuthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\SamlConfig(); // \Swagger\Client\Looker\Model\SamlConfig | SAML test config
+$body = new \Looker\Model\SamlConfig(); // \Looker\Model\SamlConfig | SAML test config
 
 try {
     $result = $apiInstance->createSamlTestConfig($body);
@@ -105,11 +105,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\SamlConfig**](../Model/SamlConfig.md)| SAML test config |
+ **body** | [**\Looker\Model\SamlConfig**](../Model/SamlConfig.md)| SAML test config |
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\SamlConfig**](../Model/SamlConfig.md)
+[**\Looker\Model\SamlConfig**](../Model/SamlConfig.md)
 
 ### Authorization
 
@@ -134,7 +134,7 @@ Delete OIDC Test Configuration
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AuthApi(
+$apiInstance = new Looker\Api\AuthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -183,7 +183,7 @@ Delete SAML Test Configuration
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AuthApi(
+$apiInstance = new Looker\Api\AuthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -221,7 +221,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **fetchAndParseSamlIdpMetadata**
-> \Swagger\Client\Looker\Model\SamlMetadataParseResult fetchAndParseSamlIdpMetadata($body)
+> \Looker\Model\SamlMetadataParseResult fetchAndParseSamlIdpMetadata($body)
 
 Parse SAML IdP Url
 
@@ -232,7 +232,7 @@ Parse SAML IdP Url
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AuthApi(
+$apiInstance = new Looker\Api\AuthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -256,7 +256,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\SamlMetadataParseResult**](../Model/SamlMetadataParseResult.md)
+[**\Looker\Model\SamlMetadataParseResult**](../Model/SamlMetadataParseResult.md)
 
 ### Authorization
 
@@ -270,7 +270,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **ldapConfig**
-> \Swagger\Client\Looker\Model\LDAPConfig ldapConfig()
+> \Looker\Model\LDAPConfig ldapConfig()
 
 Get LDAP Configuration
 
@@ -281,7 +281,7 @@ Get LDAP Configuration
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AuthApi(
+$apiInstance = new Looker\Api\AuthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -301,7 +301,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\LDAPConfig**](../Model/LDAPConfig.md)
+[**\Looker\Model\LDAPConfig**](../Model/LDAPConfig.md)
 
 ### Authorization
 
@@ -315,7 +315,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **oidcConfig**
-> \Swagger\Client\Looker\Model\OIDCConfig oidcConfig()
+> \Looker\Model\OIDCConfig oidcConfig()
 
 Get OIDC Configuration
 
@@ -326,7 +326,7 @@ Get OIDC Configuration
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AuthApi(
+$apiInstance = new Looker\Api\AuthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -346,7 +346,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\OIDCConfig**](../Model/OIDCConfig.md)
+[**\Looker\Model\OIDCConfig**](../Model/OIDCConfig.md)
 
 ### Authorization
 
@@ -360,7 +360,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **oidcTestConfig**
-> \Swagger\Client\Looker\Model\OIDCConfig oidcTestConfig($test_slug)
+> \Looker\Model\OIDCConfig oidcTestConfig($test_slug)
 
 Get OIDC Test Configuration
 
@@ -371,7 +371,7 @@ Get OIDC Test Configuration
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AuthApi(
+$apiInstance = new Looker\Api\AuthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -395,7 +395,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\OIDCConfig**](../Model/OIDCConfig.md)
+[**\Looker\Model\OIDCConfig**](../Model/OIDCConfig.md)
 
 ### Authorization
 
@@ -409,7 +409,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **parseSamlIdpMetadata**
-> \Swagger\Client\Looker\Model\SamlMetadataParseResult parseSamlIdpMetadata($body)
+> \Looker\Model\SamlMetadataParseResult parseSamlIdpMetadata($body)
 
 Parse SAML IdP XML
 
@@ -420,7 +420,7 @@ Parse SAML IdP XML
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AuthApi(
+$apiInstance = new Looker\Api\AuthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -444,7 +444,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\SamlMetadataParseResult**](../Model/SamlMetadataParseResult.md)
+[**\Looker\Model\SamlMetadataParseResult**](../Model/SamlMetadataParseResult.md)
 
 ### Authorization
 
@@ -458,7 +458,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **samlConfig**
-> \Swagger\Client\Looker\Model\SamlConfig samlConfig()
+> \Looker\Model\SamlConfig samlConfig()
 
 Get SAML Configuration
 
@@ -469,7 +469,7 @@ Get SAML Configuration
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AuthApi(
+$apiInstance = new Looker\Api\AuthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -489,7 +489,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\SamlConfig**](../Model/SamlConfig.md)
+[**\Looker\Model\SamlConfig**](../Model/SamlConfig.md)
 
 ### Authorization
 
@@ -503,7 +503,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **samlTestConfig**
-> \Swagger\Client\Looker\Model\SamlConfig samlTestConfig($test_slug)
+> \Looker\Model\SamlConfig samlTestConfig($test_slug)
 
 Get SAML Test Configuration
 
@@ -514,7 +514,7 @@ Get SAML Test Configuration
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AuthApi(
+$apiInstance = new Looker\Api\AuthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -538,7 +538,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\SamlConfig**](../Model/SamlConfig.md)
+[**\Looker\Model\SamlConfig**](../Model/SamlConfig.md)
 
 ### Authorization
 
@@ -552,7 +552,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **testLdapConfigAuth**
-> \Swagger\Client\Looker\Model\LDAPConfigTestResult testLdapConfigAuth($body)
+> \Looker\Model\LDAPConfigTestResult testLdapConfigAuth($body)
 
 Test LDAP Auth
 
@@ -563,12 +563,12 @@ Test LDAP Auth
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AuthApi(
+$apiInstance = new Looker\Api\AuthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\LDAPConfig(); // \Swagger\Client\Looker\Model\LDAPConfig | LDAP Config
+$body = new \Looker\Model\LDAPConfig(); // \Looker\Model\LDAPConfig | LDAP Config
 
 try {
     $result = $apiInstance->testLdapConfigAuth($body);
@@ -583,11 +583,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\LDAPConfig**](../Model/LDAPConfig.md)| LDAP Config |
+ **body** | [**\Looker\Model\LDAPConfig**](../Model/LDAPConfig.md)| LDAP Config |
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\LDAPConfigTestResult**](../Model/LDAPConfigTestResult.md)
+[**\Looker\Model\LDAPConfigTestResult**](../Model/LDAPConfigTestResult.md)
 
 ### Authorization
 
@@ -601,7 +601,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **testLdapConfigConnection**
-> \Swagger\Client\Looker\Model\LDAPConfigTestResult testLdapConfigConnection($body)
+> \Looker\Model\LDAPConfigTestResult testLdapConfigConnection($body)
 
 Test LDAP Connection
 
@@ -612,12 +612,12 @@ Test LDAP Connection
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AuthApi(
+$apiInstance = new Looker\Api\AuthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\LDAPConfig(); // \Swagger\Client\Looker\Model\LDAPConfig | LDAP Config
+$body = new \Looker\Model\LDAPConfig(); // \Looker\Model\LDAPConfig | LDAP Config
 
 try {
     $result = $apiInstance->testLdapConfigConnection($body);
@@ -632,11 +632,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\LDAPConfig**](../Model/LDAPConfig.md)| LDAP Config |
+ **body** | [**\Looker\Model\LDAPConfig**](../Model/LDAPConfig.md)| LDAP Config |
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\LDAPConfigTestResult**](../Model/LDAPConfigTestResult.md)
+[**\Looker\Model\LDAPConfigTestResult**](../Model/LDAPConfigTestResult.md)
 
 ### Authorization
 
@@ -650,7 +650,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **testLdapConfigUserAuth**
-> \Swagger\Client\Looker\Model\LDAPConfigTestResult testLdapConfigUserAuth($body)
+> \Looker\Model\LDAPConfigTestResult testLdapConfigUserAuth($body)
 
 Test LDAP User Auth
 
@@ -661,12 +661,12 @@ Test LDAP User Auth
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AuthApi(
+$apiInstance = new Looker\Api\AuthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\LDAPConfig(); // \Swagger\Client\Looker\Model\LDAPConfig | LDAP Config
+$body = new \Looker\Model\LDAPConfig(); // \Looker\Model\LDAPConfig | LDAP Config
 
 try {
     $result = $apiInstance->testLdapConfigUserAuth($body);
@@ -681,11 +681,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\LDAPConfig**](../Model/LDAPConfig.md)| LDAP Config |
+ **body** | [**\Looker\Model\LDAPConfig**](../Model/LDAPConfig.md)| LDAP Config |
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\LDAPConfigTestResult**](../Model/LDAPConfigTestResult.md)
+[**\Looker\Model\LDAPConfigTestResult**](../Model/LDAPConfigTestResult.md)
 
 ### Authorization
 
@@ -699,7 +699,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **testLdapConfigUserInfo**
-> \Swagger\Client\Looker\Model\LDAPConfigTestResult testLdapConfigUserInfo($body)
+> \Looker\Model\LDAPConfigTestResult testLdapConfigUserInfo($body)
 
 Test LDAP User Info
 
@@ -710,12 +710,12 @@ Test LDAP User Info
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AuthApi(
+$apiInstance = new Looker\Api\AuthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\LDAPConfig(); // \Swagger\Client\Looker\Model\LDAPConfig | LDAP Config
+$body = new \Looker\Model\LDAPConfig(); // \Looker\Model\LDAPConfig | LDAP Config
 
 try {
     $result = $apiInstance->testLdapConfigUserInfo($body);
@@ -730,11 +730,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\LDAPConfig**](../Model/LDAPConfig.md)| LDAP Config |
+ **body** | [**\Looker\Model\LDAPConfig**](../Model/LDAPConfig.md)| LDAP Config |
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\LDAPConfigTestResult**](../Model/LDAPConfigTestResult.md)
+[**\Looker\Model\LDAPConfigTestResult**](../Model/LDAPConfigTestResult.md)
 
 ### Authorization
 
@@ -748,7 +748,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLdapConfig**
-> \Swagger\Client\Looker\Model\LDAPConfig updateLdapConfig($body)
+> \Looker\Model\LDAPConfig updateLdapConfig($body)
 
 Update LDAP Configuration
 
@@ -759,12 +759,12 @@ Update LDAP Configuration
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AuthApi(
+$apiInstance = new Looker\Api\AuthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\LDAPConfig(); // \Swagger\Client\Looker\Model\LDAPConfig | LDAP Config
+$body = new \Looker\Model\LDAPConfig(); // \Looker\Model\LDAPConfig | LDAP Config
 
 try {
     $result = $apiInstance->updateLdapConfig($body);
@@ -779,11 +779,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\LDAPConfig**](../Model/LDAPConfig.md)| LDAP Config |
+ **body** | [**\Looker\Model\LDAPConfig**](../Model/LDAPConfig.md)| LDAP Config |
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\LDAPConfig**](../Model/LDAPConfig.md)
+[**\Looker\Model\LDAPConfig**](../Model/LDAPConfig.md)
 
 ### Authorization
 
@@ -797,7 +797,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateOidcConfig**
-> \Swagger\Client\Looker\Model\OIDCConfig updateOidcConfig($body)
+> \Looker\Model\OIDCConfig updateOidcConfig($body)
 
 Update OIDC Configuration
 
@@ -808,12 +808,12 @@ Update OIDC Configuration
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AuthApi(
+$apiInstance = new Looker\Api\AuthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\OIDCConfig(); // \Swagger\Client\Looker\Model\OIDCConfig | OIDC Config
+$body = new \Looker\Model\OIDCConfig(); // \Looker\Model\OIDCConfig | OIDC Config
 
 try {
     $result = $apiInstance->updateOidcConfig($body);
@@ -828,11 +828,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\OIDCConfig**](../Model/OIDCConfig.md)| OIDC Config |
+ **body** | [**\Looker\Model\OIDCConfig**](../Model/OIDCConfig.md)| OIDC Config |
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\OIDCConfig**](../Model/OIDCConfig.md)
+[**\Looker\Model\OIDCConfig**](../Model/OIDCConfig.md)
 
 ### Authorization
 
@@ -846,7 +846,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateSamlConfig**
-> \Swagger\Client\Looker\Model\SamlConfig updateSamlConfig($body)
+> \Looker\Model\SamlConfig updateSamlConfig($body)
 
 Update SAML Configuration
 
@@ -857,12 +857,12 @@ Update SAML Configuration
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AuthApi(
+$apiInstance = new Looker\Api\AuthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\SamlConfig(); // \Swagger\Client\Looker\Model\SamlConfig | SAML Config
+$body = new \Looker\Model\SamlConfig(); // \Looker\Model\SamlConfig | SAML Config
 
 try {
     $result = $apiInstance->updateSamlConfig($body);
@@ -877,11 +877,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\SamlConfig**](../Model/SamlConfig.md)| SAML Config |
+ **body** | [**\Looker\Model\SamlConfig**](../Model/SamlConfig.md)| SAML Config |
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\SamlConfig**](../Model/SamlConfig.md)
+[**\Looker\Model\SamlConfig**](../Model/SamlConfig.md)
 
 ### Authorization
 

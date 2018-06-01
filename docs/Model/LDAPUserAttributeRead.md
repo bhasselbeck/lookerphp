@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **string** | Name of User Attribute in LDAP | [optional] 
 **required** | **bool** | Required to be in LDAP assertion for login to be allowed to succeed | [optional] 
-**user_attributes** | [**\Swagger\Client\Looker\Model\UserAttribute[]**](UserAttribute.md) | Looker User Attributes | [optional] 
+**user_attributes** | [**\Looker\Model\UserAttribute[]**](UserAttribute.md) | Looker User Attributes | [optional] 
 **url** | **string** | Link to LDAP config | [optional] 
 **can** | **map[string,bool]** | Operations the current user is able to perform on this object | [optional] 
 

@@ -1,4 +1,4 @@
-# Swagger\Client\RenderTaskApi
+# Looker\RenderTaskApi
 
 All URIs are relative to *https://ethosce.looker.com:19999/api/3.1*
 
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **createDashboardRenderTask**
-> \Swagger\Client\Looker\Model\RenderTask createDashboardRenderTask($dashboard_id, $result_format, $body, $width, $height, $fields)
+> \Looker\Model\RenderTask createDashboardRenderTask($dashboard_id, $result_format, $body, $width, $height, $fields)
 
 Create Dashboard Render Task
 
@@ -24,14 +24,14 @@ Create Dashboard Render Task
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RenderTaskApi(
+$apiInstance = new Looker\Api\RenderTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $dashboard_id = 789; // int | Id of dashboard to render
 $result_format = "result_format_example"; // string | Output type: pdf, png, or jpg
-$body = new \Swagger\Client\Looker\Model\CreateDashboardRenderTask(); // \Swagger\Client\Looker\Model\CreateDashboardRenderTask | Dashboard render task parameters
+$body = new \Looker\Model\CreateDashboardRenderTask(); // \Looker\Model\CreateDashboardRenderTask | Dashboard render task parameters
 $width = 789; // int | Output width in pixels
 $height = 789; // int | Output height in pixels
 $fields = "fields_example"; // string | Requested fields.
@@ -51,14 +51,14 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **dashboard_id** | **int**| Id of dashboard to render |
  **result_format** | **string**| Output type: pdf, png, or jpg |
- **body** | [**\Swagger\Client\Looker\Model\CreateDashboardRenderTask**](../Model/CreateDashboardRenderTask.md)| Dashboard render task parameters |
+ **body** | [**\Looker\Model\CreateDashboardRenderTask**](../Model/CreateDashboardRenderTask.md)| Dashboard render task parameters |
  **width** | **int**| Output width in pixels |
  **height** | **int**| Output height in pixels |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\RenderTask**](../Model/RenderTask.md)
+[**\Looker\Model\RenderTask**](../Model/RenderTask.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createLookRenderTask**
-> \Swagger\Client\Looker\Model\RenderTask createLookRenderTask($look_id, $result_format, $width, $height, $fields)
+> \Looker\Model\RenderTask createLookRenderTask($look_id, $result_format, $width, $height, $fields)
 
 Create Look Render Task
 
@@ -83,7 +83,7 @@ Create Look Render Task
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RenderTaskApi(
+$apiInstance = new Looker\Api\RenderTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -115,7 +115,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\RenderTask**](../Model/RenderTask.md)
+[**\Looker\Model\RenderTask**](../Model/RenderTask.md)
 
 ### Authorization
 
@@ -129,7 +129,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createLookmlDashboardRenderTask**
-> \Swagger\Client\Looker\Model\RenderTask createLookmlDashboardRenderTask($dashboard_id, $result_format, $body, $width, $height, $fields)
+> \Looker\Model\RenderTask createLookmlDashboardRenderTask($dashboard_id, $result_format, $body, $width, $height, $fields)
 
 Create Lookml Dashboard Render Task
 
@@ -140,14 +140,14 @@ Create Lookml Dashboard Render Task
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RenderTaskApi(
+$apiInstance = new Looker\Api\RenderTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $dashboard_id = "dashboard_id_example"; // string | Id of lookml dashboard to render
 $result_format = "result_format_example"; // string | Output type: pdf, png, or jpg
-$body = new \Swagger\Client\Looker\Model\CreateDashboardRenderTask(); // \Swagger\Client\Looker\Model\CreateDashboardRenderTask | Dashboard render task parameters
+$body = new \Looker\Model\CreateDashboardRenderTask(); // \Looker\Model\CreateDashboardRenderTask | Dashboard render task parameters
 $width = 789; // int | Output width in pixels
 $height = 789; // int | Output height in pixels
 $fields = "fields_example"; // string | Requested fields.
@@ -167,14 +167,14 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **dashboard_id** | **string**| Id of lookml dashboard to render |
  **result_format** | **string**| Output type: pdf, png, or jpg |
- **body** | [**\Swagger\Client\Looker\Model\CreateDashboardRenderTask**](../Model/CreateDashboardRenderTask.md)| Dashboard render task parameters |
+ **body** | [**\Looker\Model\CreateDashboardRenderTask**](../Model/CreateDashboardRenderTask.md)| Dashboard render task parameters |
  **width** | **int**| Output width in pixels |
  **height** | **int**| Output height in pixels |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\RenderTask**](../Model/RenderTask.md)
+[**\Looker\Model\RenderTask**](../Model/RenderTask.md)
 
 ### Authorization
 
@@ -188,7 +188,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createQueryRenderTask**
-> \Swagger\Client\Looker\Model\RenderTask createQueryRenderTask($query_id, $result_format, $width, $height, $fields)
+> \Looker\Model\RenderTask createQueryRenderTask($query_id, $result_format, $width, $height, $fields)
 
 Create Query Render Task
 
@@ -199,7 +199,7 @@ Create Query Render Task
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RenderTaskApi(
+$apiInstance = new Looker\Api\RenderTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -231,7 +231,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\RenderTask**](../Model/RenderTask.md)
+[**\Looker\Model\RenderTask**](../Model/RenderTask.md)
 
 ### Authorization
 
@@ -245,7 +245,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **renderTask**
-> \Swagger\Client\Looker\Model\RenderTask renderTask($render_task_id, $fields)
+> \Looker\Model\RenderTask renderTask($render_task_id, $fields)
 
 Get Render Task
 
@@ -256,7 +256,7 @@ Get Render Task
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RenderTaskApi(
+$apiInstance = new Looker\Api\RenderTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -282,7 +282,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\RenderTask**](../Model/RenderTask.md)
+[**\Looker\Model\RenderTask**](../Model/RenderTask.md)
 
 ### Authorization
 
@@ -307,7 +307,7 @@ Render Task Results
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RenderTaskApi(
+$apiInstance = new Looker\Api\RenderTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()

@@ -1,4 +1,4 @@
-# Swagger\Client\ConfigApi
+# Looker\ConfigApi
 
 All URIs are relative to *https://ethosce.looker.com:19999/api/3.1*
 
@@ -16,7 +16,7 @@ Method | HTTP request | Description
 
 
 # **allLegacyFeatures**
-> \Swagger\Client\Looker\Model\LegacyFeature[] allLegacyFeatures()
+> \Looker\Model\LegacyFeature[] allLegacyFeatures()
 
 Get All Legacy Features
 
@@ -27,7 +27,7 @@ Get All Legacy Features
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ConfigApi(
+$apiInstance = new Looker\Api\ConfigApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -47,7 +47,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\LegacyFeature[]**](../Model/LegacyFeature.md)
+[**\Looker\Model\LegacyFeature[]**](../Model/LegacyFeature.md)
 
 ### Authorization
 
@@ -61,7 +61,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allTimezones**
-> \Swagger\Client\Looker\Model\Timezone[] allTimezones()
+> \Looker\Model\Timezone[] allTimezones()
 
 Get All Timezones
 
@@ -72,7 +72,7 @@ Get All Timezones
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ConfigApi(
+$apiInstance = new Looker\Api\ConfigApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -92,7 +92,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Timezone[]**](../Model/Timezone.md)
+[**\Looker\Model\Timezone[]**](../Model/Timezone.md)
 
 ### Authorization
 
@@ -106,7 +106,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **backupConfiguration**
-> \Swagger\Client\Looker\Model\BackupConfiguration backupConfiguration()
+> \Looker\Model\BackupConfiguration backupConfiguration()
 
 Get Backup Configuration
 
@@ -117,7 +117,7 @@ Get Backup Configuration
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ConfigApi(
+$apiInstance = new Looker\Api\ConfigApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -137,7 +137,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\BackupConfiguration**](../Model/BackupConfiguration.md)
+[**\Looker\Model\BackupConfiguration**](../Model/BackupConfiguration.md)
 
 ### Authorization
 
@@ -151,7 +151,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **legacyFeature**
-> \Swagger\Client\Looker\Model\LegacyFeature legacyFeature($legacy_feature_id)
+> \Looker\Model\LegacyFeature legacyFeature($legacy_feature_id)
 
 Get Legacy Feature
 
@@ -162,7 +162,7 @@ Get Legacy Feature
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ConfigApi(
+$apiInstance = new Looker\Api\ConfigApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -186,7 +186,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\LegacyFeature**](../Model/LegacyFeature.md)
+[**\Looker\Model\LegacyFeature**](../Model/LegacyFeature.md)
 
 ### Authorization
 
@@ -200,7 +200,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateBackupConfiguration**
-> \Swagger\Client\Looker\Model\BackupConfiguration updateBackupConfiguration($body)
+> \Looker\Model\BackupConfiguration updateBackupConfiguration($body)
 
 Update Backup Configuration
 
@@ -211,12 +211,12 @@ Update Backup Configuration
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ConfigApi(
+$apiInstance = new Looker\Api\ConfigApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\BackupConfiguration(); // \Swagger\Client\Looker\Model\BackupConfiguration | Options for Backup Configuration
+$body = new \Looker\Model\BackupConfiguration(); // \Looker\Model\BackupConfiguration | Options for Backup Configuration
 
 try {
     $result = $apiInstance->updateBackupConfiguration($body);
@@ -231,11 +231,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\BackupConfiguration**](../Model/BackupConfiguration.md)| Options for Backup Configuration |
+ **body** | [**\Looker\Model\BackupConfiguration**](../Model/BackupConfiguration.md)| Options for Backup Configuration |
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\BackupConfiguration**](../Model/BackupConfiguration.md)
+[**\Looker\Model\BackupConfiguration**](../Model/BackupConfiguration.md)
 
 ### Authorization
 
@@ -249,7 +249,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLegacyFeature**
-> \Swagger\Client\Looker\Model\LegacyFeature updateLegacyFeature($legacy_feature_id, $body)
+> \Looker\Model\LegacyFeature updateLegacyFeature($legacy_feature_id, $body)
 
 Update Legacy Feature
 
@@ -260,13 +260,13 @@ Update Legacy Feature
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ConfigApi(
+$apiInstance = new Looker\Api\ConfigApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $legacy_feature_id = 789; // int | id of legacy feature
-$body = new \Swagger\Client\Looker\Model\LegacyFeature(); // \Swagger\Client\Looker\Model\LegacyFeature | Legacy Feature
+$body = new \Looker\Model\LegacyFeature(); // \Looker\Model\LegacyFeature | Legacy Feature
 
 try {
     $result = $apiInstance->updateLegacyFeature($legacy_feature_id, $body);
@@ -282,11 +282,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **legacy_feature_id** | **int**| id of legacy feature |
- **body** | [**\Swagger\Client\Looker\Model\LegacyFeature**](../Model/LegacyFeature.md)| Legacy Feature |
+ **body** | [**\Looker\Model\LegacyFeature**](../Model/LegacyFeature.md)| Legacy Feature |
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\LegacyFeature**](../Model/LegacyFeature.md)
+[**\Looker\Model\LegacyFeature**](../Model/LegacyFeature.md)
 
 ### Authorization
 
@@ -300,7 +300,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateWhitelabelConfiguration**
-> \Swagger\Client\Looker\Model\WhitelabelConfiguration updateWhitelabelConfiguration($body)
+> \Looker\Model\WhitelabelConfiguration updateWhitelabelConfiguration($body)
 
 Update Whitelabel configuration
 
@@ -311,12 +311,12 @@ Update Whitelabel configuration
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ConfigApi(
+$apiInstance = new Looker\Api\ConfigApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\WhitelabelConfiguration(); // \Swagger\Client\Looker\Model\WhitelabelConfiguration | Whitelabel configuration
+$body = new \Looker\Model\WhitelabelConfiguration(); // \Looker\Model\WhitelabelConfiguration | Whitelabel configuration
 
 try {
     $result = $apiInstance->updateWhitelabelConfiguration($body);
@@ -331,11 +331,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\WhitelabelConfiguration**](../Model/WhitelabelConfiguration.md)| Whitelabel configuration |
+ **body** | [**\Looker\Model\WhitelabelConfiguration**](../Model/WhitelabelConfiguration.md)| Whitelabel configuration |
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\WhitelabelConfiguration**](../Model/WhitelabelConfiguration.md)
+[**\Looker\Model\WhitelabelConfiguration**](../Model/WhitelabelConfiguration.md)
 
 ### Authorization
 
@@ -349,7 +349,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **versions**
-> \Swagger\Client\Looker\Model\ApiVersion versions($fields)
+> \Looker\Model\ApiVersion versions($fields)
 
 Get ApiVersion
 
@@ -360,7 +360,7 @@ Get ApiVersion
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ConfigApi(
+$apiInstance = new Looker\Api\ConfigApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -384,7 +384,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ApiVersion**](../Model/ApiVersion.md)
+[**\Looker\Model\ApiVersion**](../Model/ApiVersion.md)
 
 ### Authorization
 
@@ -398,7 +398,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **whitelabelConfiguration**
-> \Swagger\Client\Looker\Model\WhitelabelConfiguration whitelabelConfiguration($fields)
+> \Looker\Model\WhitelabelConfiguration whitelabelConfiguration($fields)
 
 Get Whitelabel configuration
 
@@ -409,7 +409,7 @@ Get Whitelabel configuration
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ConfigApi(
+$apiInstance = new Looker\Api\ConfigApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -433,7 +433,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\WhitelabelConfiguration**](../Model/WhitelabelConfiguration.md)
+[**\Looker\Model\WhitelabelConfiguration**](../Model/WhitelabelConfiguration.md)
 
 ### Authorization
 

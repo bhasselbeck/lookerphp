@@ -1,4 +1,4 @@
-# Swagger\Client\LookmlModelApi
+# Looker\LookmlModelApi
 
 All URIs are relative to *https://ethosce.looker.com:19999/api/3.1*
 
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **allLookmlModels**
-> \Swagger\Client\Looker\Model\LookmlModel[] allLookmlModels($fields)
+> \Looker\Model\LookmlModel[] allLookmlModels($fields)
 
 Get All LookML Models
 
@@ -24,7 +24,7 @@ Get All LookML Models
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LookmlModelApi(
+$apiInstance = new Looker\Api\LookmlModelApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\LookmlModel[]**](../Model/LookmlModel.md)
+[**\Looker\Model\LookmlModel[]**](../Model/LookmlModel.md)
 
 ### Authorization
 
@@ -62,7 +62,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createLookmlModel**
-> \Swagger\Client\Looker\Model\LookmlModel createLookmlModel($body)
+> \Looker\Model\LookmlModel createLookmlModel($body)
 
 Create LookML Model
 
@@ -73,12 +73,12 @@ Create LookML Model
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LookmlModelApi(
+$apiInstance = new Looker\Api\LookmlModelApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\LookmlModel(); // \Swagger\Client\Looker\Model\LookmlModel | LookML Model
+$body = new \Looker\Model\LookmlModel(); // \Looker\Model\LookmlModel | LookML Model
 
 try {
     $result = $apiInstance->createLookmlModel($body);
@@ -93,11 +93,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\LookmlModel**](../Model/LookmlModel.md)| LookML Model | [optional]
+ **body** | [**\Looker\Model\LookmlModel**](../Model/LookmlModel.md)| LookML Model | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\LookmlModel**](../Model/LookmlModel.md)
+[**\Looker\Model\LookmlModel**](../Model/LookmlModel.md)
 
 ### Authorization
 
@@ -122,7 +122,7 @@ Delete LookML Model
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LookmlModelApi(
+$apiInstance = new Looker\Api\LookmlModelApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -160,7 +160,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **lookmlModel**
-> \Swagger\Client\Looker\Model\LookmlModel lookmlModel($lookml_model_name, $fields)
+> \Looker\Model\LookmlModel lookmlModel($lookml_model_name, $fields)
 
 Get LookML Model
 
@@ -171,7 +171,7 @@ Get LookML Model
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LookmlModelApi(
+$apiInstance = new Looker\Api\LookmlModelApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -197,7 +197,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\LookmlModel**](../Model/LookmlModel.md)
+[**\Looker\Model\LookmlModel**](../Model/LookmlModel.md)
 
 ### Authorization
 
@@ -211,7 +211,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **lookmlModelExplore**
-> \Swagger\Client\Looker\Model\LookmlModelExplore lookmlModelExplore($lookml_model_name, $explore_name, $fields)
+> \Looker\Model\LookmlModelExplore lookmlModelExplore($lookml_model_name, $explore_name, $fields)
 
 Get LookML Model Explore
 
@@ -222,7 +222,7 @@ Get LookML Model Explore
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LookmlModelApi(
+$apiInstance = new Looker\Api\LookmlModelApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -250,7 +250,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\LookmlModelExplore**](../Model/LookmlModelExplore.md)
+[**\Looker\Model\LookmlModelExplore**](../Model/LookmlModelExplore.md)
 
 ### Authorization
 
@@ -264,7 +264,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLookmlModel**
-> \Swagger\Client\Looker\Model\LookmlModel updateLookmlModel($lookml_model_name, $body)
+> \Looker\Model\LookmlModel updateLookmlModel($lookml_model_name, $body)
 
 Update LookML Model
 
@@ -275,13 +275,13 @@ Update LookML Model
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LookmlModelApi(
+$apiInstance = new Looker\Api\LookmlModelApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $lookml_model_name = "lookml_model_name_example"; // string | Name of lookml model.
-$body = new \Swagger\Client\Looker\Model\LookmlModel(); // \Swagger\Client\Looker\Model\LookmlModel | LookML Model
+$body = new \Looker\Model\LookmlModel(); // \Looker\Model\LookmlModel | LookML Model
 
 try {
     $result = $apiInstance->updateLookmlModel($lookml_model_name, $body);
@@ -297,11 +297,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **lookml_model_name** | **string**| Name of lookml model. |
- **body** | [**\Swagger\Client\Looker\Model\LookmlModel**](../Model/LookmlModel.md)| LookML Model |
+ **body** | [**\Looker\Model\LookmlModel**](../Model/LookmlModel.md)| LookML Model |
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\LookmlModel**](../Model/LookmlModel.md)
+[**\Looker\Model\LookmlModel**](../Model/LookmlModel.md)
 
 ### Authorization
 

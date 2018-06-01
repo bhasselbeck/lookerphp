@@ -1,4 +1,4 @@
-# Swagger\Client\DashboardApi
+# Looker\DashboardApi
 
 All URIs are relative to *https://ethosce.looker.com:19999/api/3.1*
 
@@ -32,7 +32,7 @@ Method | HTTP request | Description
 
 
 # **allDashboards**
-> \Swagger\Client\Looker\Model\DashboardBase[] allDashboards($fields)
+> \Looker\Model\DashboardBase[] allDashboards($fields)
 
 Get All Dashboards
 
@@ -43,7 +43,7 @@ Get information about all dashboards.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DashboardApi(
+$apiInstance = new Looker\Api\DashboardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\DashboardBase[]**](../Model/DashboardBase.md)
+[**\Looker\Model\DashboardBase[]**](../Model/DashboardBase.md)
 
 ### Authorization
 
@@ -81,7 +81,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createDashboard**
-> \Swagger\Client\Looker\Model\Dashboard createDashboard($body)
+> \Looker\Model\Dashboard createDashboard($body)
 
 Create Dashboard
 
@@ -92,12 +92,12 @@ Create Dashboard
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DashboardApi(
+$apiInstance = new Looker\Api\DashboardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\Dashboard(); // \Swagger\Client\Looker\Model\Dashboard | Dashboard
+$body = new \Looker\Model\Dashboard(); // \Looker\Model\Dashboard | Dashboard
 
 try {
     $result = $apiInstance->createDashboard($body);
@@ -112,11 +112,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\Dashboard**](../Model/Dashboard.md)| Dashboard | [optional]
+ **body** | [**\Looker\Model\Dashboard**](../Model/Dashboard.md)| Dashboard | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Dashboard**](../Model/Dashboard.md)
+[**\Looker\Model\Dashboard**](../Model/Dashboard.md)
 
 ### Authorization
 
@@ -130,7 +130,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createDashboardElement**
-> \Swagger\Client\Looker\Model\DashboardElement createDashboardElement($body, $fields)
+> \Looker\Model\DashboardElement createDashboardElement($body, $fields)
 
 Create DashboardElement
 
@@ -141,12 +141,12 @@ Create DashboardElement
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DashboardApi(
+$apiInstance = new Looker\Api\DashboardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\DashboardElement(); // \Swagger\Client\Looker\Model\DashboardElement | DashboardElement
+$body = new \Looker\Model\DashboardElement(); // \Looker\Model\DashboardElement | DashboardElement
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -162,12 +162,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\DashboardElement**](../Model/DashboardElement.md)| DashboardElement | [optional]
+ **body** | [**\Looker\Model\DashboardElement**](../Model/DashboardElement.md)| DashboardElement | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\DashboardElement**](../Model/DashboardElement.md)
+[**\Looker\Model\DashboardElement**](../Model/DashboardElement.md)
 
 ### Authorization
 
@@ -181,7 +181,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createDashboardFilter**
-> \Swagger\Client\Looker\Model\DashboardFilter createDashboardFilter($body, $fields)
+> \Looker\Model\DashboardFilter createDashboardFilter($body, $fields)
 
 Create Dashboard Filter
 
@@ -192,12 +192,12 @@ Create Dashboard Filter
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DashboardApi(
+$apiInstance = new Looker\Api\DashboardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\DashboardFilter(); // \Swagger\Client\Looker\Model\DashboardFilter | Dashboard Filter
+$body = new \Looker\Model\DashboardFilter(); // \Looker\Model\DashboardFilter | Dashboard Filter
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -213,12 +213,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\DashboardFilter**](../Model/DashboardFilter.md)| Dashboard Filter | [optional]
+ **body** | [**\Looker\Model\DashboardFilter**](../Model/DashboardFilter.md)| Dashboard Filter | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\DashboardFilter**](../Model/DashboardFilter.md)
+[**\Looker\Model\DashboardFilter**](../Model/DashboardFilter.md)
 
 ### Authorization
 
@@ -232,7 +232,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createDashboardLayout**
-> \Swagger\Client\Looker\Model\DashboardLayout createDashboardLayout($body, $fields)
+> \Looker\Model\DashboardLayout createDashboardLayout($body, $fields)
 
 Create DashboardLayout
 
@@ -243,12 +243,12 @@ Create DashboardLayout
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DashboardApi(
+$apiInstance = new Looker\Api\DashboardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\DashboardLayout(); // \Swagger\Client\Looker\Model\DashboardLayout | DashboardLayout
+$body = new \Looker\Model\DashboardLayout(); // \Looker\Model\DashboardLayout | DashboardLayout
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -264,12 +264,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\DashboardLayout**](../Model/DashboardLayout.md)| DashboardLayout | [optional]
+ **body** | [**\Looker\Model\DashboardLayout**](../Model/DashboardLayout.md)| DashboardLayout | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\DashboardLayout**](../Model/DashboardLayout.md)
+[**\Looker\Model\DashboardLayout**](../Model/DashboardLayout.md)
 
 ### Authorization
 
@@ -283,7 +283,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dashboard**
-> \Swagger\Client\Looker\Model\Dashboard dashboard($dashboard_id, $fields)
+> \Looker\Model\Dashboard dashboard($dashboard_id, $fields)
 
 Get Dashboard
 
@@ -294,7 +294,7 @@ Get Dashboard
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DashboardApi(
+$apiInstance = new Looker\Api\DashboardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -320,7 +320,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Dashboard**](../Model/Dashboard.md)
+[**\Looker\Model\Dashboard**](../Model/Dashboard.md)
 
 ### Authorization
 
@@ -334,7 +334,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dashboardDashboardElements**
-> \Swagger\Client\Looker\Model\DashboardElement[] dashboardDashboardElements($dashboard_id, $fields)
+> \Looker\Model\DashboardElement[] dashboardDashboardElements($dashboard_id, $fields)
 
 Get All DashboardElements
 
@@ -345,7 +345,7 @@ Get All DashboardElements
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DashboardApi(
+$apiInstance = new Looker\Api\DashboardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -371,7 +371,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\DashboardElement[]**](../Model/DashboardElement.md)
+[**\Looker\Model\DashboardElement[]**](../Model/DashboardElement.md)
 
 ### Authorization
 
@@ -385,7 +385,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dashboardDashboardFilters**
-> \Swagger\Client\Looker\Model\DashboardFilter[] dashboardDashboardFilters($dashboard_id, $fields)
+> \Looker\Model\DashboardFilter[] dashboardDashboardFilters($dashboard_id, $fields)
 
 Get All Dashboard Filters
 
@@ -396,7 +396,7 @@ Get All Dashboard Filters
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DashboardApi(
+$apiInstance = new Looker\Api\DashboardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -422,7 +422,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\DashboardFilter[]**](../Model/DashboardFilter.md)
+[**\Looker\Model\DashboardFilter[]**](../Model/DashboardFilter.md)
 
 ### Authorization
 
@@ -436,7 +436,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dashboardDashboardLayouts**
-> \Swagger\Client\Looker\Model\DashboardLayout[] dashboardDashboardLayouts($dashboard_id, $fields)
+> \Looker\Model\DashboardLayout[] dashboardDashboardLayouts($dashboard_id, $fields)
 
 Get All DashboardLayouts
 
@@ -447,7 +447,7 @@ Get All DashboardLayouts
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DashboardApi(
+$apiInstance = new Looker\Api\DashboardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -473,7 +473,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\DashboardLayout[]**](../Model/DashboardLayout.md)
+[**\Looker\Model\DashboardLayout[]**](../Model/DashboardLayout.md)
 
 ### Authorization
 
@@ -487,7 +487,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dashboardElement**
-> \Swagger\Client\Looker\Model\DashboardElement dashboardElement($dashboard_element_id, $fields)
+> \Looker\Model\DashboardElement dashboardElement($dashboard_element_id, $fields)
 
 Get DashboardElement
 
@@ -498,7 +498,7 @@ Get DashboardElement
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DashboardApi(
+$apiInstance = new Looker\Api\DashboardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -524,7 +524,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\DashboardElement**](../Model/DashboardElement.md)
+[**\Looker\Model\DashboardElement**](../Model/DashboardElement.md)
 
 ### Authorization
 
@@ -538,7 +538,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dashboardFilter**
-> \Swagger\Client\Looker\Model\DashboardFilter dashboardFilter($dashboard_filter_id, $fields)
+> \Looker\Model\DashboardFilter dashboardFilter($dashboard_filter_id, $fields)
 
 Get Dashboard Filter
 
@@ -549,7 +549,7 @@ Get Dashboard Filter
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DashboardApi(
+$apiInstance = new Looker\Api\DashboardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -575,7 +575,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\DashboardFilter**](../Model/DashboardFilter.md)
+[**\Looker\Model\DashboardFilter**](../Model/DashboardFilter.md)
 
 ### Authorization
 
@@ -589,7 +589,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dashboardLayout**
-> \Swagger\Client\Looker\Model\DashboardLayout dashboardLayout($dashboard_layout_id, $fields)
+> \Looker\Model\DashboardLayout dashboardLayout($dashboard_layout_id, $fields)
 
 Get DashboardLayout
 
@@ -600,7 +600,7 @@ Get DashboardLayout
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DashboardApi(
+$apiInstance = new Looker\Api\DashboardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -626,7 +626,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\DashboardLayout**](../Model/DashboardLayout.md)
+[**\Looker\Model\DashboardLayout**](../Model/DashboardLayout.md)
 
 ### Authorization
 
@@ -640,7 +640,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dashboardLayoutComponent**
-> \Swagger\Client\Looker\Model\DashboardLayoutComponent dashboardLayoutComponent($dashboard_layout_component_id, $fields)
+> \Looker\Model\DashboardLayoutComponent dashboardLayoutComponent($dashboard_layout_component_id, $fields)
 
 Get DashboardLayoutComponent
 
@@ -651,7 +651,7 @@ Get DashboardLayoutComponent
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DashboardApi(
+$apiInstance = new Looker\Api\DashboardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -677,7 +677,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\DashboardLayoutComponent**](../Model/DashboardLayoutComponent.md)
+[**\Looker\Model\DashboardLayoutComponent**](../Model/DashboardLayoutComponent.md)
 
 ### Authorization
 
@@ -691,7 +691,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dashboardLayoutDashboardLayoutComponents**
-> \Swagger\Client\Looker\Model\DashboardLayoutComponent[] dashboardLayoutDashboardLayoutComponents($dashboard_layout_id, $fields)
+> \Looker\Model\DashboardLayoutComponent[] dashboardLayoutDashboardLayoutComponents($dashboard_layout_id, $fields)
 
 Get All DashboardLayoutComponents
 
@@ -702,7 +702,7 @@ Get All DashboardLayoutComponents
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DashboardApi(
+$apiInstance = new Looker\Api\DashboardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -728,7 +728,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\DashboardLayoutComponent[]**](../Model/DashboardLayoutComponent.md)
+[**\Looker\Model\DashboardLayoutComponent[]**](../Model/DashboardLayoutComponent.md)
 
 ### Authorization
 
@@ -753,7 +753,7 @@ Delete Dashboard
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DashboardApi(
+$apiInstance = new Looker\Api\DashboardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -802,7 +802,7 @@ Delete DashboardElement
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DashboardApi(
+$apiInstance = new Looker\Api\DashboardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -851,7 +851,7 @@ Delete Dashboard Filter
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DashboardApi(
+$apiInstance = new Looker\Api\DashboardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -900,7 +900,7 @@ Delete DashboardLayout
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DashboardApi(
+$apiInstance = new Looker\Api\DashboardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -938,7 +938,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **searchDashboardElements**
-> \Swagger\Client\Looker\Model\DashboardElement[] searchDashboardElements($fields, $look_id, $dashboard_id, $title)
+> \Looker\Model\DashboardElement[] searchDashboardElements($fields, $look_id, $dashboard_id, $title)
 
 Get DashboardElement
 
@@ -949,7 +949,7 @@ Get DashboardElement
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DashboardApi(
+$apiInstance = new Looker\Api\DashboardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -979,7 +979,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\DashboardElement[]**](../Model/DashboardElement.md)
+[**\Looker\Model\DashboardElement[]**](../Model/DashboardElement.md)
 
 ### Authorization
 
@@ -993,7 +993,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **searchDashboards**
-> \Swagger\Client\Looker\Model\Dashboard[] searchDashboards($fields, $id, $page, $per_page, $limit, $offset, $sorts, $title, $description, $content_favorite_id, $space_id, $deleted, $user_id, $view_count)
+> \Looker\Model\Dashboard[] searchDashboards($fields, $id, $page, $per_page, $limit, $offset, $sorts, $title, $description, $content_favorite_id, $space_id, $deleted, $user_id, $view_count)
 
 Search Dashboards
 
@@ -1004,7 +1004,7 @@ Get information about all dashboards.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DashboardApi(
+$apiInstance = new Looker\Api\DashboardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1054,7 +1054,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Dashboard[]**](../Model/Dashboard.md)
+[**\Looker\Model\Dashboard[]**](../Model/Dashboard.md)
 
 ### Authorization
 
@@ -1068,7 +1068,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateDashboard**
-> \Swagger\Client\Looker\Model\Dashboard updateDashboard($dashboard_id, $body)
+> \Looker\Model\Dashboard updateDashboard($dashboard_id, $body)
 
 Update Dashboard
 
@@ -1079,13 +1079,13 @@ Update Dashboard
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DashboardApi(
+$apiInstance = new Looker\Api\DashboardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $dashboard_id = "dashboard_id_example"; // string | Id of dashboard
-$body = new \Swagger\Client\Looker\Model\Dashboard(); // \Swagger\Client\Looker\Model\Dashboard | Dashboard
+$body = new \Looker\Model\Dashboard(); // \Looker\Model\Dashboard | Dashboard
 
 try {
     $result = $apiInstance->updateDashboard($dashboard_id, $body);
@@ -1101,11 +1101,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **dashboard_id** | **string**| Id of dashboard |
- **body** | [**\Swagger\Client\Looker\Model\Dashboard**](../Model/Dashboard.md)| Dashboard |
+ **body** | [**\Looker\Model\Dashboard**](../Model/Dashboard.md)| Dashboard |
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Dashboard**](../Model/Dashboard.md)
+[**\Looker\Model\Dashboard**](../Model/Dashboard.md)
 
 ### Authorization
 
@@ -1119,7 +1119,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateDashboardElement**
-> \Swagger\Client\Looker\Model\DashboardElement updateDashboardElement($dashboard_element_id, $body, $fields)
+> \Looker\Model\DashboardElement updateDashboardElement($dashboard_element_id, $body, $fields)
 
 Update DashboardElement
 
@@ -1130,13 +1130,13 @@ Update DashboardElement
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DashboardApi(
+$apiInstance = new Looker\Api\DashboardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $dashboard_element_id = "dashboard_element_id_example"; // string | Id of dashboard element
-$body = new \Swagger\Client\Looker\Model\DashboardElement(); // \Swagger\Client\Looker\Model\DashboardElement | DashboardElement
+$body = new \Looker\Model\DashboardElement(); // \Looker\Model\DashboardElement | DashboardElement
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -1153,12 +1153,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **dashboard_element_id** | **string**| Id of dashboard element |
- **body** | [**\Swagger\Client\Looker\Model\DashboardElement**](../Model/DashboardElement.md)| DashboardElement |
+ **body** | [**\Looker\Model\DashboardElement**](../Model/DashboardElement.md)| DashboardElement |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\DashboardElement**](../Model/DashboardElement.md)
+[**\Looker\Model\DashboardElement**](../Model/DashboardElement.md)
 
 ### Authorization
 
@@ -1172,7 +1172,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateDashboardFilter**
-> \Swagger\Client\Looker\Model\DashboardFilter updateDashboardFilter($dashboard_filter_id, $body, $fields)
+> \Looker\Model\DashboardFilter updateDashboardFilter($dashboard_filter_id, $body, $fields)
 
 Update Dashboard Filter
 
@@ -1183,13 +1183,13 @@ Update Dashboard Filter
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DashboardApi(
+$apiInstance = new Looker\Api\DashboardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $dashboard_filter_id = "dashboard_filter_id_example"; // string | Id of dashboard filter
-$body = new \Swagger\Client\Looker\Model\DashboardFilter(); // \Swagger\Client\Looker\Model\DashboardFilter | Dashboard Filter
+$body = new \Looker\Model\DashboardFilter(); // \Looker\Model\DashboardFilter | Dashboard Filter
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -1206,12 +1206,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **dashboard_filter_id** | **string**| Id of dashboard filter |
- **body** | [**\Swagger\Client\Looker\Model\DashboardFilter**](../Model/DashboardFilter.md)| Dashboard Filter |
+ **body** | [**\Looker\Model\DashboardFilter**](../Model/DashboardFilter.md)| Dashboard Filter |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\DashboardFilter**](../Model/DashboardFilter.md)
+[**\Looker\Model\DashboardFilter**](../Model/DashboardFilter.md)
 
 ### Authorization
 
@@ -1225,7 +1225,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateDashboardLayout**
-> \Swagger\Client\Looker\Model\DashboardLayout updateDashboardLayout($dashboard_layout_id, $body, $fields)
+> \Looker\Model\DashboardLayout updateDashboardLayout($dashboard_layout_id, $body, $fields)
 
 Update DashboardLayout
 
@@ -1236,13 +1236,13 @@ Update DashboardLayout
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DashboardApi(
+$apiInstance = new Looker\Api\DashboardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $dashboard_layout_id = "dashboard_layout_id_example"; // string | Id of dashboard layout
-$body = new \Swagger\Client\Looker\Model\DashboardLayout(); // \Swagger\Client\Looker\Model\DashboardLayout | DashboardLayout
+$body = new \Looker\Model\DashboardLayout(); // \Looker\Model\DashboardLayout | DashboardLayout
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -1259,12 +1259,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **dashboard_layout_id** | **string**| Id of dashboard layout |
- **body** | [**\Swagger\Client\Looker\Model\DashboardLayout**](../Model/DashboardLayout.md)| DashboardLayout |
+ **body** | [**\Looker\Model\DashboardLayout**](../Model/DashboardLayout.md)| DashboardLayout |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\DashboardLayout**](../Model/DashboardLayout.md)
+[**\Looker\Model\DashboardLayout**](../Model/DashboardLayout.md)
 
 ### Authorization
 
@@ -1278,7 +1278,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateDashboardLayoutComponent**
-> \Swagger\Client\Looker\Model\DashboardLayoutComponent updateDashboardLayoutComponent($dashboard_layout_component_id, $body, $fields)
+> \Looker\Model\DashboardLayoutComponent updateDashboardLayoutComponent($dashboard_layout_component_id, $body, $fields)
 
 Update DashboardLayoutComponent
 
@@ -1289,13 +1289,13 @@ Update DashboardLayoutComponent
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DashboardApi(
+$apiInstance = new Looker\Api\DashboardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $dashboard_layout_component_id = "dashboard_layout_component_id_example"; // string | Id of dashboard layout component
-$body = new \Swagger\Client\Looker\Model\DashboardLayoutComponent(); // \Swagger\Client\Looker\Model\DashboardLayoutComponent | DashboardLayoutComponent
+$body = new \Looker\Model\DashboardLayoutComponent(); // \Looker\Model\DashboardLayoutComponent | DashboardLayoutComponent
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -1312,12 +1312,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **dashboard_layout_component_id** | **string**| Id of dashboard layout component |
- **body** | [**\Swagger\Client\Looker\Model\DashboardLayoutComponent**](../Model/DashboardLayoutComponent.md)| DashboardLayoutComponent |
+ **body** | [**\Looker\Model\DashboardLayoutComponent**](../Model/DashboardLayoutComponent.md)| DashboardLayoutComponent |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\DashboardLayoutComponent**](../Model/DashboardLayoutComponent.md)
+[**\Looker\Model\DashboardLayoutComponent**](../Model/DashboardLayoutComponent.md)
 
 ### Authorization
 

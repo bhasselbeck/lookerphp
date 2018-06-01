@@ -1,4 +1,4 @@
-# Swagger\Client\QueryApi
+# Looker\QueryApi
 
 All URIs are relative to *https://ethosce.looker.com:19999/api/3.1*
 
@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 
 # **createMergeQuery**
-> \Swagger\Client\Looker\Model\MergeQuery createMergeQuery($body, $fields)
+> \Looker\Model\MergeQuery createMergeQuery($body, $fields)
 
 Create Merge Query
 
@@ -30,12 +30,12 @@ Create Merge Query
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\QueryApi(
+$apiInstance = new Looker\Api\QueryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\MergeQuery(); // \Swagger\Client\Looker\Model\MergeQuery | Merge Query
+$body = new \Looker\Model\MergeQuery(); // \Looker\Model\MergeQuery | Merge Query
 $fields = "fields_example"; // string | Requested fields
 
 try {
@@ -51,12 +51,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\MergeQuery**](../Model/MergeQuery.md)| Merge Query | [optional]
+ **body** | [**\Looker\Model\MergeQuery**](../Model/MergeQuery.md)| Merge Query | [optional]
  **fields** | **string**| Requested fields | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\MergeQuery**](../Model/MergeQuery.md)
+[**\Looker\Model\MergeQuery**](../Model/MergeQuery.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createQuery**
-> \Swagger\Client\Looker\Model\Query createQuery($body, $fields)
+> \Looker\Model\Query createQuery($body, $fields)
 
 Create Query
 
@@ -81,12 +81,12 @@ Create Query
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\QueryApi(
+$apiInstance = new Looker\Api\QueryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\Query(); // \Swagger\Client\Looker\Model\Query | Query
+$body = new \Looker\Model\Query(); // \Looker\Model\Query | Query
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -102,12 +102,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\Query**](../Model/Query.md)| Query | [optional]
+ **body** | [**\Looker\Model\Query**](../Model/Query.md)| Query | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Query**](../Model/Query.md)
+[**\Looker\Model\Query**](../Model/Query.md)
 
 ### Authorization
 
@@ -121,7 +121,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createQueryTask**
-> \Swagger\Client\Looker\Model\QueryTask createQueryTask($body, $limit, $apply_formatting, $apply_vis, $cache, $image_width, $image_height, $generate_drill_links, $force_production, $cache_only, $path_prefix, $rebuild_pdts, $server_table_calcs, $fields)
+> \Looker\Model\QueryTask createQueryTask($body, $limit, $apply_formatting, $apply_vis, $cache, $image_width, $image_height, $generate_drill_links, $force_production, $cache_only, $path_prefix, $rebuild_pdts, $server_table_calcs, $fields)
 
 Run Query Async
 
@@ -132,12 +132,12 @@ Run Query Async
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\QueryApi(
+$apiInstance = new Looker\Api\QueryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\CreateQueryTask(); // \Swagger\Client\Looker\Model\CreateQueryTask | Query parameters
+$body = new \Looker\Model\CreateQueryTask(); // \Looker\Model\CreateQueryTask | Query parameters
 $limit = 789; // int | Row limit (may override the limit in the saved query).
 $apply_formatting = true; // bool | Apply model-specified formatting to each result.
 $apply_vis = true; // bool | Apply visualization options to results.
@@ -165,7 +165,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\CreateQueryTask**](../Model/CreateQueryTask.md)| Query parameters |
+ **body** | [**\Looker\Model\CreateQueryTask**](../Model/CreateQueryTask.md)| Query parameters |
  **limit** | **int**| Row limit (may override the limit in the saved query). | [optional]
  **apply_formatting** | **bool**| Apply model-specified formatting to each result. | [optional]
  **apply_vis** | **bool**| Apply visualization options to results. | [optional]
@@ -182,7 +182,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\QueryTask**](../Model/QueryTask.md)
+[**\Looker\Model\QueryTask**](../Model/QueryTask.md)
 
 ### Authorization
 
@@ -196,7 +196,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **mergeQuery**
-> \Swagger\Client\Looker\Model\MergeQuery mergeQuery($merge_query_id, $fields)
+> \Looker\Model\MergeQuery mergeQuery($merge_query_id, $fields)
 
 Get Merge Query
 
@@ -207,7 +207,7 @@ Get Merge Query
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\QueryApi(
+$apiInstance = new Looker\Api\QueryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -233,7 +233,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\MergeQuery**](../Model/MergeQuery.md)
+[**\Looker\Model\MergeQuery**](../Model/MergeQuery.md)
 
 ### Authorization
 
@@ -247,7 +247,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **query**
-> \Swagger\Client\Looker\Model\Query query($query_id, $fields)
+> \Looker\Model\Query query($query_id, $fields)
 
 Get Query
 
@@ -258,7 +258,7 @@ Get Query
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\QueryApi(
+$apiInstance = new Looker\Api\QueryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -284,7 +284,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Query**](../Model/Query.md)
+[**\Looker\Model\Query**](../Model/Query.md)
 
 ### Authorization
 
@@ -298,7 +298,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryForSlug**
-> \Swagger\Client\Looker\Model\Query queryForSlug($slug, $fields)
+> \Looker\Model\Query queryForSlug($slug, $fields)
 
 Get Query for Slug
 
@@ -309,7 +309,7 @@ Get Query for Slug
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\QueryApi(
+$apiInstance = new Looker\Api\QueryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -335,7 +335,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Query**](../Model/Query.md)
+[**\Looker\Model\Query**](../Model/Query.md)
 
 ### Authorization
 
@@ -349,7 +349,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryTask**
-> \Swagger\Client\Looker\Model\QueryTask queryTask($query_task_id, $fields)
+> \Looker\Model\QueryTask queryTask($query_task_id, $fields)
 
 Get Async Query Info
 
@@ -360,7 +360,7 @@ Returns information about a Query Task.  Query Tasks are generated by running qu
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\QueryApi(
+$apiInstance = new Looker\Api\QueryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -386,7 +386,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\QueryTask**](../Model/QueryTask.md)
+[**\Looker\Model\QueryTask**](../Model/QueryTask.md)
 
 ### Authorization
 
@@ -411,7 +411,7 @@ Fetch the results of multiple async Query Tasks in one response.  Query Tasks th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\QueryApi(
+$apiInstance = new Looker\Api\QueryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -460,7 +460,7 @@ Returns the results of an async Query Task if the query has completed.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\QueryApi(
+$apiInstance = new Looker\Api\QueryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -509,13 +509,13 @@ Run Inline Query
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\QueryApi(
+$apiInstance = new Looker\Api\QueryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $result_format = "result_format_example"; // string | Format of result
-$body = new \Swagger\Client\Looker\Model\Query(); // \Swagger\Client\Looker\Model\Query | inline query
+$body = new \Looker\Model\Query(); // \Looker\Model\Query | inline query
 $limit = 789; // int | Row limit (may override the limit in the saved query).
 $apply_formatting = true; // bool | Apply model-specified formatting to each result.
 $apply_vis = true; // bool | Apply visualization options to results.
@@ -543,7 +543,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **result_format** | **string**| Format of result |
- **body** | [**\Swagger\Client\Looker\Model\Query**](../Model/Query.md)| inline query |
+ **body** | [**\Looker\Model\Query**](../Model/Query.md)| inline query |
  **limit** | **int**| Row limit (may override the limit in the saved query). | [optional]
  **apply_formatting** | **bool**| Apply model-specified formatting to each result. | [optional]
  **apply_vis** | **bool**| Apply visualization options to results. | [optional]
@@ -584,7 +584,7 @@ Run Query
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\QueryApi(
+$apiInstance = new Looker\Api\QueryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -659,7 +659,7 @@ Run Url Encoded Query
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\QueryApi(
+$apiInstance = new Looker\Api\QueryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()

@@ -1,4 +1,4 @@
-# Swagger\Client\HomepageApi
+# Looker\HomepageApi
 
 All URIs are relative to *https://ethosce.looker.com:19999/api/3.1*
 
@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 
 # **allHomepageItems**
-> \Swagger\Client\Looker\Model\HomepageItem[] allHomepageItems($fields, $sorts, $homepage_section_id)
+> \Looker\Model\HomepageItem[] allHomepageItems($fields, $sorts, $homepage_section_id)
 
 Get All Homepage Items
 
@@ -28,7 +28,7 @@ Get All Homepage Items
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\HomepageApi(
+$apiInstance = new Looker\Api\HomepageApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\HomepageItem[]**](../Model/HomepageItem.md)
+[**\Looker\Model\HomepageItem[]**](../Model/HomepageItem.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allHomepageSections**
-> \Swagger\Client\Looker\Model\HomepageSection[] allHomepageSections($fields, $sorts)
+> \Looker\Model\HomepageSection[] allHomepageSections($fields, $sorts)
 
 Get All Homepage sections
 
@@ -81,7 +81,7 @@ Get All Homepage sections
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\HomepageApi(
+$apiInstance = new Looker\Api\HomepageApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\HomepageSection[]**](../Model/HomepageSection.md)
+[**\Looker\Model\HomepageSection[]**](../Model/HomepageSection.md)
 
 ### Authorization
 
@@ -121,7 +121,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createHomepageItem**
-> \Swagger\Client\Looker\Model\HomepageItem createHomepageItem($body, $fields)
+> \Looker\Model\HomepageItem createHomepageItem($body, $fields)
 
 Create Homepage Item
 
@@ -132,12 +132,12 @@ Create Homepage Item
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\HomepageApi(
+$apiInstance = new Looker\Api\HomepageApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\HomepageItem(); // \Swagger\Client\Looker\Model\HomepageItem | Homepage Item
+$body = new \Looker\Model\HomepageItem(); // \Looker\Model\HomepageItem | Homepage Item
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -153,12 +153,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\HomepageItem**](../Model/HomepageItem.md)| Homepage Item | [optional]
+ **body** | [**\Looker\Model\HomepageItem**](../Model/HomepageItem.md)| Homepage Item | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\HomepageItem**](../Model/HomepageItem.md)
+[**\Looker\Model\HomepageItem**](../Model/HomepageItem.md)
 
 ### Authorization
 
@@ -172,7 +172,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createHomepageSection**
-> \Swagger\Client\Looker\Model\HomepageSection createHomepageSection($body, $fields)
+> \Looker\Model\HomepageSection createHomepageSection($body, $fields)
 
 Create Homepage section
 
@@ -183,12 +183,12 @@ Create Homepage section
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\HomepageApi(
+$apiInstance = new Looker\Api\HomepageApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\HomepageSection(); // \Swagger\Client\Looker\Model\HomepageSection | Homepage section
+$body = new \Looker\Model\HomepageSection(); // \Looker\Model\HomepageSection | Homepage section
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -204,12 +204,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\HomepageSection**](../Model/HomepageSection.md)| Homepage section | [optional]
+ **body** | [**\Looker\Model\HomepageSection**](../Model/HomepageSection.md)| Homepage section | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\HomepageSection**](../Model/HomepageSection.md)
+[**\Looker\Model\HomepageSection**](../Model/HomepageSection.md)
 
 ### Authorization
 
@@ -234,7 +234,7 @@ Delete Homepage Item
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\HomepageApi(
+$apiInstance = new Looker\Api\HomepageApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -283,7 +283,7 @@ Delete Homepage section
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\HomepageApi(
+$apiInstance = new Looker\Api\HomepageApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -321,7 +321,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **homepageItem**
-> \Swagger\Client\Looker\Model\HomepageItem homepageItem($homepage_item_id, $fields)
+> \Looker\Model\HomepageItem homepageItem($homepage_item_id, $fields)
 
 Get Homepage Item
 
@@ -332,7 +332,7 @@ Get Homepage Item
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\HomepageApi(
+$apiInstance = new Looker\Api\HomepageApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -358,7 +358,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\HomepageItem**](../Model/HomepageItem.md)
+[**\Looker\Model\HomepageItem**](../Model/HomepageItem.md)
 
 ### Authorization
 
@@ -372,7 +372,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **homepageSection**
-> \Swagger\Client\Looker\Model\HomepageSection homepageSection($homepage_section_id, $fields)
+> \Looker\Model\HomepageSection homepageSection($homepage_section_id, $fields)
 
 Get Homepage section
 
@@ -383,7 +383,7 @@ Get Homepage section
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\HomepageApi(
+$apiInstance = new Looker\Api\HomepageApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -409,7 +409,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\HomepageSection**](../Model/HomepageSection.md)
+[**\Looker\Model\HomepageSection**](../Model/HomepageSection.md)
 
 ### Authorization
 
@@ -423,7 +423,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateHomepageItem**
-> \Swagger\Client\Looker\Model\HomepageItem updateHomepageItem($homepage_item_id, $body, $fields)
+> \Looker\Model\HomepageItem updateHomepageItem($homepage_item_id, $body, $fields)
 
 Update Homepage Item
 
@@ -434,13 +434,13 @@ Update Homepage Item
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\HomepageApi(
+$apiInstance = new Looker\Api\HomepageApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $homepage_item_id = 789; // int | Id of homepage item
-$body = new \Swagger\Client\Looker\Model\HomepageItem(); // \Swagger\Client\Looker\Model\HomepageItem | Homepage Item
+$body = new \Looker\Model\HomepageItem(); // \Looker\Model\HomepageItem | Homepage Item
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -457,12 +457,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **homepage_item_id** | **int**| Id of homepage item |
- **body** | [**\Swagger\Client\Looker\Model\HomepageItem**](../Model/HomepageItem.md)| Homepage Item |
+ **body** | [**\Looker\Model\HomepageItem**](../Model/HomepageItem.md)| Homepage Item |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\HomepageItem**](../Model/HomepageItem.md)
+[**\Looker\Model\HomepageItem**](../Model/HomepageItem.md)
 
 ### Authorization
 
@@ -476,7 +476,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateHomepageSection**
-> \Swagger\Client\Looker\Model\HomepageSection updateHomepageSection($homepage_section_id, $body, $fields)
+> \Looker\Model\HomepageSection updateHomepageSection($homepage_section_id, $body, $fields)
 
 Update Homepage section
 
@@ -487,13 +487,13 @@ Update Homepage section
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\HomepageApi(
+$apiInstance = new Looker\Api\HomepageApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $homepage_section_id = 789; // int | Id of homepage section
-$body = new \Swagger\Client\Looker\Model\HomepageSection(); // \Swagger\Client\Looker\Model\HomepageSection | Homepage section
+$body = new \Looker\Model\HomepageSection(); // \Looker\Model\HomepageSection | Homepage section
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -510,12 +510,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **homepage_section_id** | **int**| Id of homepage section |
- **body** | [**\Swagger\Client\Looker\Model\HomepageSection**](../Model/HomepageSection.md)| Homepage section |
+ **body** | [**\Looker\Model\HomepageSection**](../Model/HomepageSection.md)| Homepage section |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\HomepageSection**](../Model/HomepageSection.md)
+[**\Looker\Model\HomepageSection**](../Model/HomepageSection.md)
 
 ### Authorization
 

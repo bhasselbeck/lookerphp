@@ -1,4 +1,4 @@
-# Swagger\Client\SqlQueryApi
+# Looker\SqlQueryApi
 
 All URIs are relative to *https://ethosce.looker.com:19999/api/3.1*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **createSqlQuery**
-> \Swagger\Client\Looker\Model\SqlQuery createSqlQuery($body)
+> \Looker\Model\SqlQuery createSqlQuery($body)
 
 Create SQL Runner Query
 
@@ -20,12 +20,12 @@ Create a SQL Runner query.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SqlQueryApi(
+$apiInstance = new Looker\Api\SqlQueryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\SqlQueryCreate(); // \Swagger\Client\Looker\Model\SqlQueryCreate | SQL Runner Query
+$body = new \Looker\Model\SqlQueryCreate(); // \Looker\Model\SqlQueryCreate | SQL Runner Query
 
 try {
     $result = $apiInstance->createSqlQuery($body);
@@ -40,11 +40,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\SqlQueryCreate**](../Model/SqlQueryCreate.md)| SQL Runner Query |
+ **body** | [**\Looker\Model\SqlQueryCreate**](../Model/SqlQueryCreate.md)| SQL Runner Query |
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\SqlQuery**](../Model/SqlQuery.md)
+[**\Looker\Model\SqlQuery**](../Model/SqlQuery.md)
 
 ### Authorization
 
@@ -58,7 +58,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **sqlQuery**
-> \Swagger\Client\Looker\Model\SqlQuery sqlQuery($slug)
+> \Looker\Model\SqlQuery sqlQuery($slug)
 
 Get SQL Runner Query
 
@@ -69,7 +69,7 @@ Get a SQL Runner query.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SqlQueryApi(
+$apiInstance = new Looker\Api\SqlQueryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -93,7 +93,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\SqlQuery**](../Model/SqlQuery.md)
+[**\Looker\Model\SqlQuery**](../Model/SqlQuery.md)
 
 ### Authorization
 

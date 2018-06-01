@@ -1,4 +1,4 @@
-# Swagger\Client\WorkspaceApi
+# Looker\WorkspaceApi
 
 All URIs are relative to *https://ethosce.looker.com:19999/api/3.1*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **allWorkspaces**
-> \Swagger\Client\Looker\Model\Workspace[] allWorkspaces()
+> \Looker\Model\Workspace[] allWorkspaces()
 
 Get All Workspaces
 
@@ -20,7 +20,7 @@ Get All Workspaces
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\WorkspaceApi(
+$apiInstance = new Looker\Api\WorkspaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -40,7 +40,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Workspace[]**](../Model/Workspace.md)
+[**\Looker\Model\Workspace[]**](../Model/Workspace.md)
 
 ### Authorization
 
@@ -54,7 +54,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **workspace**
-> \Swagger\Client\Looker\Model\Workspace workspace($workspace_id)
+> \Looker\Model\Workspace workspace($workspace_id)
 
 Get Workspace
 
@@ -65,7 +65,7 @@ Get Workspace
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\WorkspaceApi(
+$apiInstance = new Looker\Api\WorkspaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -89,7 +89,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Workspace**](../Model/Workspace.md)
+[**\Looker\Model\Workspace**](../Model/Workspace.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# Swagger\Client\ApiAuthApi
+# Looker\ApiAuthApi
 
 All URIs are relative to *https://ethosce.looker.com:19999/api/3.1*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **login**
-> \Swagger\Client\Looker\Model\AccessToken login($client_id, $client_secret)
+> \Looker\Model\AccessToken login($client_id, $client_secret)
 
 Login
 
@@ -21,7 +21,7 @@ Login
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ApiAuthApi(
+$apiInstance = new Looker\Api\ApiAuthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\AccessToken**](../Model/AccessToken.md)
+[**\Looker\Model\AccessToken**](../Model/AccessToken.md)
 
 ### Authorization
 
@@ -61,7 +61,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **loginUser**
-> \Swagger\Client\Looker\Model\AccessToken loginUser($user_id)
+> \Looker\Model\AccessToken loginUser($user_id)
 
 Login user
 
@@ -72,7 +72,7 @@ Login user
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ApiAuthApi(
+$apiInstance = new Looker\Api\ApiAuthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -96,7 +96,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\AccessToken**](../Model/AccessToken.md)
+[**\Looker\Model\AccessToken**](../Model/AccessToken.md)
 
 ### Authorization
 
@@ -121,7 +121,7 @@ Logout
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ApiAuthApi(
+$apiInstance = new Looker\Api\ApiAuthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()

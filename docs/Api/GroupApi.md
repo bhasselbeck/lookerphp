@@ -1,4 +1,4 @@
-# Swagger\Client\GroupApi
+# Looker\GroupApi
 
 All URIs are relative to *https://ethosce.looker.com:19999/api/3.1*
 
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 
 # **addGroupGroup**
-> \Swagger\Client\Looker\Model\Group addGroupGroup($group_id, $body)
+> \Looker\Model\Group addGroupGroup($group_id, $body)
 
 Add a Group to Group
 
@@ -31,13 +31,13 @@ Add a Group to Group
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\GroupApi(
+$apiInstance = new Looker\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $group_id = 789; // int | Id of group
-$body = new \Swagger\Client\Looker\Model\GroupIdForGroupInclusion(); // \Swagger\Client\Looker\Model\GroupIdForGroupInclusion | Group id to add
+$body = new \Looker\Model\GroupIdForGroupInclusion(); // \Looker\Model\GroupIdForGroupInclusion | Group id to add
 
 try {
     $result = $apiInstance->addGroupGroup($group_id, $body);
@@ -53,11 +53,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **group_id** | **int**| Id of group |
- **body** | [**\Swagger\Client\Looker\Model\GroupIdForGroupInclusion**](../Model/GroupIdForGroupInclusion.md)| Group id to add | [optional]
+ **body** | [**\Looker\Model\GroupIdForGroupInclusion**](../Model/GroupIdForGroupInclusion.md)| Group id to add | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Group**](../Model/Group.md)
+[**\Looker\Model\Group**](../Model/Group.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **addGroupUser**
-> \Swagger\Client\Looker\Model\User addGroupUser($group_id, $body)
+> \Looker\Model\User addGroupUser($group_id, $body)
 
 Add a User to Group
 
@@ -82,13 +82,13 @@ Add a User to Group
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\GroupApi(
+$apiInstance = new Looker\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $group_id = 789; // int | Id of group
-$body = new \Swagger\Client\Looker\Model\GroupIdForGroupUserInclusion(); // \Swagger\Client\Looker\Model\GroupIdForGroupUserInclusion | User id to add
+$body = new \Looker\Model\GroupIdForGroupUserInclusion(); // \Looker\Model\GroupIdForGroupUserInclusion | User id to add
 
 try {
     $result = $apiInstance->addGroupUser($group_id, $body);
@@ -104,11 +104,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **group_id** | **int**| Id of group |
- **body** | [**\Swagger\Client\Looker\Model\GroupIdForGroupUserInclusion**](../Model/GroupIdForGroupUserInclusion.md)| User id to add | [optional]
+ **body** | [**\Looker\Model\GroupIdForGroupUserInclusion**](../Model/GroupIdForGroupUserInclusion.md)| User id to add | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\User**](../Model/User.md)
+[**\Looker\Model\User**](../Model/User.md)
 
 ### Authorization
 
@@ -122,7 +122,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allGroupGroups**
-> \Swagger\Client\Looker\Model\Group[] allGroupGroups($group_id, $fields)
+> \Looker\Model\Group[] allGroupGroups($group_id, $fields)
 
 Get All Groups in Group
 
@@ -133,7 +133,7 @@ Get All Groups in Group
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\GroupApi(
+$apiInstance = new Looker\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -159,7 +159,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Group[]**](../Model/Group.md)
+[**\Looker\Model\Group[]**](../Model/Group.md)
 
 ### Authorization
 
@@ -173,7 +173,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allGroupUsers**
-> \Swagger\Client\Looker\Model\User[] allGroupUsers($group_id, $fields, $page, $per_page, $sorts)
+> \Looker\Model\User[] allGroupUsers($group_id, $fields, $page, $per_page, $sorts)
 
 Get All Users in Group
 
@@ -184,7 +184,7 @@ Get All Users in Group
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\GroupApi(
+$apiInstance = new Looker\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -216,7 +216,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\User[]**](../Model/User.md)
+[**\Looker\Model\User[]**](../Model/User.md)
 
 ### Authorization
 
@@ -230,7 +230,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allGroups**
-> \Swagger\Client\Looker\Model\Group[] allGroups($fields, $page, $per_page, $sorts, $ids, $content_metadata_id, $can_add_to_content_metadata)
+> \Looker\Model\Group[] allGroups($fields, $page, $per_page, $sorts, $ids, $content_metadata_id, $can_add_to_content_metadata)
 
 Get All Groups
 
@@ -241,7 +241,7 @@ Get All Groups
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\GroupApi(
+$apiInstance = new Looker\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -277,7 +277,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Group[]**](../Model/Group.md)
+[**\Looker\Model\Group[]**](../Model/Group.md)
 
 ### Authorization
 
@@ -291,7 +291,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createGroup**
-> \Swagger\Client\Looker\Model\Group createGroup($body, $fields)
+> \Looker\Model\Group createGroup($body, $fields)
 
 Create Group
 
@@ -302,12 +302,12 @@ Create Group
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\GroupApi(
+$apiInstance = new Looker\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\Group(); // \Swagger\Client\Looker\Model\Group | Group
+$body = new \Looker\Model\Group(); // \Looker\Model\Group | Group
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -323,12 +323,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\Group**](../Model/Group.md)| Group | [optional]
+ **body** | [**\Looker\Model\Group**](../Model/Group.md)| Group | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Group**](../Model/Group.md)
+[**\Looker\Model\Group**](../Model/Group.md)
 
 ### Authorization
 
@@ -353,7 +353,7 @@ Delete Group
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\GroupApi(
+$apiInstance = new Looker\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -402,7 +402,7 @@ Deletes a Group from Group
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\GroupApi(
+$apiInstance = new Looker\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -452,7 +452,7 @@ Remove a User from Group
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\GroupApi(
+$apiInstance = new Looker\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -502,7 +502,7 @@ Delete User Attribute Group Value
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\GroupApi(
+$apiInstance = new Looker\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -541,7 +541,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **group**
-> \Swagger\Client\Looker\Model\Group group($group_id, $fields)
+> \Looker\Model\Group group($group_id, $fields)
 
 Get Group
 
@@ -552,7 +552,7 @@ Get Group
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\GroupApi(
+$apiInstance = new Looker\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -578,7 +578,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Group**](../Model/Group.md)
+[**\Looker\Model\Group**](../Model/Group.md)
 
 ### Authorization
 
@@ -592,7 +592,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateGroup**
-> \Swagger\Client\Looker\Model\Group updateGroup($group_id, $body, $fields)
+> \Looker\Model\Group updateGroup($group_id, $body, $fields)
 
 Update Group
 
@@ -603,13 +603,13 @@ Update Group
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\GroupApi(
+$apiInstance = new Looker\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $group_id = 789; // int | Id of group
-$body = new \Swagger\Client\Looker\Model\Group(); // \Swagger\Client\Looker\Model\Group | Group
+$body = new \Looker\Model\Group(); // \Looker\Model\Group | Group
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -626,12 +626,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **group_id** | **int**| Id of group |
- **body** | [**\Swagger\Client\Looker\Model\Group**](../Model/Group.md)| Group |
+ **body** | [**\Looker\Model\Group**](../Model/Group.md)| Group |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Group**](../Model/Group.md)
+[**\Looker\Model\Group**](../Model/Group.md)
 
 ### Authorization
 
@@ -645,7 +645,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateUserAttributeGroupValue**
-> \Swagger\Client\Looker\Model\UserAttributeGroupValue updateUserAttributeGroupValue($group_id, $user_attribute_id, $body)
+> \Looker\Model\UserAttributeGroupValue updateUserAttributeGroupValue($group_id, $user_attribute_id, $body)
 
 Set User Attribute Group Value
 
@@ -656,14 +656,14 @@ Set User Attribute Group Value
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\GroupApi(
+$apiInstance = new Looker\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $group_id = 789; // int | Id of group
 $user_attribute_id = 789; // int | Id of user attribute
-$body = new \Swagger\Client\Looker\Model\UserAttributeGroupValue(); // \Swagger\Client\Looker\Model\UserAttributeGroupValue | New value for group.
+$body = new \Looker\Model\UserAttributeGroupValue(); // \Looker\Model\UserAttributeGroupValue | New value for group.
 
 try {
     $result = $apiInstance->updateUserAttributeGroupValue($group_id, $user_attribute_id, $body);
@@ -680,11 +680,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **group_id** | **int**| Id of group |
  **user_attribute_id** | **int**| Id of user attribute |
- **body** | [**\Swagger\Client\Looker\Model\UserAttributeGroupValue**](../Model/UserAttributeGroupValue.md)| New value for group. |
+ **body** | [**\Looker\Model\UserAttributeGroupValue**](../Model/UserAttributeGroupValue.md)| New value for group. |
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\UserAttributeGroupValue**](../Model/UserAttributeGroupValue.md)
+[**\Looker\Model\UserAttributeGroupValue**](../Model/UserAttributeGroupValue.md)
 
 ### Authorization
 

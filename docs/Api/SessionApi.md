@@ -1,4 +1,4 @@
-# Swagger\Client\SessionApi
+# Looker\SessionApi
 
 All URIs are relative to *https://ethosce.looker.com:19999/api/3.1*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **session**
-> \Swagger\Client\Looker\Model\ApiSession session()
+> \Looker\Model\ApiSession session()
 
 Get Session
 
@@ -20,7 +20,7 @@ Get Session
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SessionApi(
+$apiInstance = new Looker\Api\SessionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -40,7 +40,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ApiSession**](../Model/ApiSession.md)
+[**\Looker\Model\ApiSession**](../Model/ApiSession.md)
 
 ### Authorization
 
@@ -54,7 +54,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateSession**
-> \Swagger\Client\Looker\Model\ApiSession updateSession($body)
+> \Looker\Model\ApiSession updateSession($body)
 
 Update Session
 
@@ -65,12 +65,12 @@ Update Session
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SessionApi(
+$apiInstance = new Looker\Api\SessionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\ApiSession(); // \Swagger\Client\Looker\Model\ApiSession | Session
+$body = new \Looker\Model\ApiSession(); // \Looker\Model\ApiSession | Session
 
 try {
     $result = $apiInstance->updateSession($body);
@@ -85,11 +85,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\ApiSession**](../Model/ApiSession.md)| Session |
+ **body** | [**\Looker\Model\ApiSession**](../Model/ApiSession.md)| Session |
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ApiSession**](../Model/ApiSession.md)
+[**\Looker\Model\ApiSession**](../Model/ApiSession.md)
 
 ### Authorization
 

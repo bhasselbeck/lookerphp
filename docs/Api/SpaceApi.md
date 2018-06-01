@@ -1,4 +1,4 @@
-# Swagger\Client\SpaceApi
+# Looker\SpaceApi
 
 All URIs are relative to *https://ethosce.looker.com:19999/api/3.1*
 
@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 
 # **allSpaces**
-> \Swagger\Client\Looker\Model\SpaceBase[] allSpaces($fields)
+> \Looker\Model\SpaceBase[] allSpaces($fields)
 
 Get All Spaces
 
@@ -30,7 +30,7 @@ Get All Spaces
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SpaceApi(
+$apiInstance = new Looker\Api\SpaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -54,7 +54,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\SpaceBase[]**](../Model/SpaceBase.md)
+[**\Looker\Model\SpaceBase[]**](../Model/SpaceBase.md)
 
 ### Authorization
 
@@ -68,7 +68,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createSpace**
-> \Swagger\Client\Looker\Model\Space createSpace($body)
+> \Looker\Model\Space createSpace($body)
 
 Create Space
 
@@ -79,12 +79,12 @@ Create Space
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SpaceApi(
+$apiInstance = new Looker\Api\SpaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\Space(); // \Swagger\Client\Looker\Model\Space | Space
+$body = new \Looker\Model\Space(); // \Looker\Model\Space | Space
 
 try {
     $result = $apiInstance->createSpace($body);
@@ -99,11 +99,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\Space**](../Model/Space.md)| Space | [optional]
+ **body** | [**\Looker\Model\Space**](../Model/Space.md)| Space | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Space**](../Model/Space.md)
+[**\Looker\Model\Space**](../Model/Space.md)
 
 ### Authorization
 
@@ -128,7 +128,7 @@ Delete Space
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SpaceApi(
+$apiInstance = new Looker\Api\SpaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -166,7 +166,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **searchSpaces**
-> \Swagger\Client\Looker\Model\Space[] searchSpaces($fields, $page, $per_page, $limit, $offset, $sorts, $name, $id, $parent_id, $creator_id)
+> \Looker\Model\Space[] searchSpaces($fields, $page, $per_page, $limit, $offset, $sorts, $name, $id, $parent_id, $creator_id)
 
 Search Spaces
 
@@ -177,7 +177,7 @@ Search for spaces by creator id, parent id, name, etc
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SpaceApi(
+$apiInstance = new Looker\Api\SpaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -219,7 +219,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Space[]**](../Model/Space.md)
+[**\Looker\Model\Space[]**](../Model/Space.md)
 
 ### Authorization
 
@@ -233,7 +233,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **space**
-> \Swagger\Client\Looker\Model\Space space($space_id, $fields)
+> \Looker\Model\Space space($space_id, $fields)
 
 Get Space
 
@@ -244,7 +244,7 @@ Get Space
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SpaceApi(
+$apiInstance = new Looker\Api\SpaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -270,7 +270,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Space**](../Model/Space.md)
+[**\Looker\Model\Space**](../Model/Space.md)
 
 ### Authorization
 
@@ -284,7 +284,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **spaceAncestors**
-> \Swagger\Client\Looker\Model\Space[] spaceAncestors($space_id, $fields)
+> \Looker\Model\Space[] spaceAncestors($space_id, $fields)
 
 Get Space Ancestors
 
@@ -295,7 +295,7 @@ Get Space Ancestors
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SpaceApi(
+$apiInstance = new Looker\Api\SpaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -321,7 +321,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Space[]**](../Model/Space.md)
+[**\Looker\Model\Space[]**](../Model/Space.md)
 
 ### Authorization
 
@@ -335,7 +335,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **spaceChildren**
-> \Swagger\Client\Looker\Model\Space[] spaceChildren($space_id, $fields, $page, $per_page, $sorts)
+> \Looker\Model\Space[] spaceChildren($space_id, $fields, $page, $per_page, $sorts)
 
 Get Space Children
 
@@ -346,7 +346,7 @@ Get Space Children
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SpaceApi(
+$apiInstance = new Looker\Api\SpaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -378,7 +378,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Space[]**](../Model/Space.md)
+[**\Looker\Model\Space[]**](../Model/Space.md)
 
 ### Authorization
 
@@ -392,7 +392,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **spaceChildrenSearch**
-> \Swagger\Client\Looker\Model\Space[] spaceChildrenSearch($space_id, $fields, $sorts, $name)
+> \Looker\Model\Space[] spaceChildrenSearch($space_id, $fields, $sorts, $name)
 
 Search Space Children
 
@@ -403,7 +403,7 @@ Search Space Children
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SpaceApi(
+$apiInstance = new Looker\Api\SpaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -433,7 +433,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Space[]**](../Model/Space.md)
+[**\Looker\Model\Space[]**](../Model/Space.md)
 
 ### Authorization
 
@@ -447,7 +447,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **spaceDashboards**
-> \Swagger\Client\Looker\Model\Dashboard[] spaceDashboards($space_id, $fields)
+> \Looker\Model\Dashboard[] spaceDashboards($space_id, $fields)
 
 Get Space Dashboards
 
@@ -458,7 +458,7 @@ Get Space Dashboards
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SpaceApi(
+$apiInstance = new Looker\Api\SpaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -484,7 +484,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Dashboard[]**](../Model/Dashboard.md)
+[**\Looker\Model\Dashboard[]**](../Model/Dashboard.md)
 
 ### Authorization
 
@@ -498,7 +498,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **spaceLooks**
-> \Swagger\Client\Looker\Model\LookWithQuery[] spaceLooks($space_id, $fields)
+> \Looker\Model\LookWithQuery[] spaceLooks($space_id, $fields)
 
 Get Space Looks
 
@@ -509,7 +509,7 @@ Get Space Looks
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SpaceApi(
+$apiInstance = new Looker\Api\SpaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -535,7 +535,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\LookWithQuery[]**](../Model/LookWithQuery.md)
+[**\Looker\Model\LookWithQuery[]**](../Model/LookWithQuery.md)
 
 ### Authorization
 
@@ -549,7 +549,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **spaceParent**
-> \Swagger\Client\Looker\Model\Space spaceParent($space_id, $fields)
+> \Looker\Model\Space spaceParent($space_id, $fields)
 
 Get Space Parent
 
@@ -560,7 +560,7 @@ Get Space Parent
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SpaceApi(
+$apiInstance = new Looker\Api\SpaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -586,7 +586,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Space**](../Model/Space.md)
+[**\Looker\Model\Space**](../Model/Space.md)
 
 ### Authorization
 
@@ -600,7 +600,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateSpace**
-> \Swagger\Client\Looker\Model\Space updateSpace($space_id, $body)
+> \Looker\Model\Space updateSpace($space_id, $body)
 
 Update Space
 
@@ -611,13 +611,13 @@ Update Space
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SpaceApi(
+$apiInstance = new Looker\Api\SpaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $space_id = "space_id_example"; // string | Id of space
-$body = new \Swagger\Client\Looker\Model\Space(); // \Swagger\Client\Looker\Model\Space | Space
+$body = new \Looker\Model\Space(); // \Looker\Model\Space | Space
 
 try {
     $result = $apiInstance->updateSpace($space_id, $body);
@@ -633,11 +633,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **space_id** | **string**| Id of space |
- **body** | [**\Swagger\Client\Looker\Model\Space**](../Model/Space.md)| Space |
+ **body** | [**\Looker\Model\Space**](../Model/Space.md)| Space |
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Space**](../Model/Space.md)
+[**\Looker\Model\Space**](../Model/Space.md)
 
 ### Authorization
 

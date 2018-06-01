@@ -1,4 +1,4 @@
-# Swagger\Client\ContentApi
+# Looker\ContentApi
 
 All URIs are relative to *https://ethosce.looker.com:19999/api/3.1*
 
@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 
 # **allContentMetadataAccesss**
-> \Swagger\Client\Looker\Model\ContentMetaGroupUser[] allContentMetadataAccesss($content_metadata_id, $fields)
+> \Looker\Model\ContentMetaGroupUser[] allContentMetadataAccesss($content_metadata_id, $fields)
 
 Get All Content Metadata Accesss
 
@@ -30,7 +30,7 @@ Get All Content Metadata Accesss
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ContentApi(
+$apiInstance = new Looker\Api\ContentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ContentMetaGroupUser[]**](../Model/ContentMetaGroupUser.md)
+[**\Looker\Model\ContentMetaGroupUser[]**](../Model/ContentMetaGroupUser.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allContentMetadatas**
-> \Swagger\Client\Looker\Model\ContentMeta[] allContentMetadatas($parent_id, $fields)
+> \Looker\Model\ContentMeta[] allContentMetadatas($parent_id, $fields)
 
 Get All Content Metadatas
 
@@ -81,7 +81,7 @@ Get All Content Metadatas
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ContentApi(
+$apiInstance = new Looker\Api\ContentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ContentMeta[]**](../Model/ContentMeta.md)
+[**\Looker\Model\ContentMeta[]**](../Model/ContentMeta.md)
 
 ### Authorization
 
@@ -121,7 +121,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **contentFavorite**
-> \Swagger\Client\Looker\Model\ContentFavorite contentFavorite($content_favorite_id, $fields)
+> \Looker\Model\ContentFavorite contentFavorite($content_favorite_id, $fields)
 
 Get Favorite Content
 
@@ -132,7 +132,7 @@ Get Favorite Content
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ContentApi(
+$apiInstance = new Looker\Api\ContentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ContentFavorite**](../Model/ContentFavorite.md)
+[**\Looker\Model\ContentFavorite**](../Model/ContentFavorite.md)
 
 ### Authorization
 
@@ -172,7 +172,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **contentMetadata**
-> \Swagger\Client\Looker\Model\ContentMeta contentMetadata($content_metadata_id, $fields)
+> \Looker\Model\ContentMeta contentMetadata($content_metadata_id, $fields)
 
 Get Content Metadata
 
@@ -183,7 +183,7 @@ Get Content Metadata
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ContentApi(
+$apiInstance = new Looker\Api\ContentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -209,7 +209,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ContentMeta**](../Model/ContentMeta.md)
+[**\Looker\Model\ContentMeta**](../Model/ContentMeta.md)
 
 ### Authorization
 
@@ -223,7 +223,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createContentFavorite**
-> \Swagger\Client\Looker\Model\ContentFavorite createContentFavorite($body)
+> \Looker\Model\ContentFavorite createContentFavorite($body)
 
 Create Favorite Content
 
@@ -234,12 +234,12 @@ Create Favorite Content
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ContentApi(
+$apiInstance = new Looker\Api\ContentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\ContentFavorite(); // \Swagger\Client\Looker\Model\ContentFavorite | Favorite Content
+$body = new \Looker\Model\ContentFavorite(); // \Looker\Model\ContentFavorite | Favorite Content
 
 try {
     $result = $apiInstance->createContentFavorite($body);
@@ -254,11 +254,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\ContentFavorite**](../Model/ContentFavorite.md)| Favorite Content | [optional]
+ **body** | [**\Looker\Model\ContentFavorite**](../Model/ContentFavorite.md)| Favorite Content | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ContentFavorite**](../Model/ContentFavorite.md)
+[**\Looker\Model\ContentFavorite**](../Model/ContentFavorite.md)
 
 ### Authorization
 
@@ -272,7 +272,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createContentMetadataAccess**
-> \Swagger\Client\Looker\Model\ContentMetaGroupUser createContentMetadataAccess($body)
+> \Looker\Model\ContentMetaGroupUser createContentMetadataAccess($body)
 
 Create Content Metadata Access
 
@@ -283,12 +283,12 @@ Create Content Metadata Access
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ContentApi(
+$apiInstance = new Looker\Api\ContentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\ContentMetaGroupUser(); // \Swagger\Client\Looker\Model\ContentMetaGroupUser | Content Metadata Access
+$body = new \Looker\Model\ContentMetaGroupUser(); // \Looker\Model\ContentMetaGroupUser | Content Metadata Access
 
 try {
     $result = $apiInstance->createContentMetadataAccess($body);
@@ -303,11 +303,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\ContentMetaGroupUser**](../Model/ContentMetaGroupUser.md)| Content Metadata Access | [optional]
+ **body** | [**\Looker\Model\ContentMetaGroupUser**](../Model/ContentMetaGroupUser.md)| Content Metadata Access | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ContentMetaGroupUser**](../Model/ContentMetaGroupUser.md)
+[**\Looker\Model\ContentMetaGroupUser**](../Model/ContentMetaGroupUser.md)
 
 ### Authorization
 
@@ -332,7 +332,7 @@ Delete Favorite Content
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ContentApi(
+$apiInstance = new Looker\Api\ContentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -381,7 +381,7 @@ Delete Content Metadata Access
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ContentApi(
+$apiInstance = new Looker\Api\ContentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -419,7 +419,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **searchContentFavorites**
-> \Swagger\Client\Looker\Model\ContentFavorite[] searchContentFavorites($user_id, $limit, $offset, $sorts, $fields)
+> \Looker\Model\ContentFavorite[] searchContentFavorites($user_id, $limit, $offset, $sorts, $fields)
 
 Search Favorite Contents
 
@@ -430,7 +430,7 @@ Search Favorite Contents
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ContentApi(
+$apiInstance = new Looker\Api\ContentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -462,7 +462,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ContentFavorite[]**](../Model/ContentFavorite.md)
+[**\Looker\Model\ContentFavorite[]**](../Model/ContentFavorite.md)
 
 ### Authorization
 
@@ -476,7 +476,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **searchContentViews**
-> \Swagger\Client\Looker\Model\ContentView[] searchContentViews($view_count, $group_id, $look_id, $dashboard_id, $content_metadata_id, $start_of_week_date, $all_time, $user_id, $limit, $offset, $sorts, $fields)
+> \Looker\Model\ContentView[] searchContentViews($view_count, $group_id, $look_id, $dashboard_id, $content_metadata_id, $start_of_week_date, $all_time, $user_id, $limit, $offset, $sorts, $fields)
 
 Search Content Views
 
@@ -487,7 +487,7 @@ Search Content Views
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ContentApi(
+$apiInstance = new Looker\Api\ContentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -533,7 +533,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ContentView[]**](../Model/ContentView.md)
+[**\Looker\Model\ContentView[]**](../Model/ContentView.md)
 
 ### Authorization
 
@@ -547,7 +547,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateContentMetadata**
-> \Swagger\Client\Looker\Model\ContentMeta updateContentMetadata($content_metadata_id, $body)
+> \Looker\Model\ContentMeta updateContentMetadata($content_metadata_id, $body)
 
 Update Content Metadata
 
@@ -558,13 +558,13 @@ Update Content Metadata
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ContentApi(
+$apiInstance = new Looker\Api\ContentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $content_metadata_id = 789; // int | Id of content metadata
-$body = new \Swagger\Client\Looker\Model\ContentMeta(); // \Swagger\Client\Looker\Model\ContentMeta | Content Metadata
+$body = new \Looker\Model\ContentMeta(); // \Looker\Model\ContentMeta | Content Metadata
 
 try {
     $result = $apiInstance->updateContentMetadata($content_metadata_id, $body);
@@ -580,11 +580,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **content_metadata_id** | **int**| Id of content metadata |
- **body** | [**\Swagger\Client\Looker\Model\ContentMeta**](../Model/ContentMeta.md)| Content Metadata |
+ **body** | [**\Looker\Model\ContentMeta**](../Model/ContentMeta.md)| Content Metadata |
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ContentMeta**](../Model/ContentMeta.md)
+[**\Looker\Model\ContentMeta**](../Model/ContentMeta.md)
 
 ### Authorization
 
@@ -598,7 +598,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateContentMetadataAccess**
-> \Swagger\Client\Looker\Model\ContentMetaGroupUser updateContentMetadataAccess($content_metadata_access_id, $body)
+> \Looker\Model\ContentMetaGroupUser updateContentMetadataAccess($content_metadata_access_id, $body)
 
 Update Content Metadata Access
 
@@ -609,13 +609,13 @@ Update Content Metadata Access
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ContentApi(
+$apiInstance = new Looker\Api\ContentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $content_metadata_access_id = 789; // int | Id of content metadata access
-$body = new \Swagger\Client\Looker\Model\ContentMetaGroupUser(); // \Swagger\Client\Looker\Model\ContentMetaGroupUser | Content Metadata Access
+$body = new \Looker\Model\ContentMetaGroupUser(); // \Looker\Model\ContentMetaGroupUser | Content Metadata Access
 
 try {
     $result = $apiInstance->updateContentMetadataAccess($content_metadata_access_id, $body);
@@ -631,11 +631,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **content_metadata_access_id** | **int**| Id of content metadata access |
- **body** | [**\Swagger\Client\Looker\Model\ContentMetaGroupUser**](../Model/ContentMetaGroupUser.md)| Content Metadata Access |
+ **body** | [**\Looker\Model\ContentMetaGroupUser**](../Model/ContentMetaGroupUser.md)| Content Metadata Access |
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ContentMetaGroupUser**](../Model/ContentMetaGroupUser.md)
+[**\Looker\Model\ContentMetaGroupUser**](../Model/ContentMetaGroupUser.md)
 
 ### Authorization
 

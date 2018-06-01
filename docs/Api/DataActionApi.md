@@ -1,4 +1,4 @@
-# Swagger\Client\DataActionApi
+# Looker\DataActionApi
 
 All URIs are relative to *https://ethosce.looker.com:19999/api/3.1*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **fetchRemoteDataActionForm**
-> \Swagger\Client\Looker\Model\DataActionForm fetchRemoteDataActionForm($body)
+> \Looker\Model\DataActionForm fetchRemoteDataActionForm($body)
 
 Fetch Remote Data Action Form
 
@@ -20,7 +20,7 @@ For some data actions, the remote server may supply a form requesting further us
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DataActionApi(
+$apiInstance = new Looker\Api\DataActionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -44,7 +44,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\DataActionForm**](../Model/DataActionForm.md)
+[**\Looker\Model\DataActionForm**](../Model/DataActionForm.md)
 
 ### Authorization
 
@@ -58,7 +58,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **performDataAction**
-> \Swagger\Client\Looker\Model\DataActionResponse performDataAction($body)
+> \Looker\Model\DataActionResponse performDataAction($body)
 
 Send a Data Action
 
@@ -69,12 +69,12 @@ Perform a data action. The data action object can be obtained from query results
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DataActionApi(
+$apiInstance = new Looker\Api\DataActionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\DataActionRequest(); // \Swagger\Client\Looker\Model\DataActionRequest | Data Action Request
+$body = new \Looker\Model\DataActionRequest(); // \Looker\Model\DataActionRequest | Data Action Request
 
 try {
     $result = $apiInstance->performDataAction($body);
@@ -89,11 +89,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\DataActionRequest**](../Model/DataActionRequest.md)| Data Action Request |
+ **body** | [**\Looker\Model\DataActionRequest**](../Model/DataActionRequest.md)| Data Action Request |
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\DataActionResponse**](../Model/DataActionResponse.md)
+[**\Looker\Model\DataActionResponse**](../Model/DataActionResponse.md)
 
 ### Authorization
 

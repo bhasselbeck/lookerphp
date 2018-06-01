@@ -1,4 +1,4 @@
-# Swagger\Client\RoleApi
+# Looker\RoleApi
 
 All URIs are relative to *https://ethosce.looker.com:19999/api/3.1*
 
@@ -27,7 +27,7 @@ Method | HTTP request | Description
 
 
 # **allModelSets**
-> \Swagger\Client\Looker\Model\ModelSet[] allModelSets($fields)
+> \Looker\Model\ModelSet[] allModelSets($fields)
 
 Get All Model Sets
 
@@ -38,7 +38,7 @@ Get All Model Sets
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RoleApi(
+$apiInstance = new Looker\Api\RoleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ModelSet[]**](../Model/ModelSet.md)
+[**\Looker\Model\ModelSet[]**](../Model/ModelSet.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allPermissionSets**
-> \Swagger\Client\Looker\Model\PermissionSet[] allPermissionSets($fields)
+> \Looker\Model\PermissionSet[] allPermissionSets($fields)
 
 Get All Permission Sets
 
@@ -87,7 +87,7 @@ Get All Permission Sets
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RoleApi(
+$apiInstance = new Looker\Api\RoleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -111,7 +111,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\PermissionSet[]**](../Model/PermissionSet.md)
+[**\Looker\Model\PermissionSet[]**](../Model/PermissionSet.md)
 
 ### Authorization
 
@@ -125,7 +125,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allPermissions**
-> \Swagger\Client\Looker\Model\Permission[] allPermissions()
+> \Looker\Model\Permission[] allPermissions()
 
 Get All Permissions
 
@@ -136,7 +136,7 @@ Get All Permissions
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RoleApi(
+$apiInstance = new Looker\Api\RoleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -156,7 +156,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Permission[]**](../Model/Permission.md)
+[**\Looker\Model\Permission[]**](../Model/Permission.md)
 
 ### Authorization
 
@@ -170,7 +170,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allRoles**
-> \Swagger\Client\Looker\Model\Role[] allRoles($fields, $ids)
+> \Looker\Model\Role[] allRoles($fields, $ids)
 
 Get All Roles
 
@@ -181,7 +181,7 @@ Get All Roles
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RoleApi(
+$apiInstance = new Looker\Api\RoleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -207,7 +207,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Role[]**](../Model/Role.md)
+[**\Looker\Model\Role[]**](../Model/Role.md)
 
 ### Authorization
 
@@ -221,7 +221,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createModelSet**
-> \Swagger\Client\Looker\Model\ModelSet createModelSet($body)
+> \Looker\Model\ModelSet createModelSet($body)
 
 Create Model Set
 
@@ -232,12 +232,12 @@ Create Model Set
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RoleApi(
+$apiInstance = new Looker\Api\RoleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\ModelSet(); // \Swagger\Client\Looker\Model\ModelSet | ModelSet
+$body = new \Looker\Model\ModelSet(); // \Looker\Model\ModelSet | ModelSet
 
 try {
     $result = $apiInstance->createModelSet($body);
@@ -252,11 +252,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\ModelSet**](../Model/ModelSet.md)| ModelSet | [optional]
+ **body** | [**\Looker\Model\ModelSet**](../Model/ModelSet.md)| ModelSet | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ModelSet**](../Model/ModelSet.md)
+[**\Looker\Model\ModelSet**](../Model/ModelSet.md)
 
 ### Authorization
 
@@ -270,7 +270,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createPermissionSet**
-> \Swagger\Client\Looker\Model\PermissionSet createPermissionSet($body)
+> \Looker\Model\PermissionSet createPermissionSet($body)
 
 Create Permission Set
 
@@ -281,12 +281,12 @@ Create Permission Set
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RoleApi(
+$apiInstance = new Looker\Api\RoleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\PermissionSet(); // \Swagger\Client\Looker\Model\PermissionSet | Permission Set
+$body = new \Looker\Model\PermissionSet(); // \Looker\Model\PermissionSet | Permission Set
 
 try {
     $result = $apiInstance->createPermissionSet($body);
@@ -301,11 +301,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\PermissionSet**](../Model/PermissionSet.md)| Permission Set | [optional]
+ **body** | [**\Looker\Model\PermissionSet**](../Model/PermissionSet.md)| Permission Set | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\PermissionSet**](../Model/PermissionSet.md)
+[**\Looker\Model\PermissionSet**](../Model/PermissionSet.md)
 
 ### Authorization
 
@@ -319,7 +319,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createRole**
-> \Swagger\Client\Looker\Model\Role createRole($body)
+> \Looker\Model\Role createRole($body)
 
 Create Role
 
@@ -330,12 +330,12 @@ Create Role
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RoleApi(
+$apiInstance = new Looker\Api\RoleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\Role(); // \Swagger\Client\Looker\Model\Role | Role
+$body = new \Looker\Model\Role(); // \Looker\Model\Role | Role
 
 try {
     $result = $apiInstance->createRole($body);
@@ -350,11 +350,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\Role**](../Model/Role.md)| Role | [optional]
+ **body** | [**\Looker\Model\Role**](../Model/Role.md)| Role | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Role**](../Model/Role.md)
+[**\Looker\Model\Role**](../Model/Role.md)
 
 ### Authorization
 
@@ -379,7 +379,7 @@ Delete Model Set
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RoleApi(
+$apiInstance = new Looker\Api\RoleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -428,7 +428,7 @@ Delete Permission Set
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RoleApi(
+$apiInstance = new Looker\Api\RoleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -477,7 +477,7 @@ Delete Role
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RoleApi(
+$apiInstance = new Looker\Api\RoleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -515,7 +515,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **modelSet**
-> \Swagger\Client\Looker\Model\ModelSet modelSet($model_set_id, $fields)
+> \Looker\Model\ModelSet modelSet($model_set_id, $fields)
 
 Get Model Set
 
@@ -526,7 +526,7 @@ Get Model Set
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RoleApi(
+$apiInstance = new Looker\Api\RoleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -552,7 +552,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ModelSet**](../Model/ModelSet.md)
+[**\Looker\Model\ModelSet**](../Model/ModelSet.md)
 
 ### Authorization
 
@@ -566,7 +566,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **permissionSet**
-> \Swagger\Client\Looker\Model\PermissionSet permissionSet($permission_set_id, $fields)
+> \Looker\Model\PermissionSet permissionSet($permission_set_id, $fields)
 
 Get Permission Set
 
@@ -577,7 +577,7 @@ Get Permission Set
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RoleApi(
+$apiInstance = new Looker\Api\RoleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -603,7 +603,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\PermissionSet**](../Model/PermissionSet.md)
+[**\Looker\Model\PermissionSet**](../Model/PermissionSet.md)
 
 ### Authorization
 
@@ -617,7 +617,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **role**
-> \Swagger\Client\Looker\Model\Role role($role_id)
+> \Looker\Model\Role role($role_id)
 
 Get Role
 
@@ -628,7 +628,7 @@ Get Role
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RoleApi(
+$apiInstance = new Looker\Api\RoleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -652,7 +652,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Role**](../Model/Role.md)
+[**\Looker\Model\Role**](../Model/Role.md)
 
 ### Authorization
 
@@ -666,7 +666,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **roleGroups**
-> \Swagger\Client\Looker\Model\Group[] roleGroups($role_id, $fields)
+> \Looker\Model\Group[] roleGroups($role_id, $fields)
 
 Get Role Groups
 
@@ -677,7 +677,7 @@ Get Role Groups
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RoleApi(
+$apiInstance = new Looker\Api\RoleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -703,7 +703,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Group[]**](../Model/Group.md)
+[**\Looker\Model\Group[]**](../Model/Group.md)
 
 ### Authorization
 
@@ -717,7 +717,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **roleUsers**
-> \Swagger\Client\Looker\Model\User[] roleUsers($role_id, $fields, $direct_association_only)
+> \Looker\Model\User[] roleUsers($role_id, $fields, $direct_association_only)
 
 Get Role Users
 
@@ -728,7 +728,7 @@ Get Role Users
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RoleApi(
+$apiInstance = new Looker\Api\RoleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -756,7 +756,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\User[]**](../Model/User.md)
+[**\Looker\Model\User[]**](../Model/User.md)
 
 ### Authorization
 
@@ -770,7 +770,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setRoleGroups**
-> \Swagger\Client\Looker\Model\Group[] setRoleGroups($role_id, $body)
+> \Looker\Model\Group[] setRoleGroups($role_id, $body)
 
 Update Role Groups
 
@@ -781,13 +781,13 @@ Update Role Groups
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RoleApi(
+$apiInstance = new Looker\Api\RoleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $role_id = 789; // int | Id of Role
-$body = array(new \Swagger\Client\Looker\Model\int[]()); // int[] | Array of Group Ids
+$body = array(new \Looker\Model\int[]()); // int[] | Array of Group Ids
 
 try {
     $result = $apiInstance->setRoleGroups($role_id, $body);
@@ -807,7 +807,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Group[]**](../Model/Group.md)
+[**\Looker\Model\Group[]**](../Model/Group.md)
 
 ### Authorization
 
@@ -821,7 +821,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setRoleUsers**
-> \Swagger\Client\Looker\Model\User[] setRoleUsers($role_id, $body)
+> \Looker\Model\User[] setRoleUsers($role_id, $body)
 
 Update Role Users
 
@@ -832,13 +832,13 @@ Update Role Users
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RoleApi(
+$apiInstance = new Looker\Api\RoleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $role_id = 789; // int | id of role
-$body = array(new \Swagger\Client\Looker\Model\int[]()); // int[] | array of user ids for role
+$body = array(new \Looker\Model\int[]()); // int[] | array of user ids for role
 
 try {
     $result = $apiInstance->setRoleUsers($role_id, $body);
@@ -858,7 +858,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\User[]**](../Model/User.md)
+[**\Looker\Model\User[]**](../Model/User.md)
 
 ### Authorization
 
@@ -872,7 +872,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateModelSet**
-> \Swagger\Client\Looker\Model\ModelSet updateModelSet($model_set_id, $body)
+> \Looker\Model\ModelSet updateModelSet($model_set_id, $body)
 
 Update Model Set
 
@@ -883,13 +883,13 @@ Update Model Set
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RoleApi(
+$apiInstance = new Looker\Api\RoleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $model_set_id = 789; // int | id of model set
-$body = new \Swagger\Client\Looker\Model\ModelSet(); // \Swagger\Client\Looker\Model\ModelSet | ModelSet
+$body = new \Looker\Model\ModelSet(); // \Looker\Model\ModelSet | ModelSet
 
 try {
     $result = $apiInstance->updateModelSet($model_set_id, $body);
@@ -905,11 +905,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model_set_id** | **int**| id of model set |
- **body** | [**\Swagger\Client\Looker\Model\ModelSet**](../Model/ModelSet.md)| ModelSet |
+ **body** | [**\Looker\Model\ModelSet**](../Model/ModelSet.md)| ModelSet |
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ModelSet**](../Model/ModelSet.md)
+[**\Looker\Model\ModelSet**](../Model/ModelSet.md)
 
 ### Authorization
 
@@ -923,7 +923,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updatePermissionSet**
-> \Swagger\Client\Looker\Model\PermissionSet updatePermissionSet($permission_set_id, $body)
+> \Looker\Model\PermissionSet updatePermissionSet($permission_set_id, $body)
 
 Update Permission Set
 
@@ -934,13 +934,13 @@ Update Permission Set
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RoleApi(
+$apiInstance = new Looker\Api\RoleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $permission_set_id = 789; // int | id of permission set
-$body = new \Swagger\Client\Looker\Model\PermissionSet(); // \Swagger\Client\Looker\Model\PermissionSet | Permission Set
+$body = new \Looker\Model\PermissionSet(); // \Looker\Model\PermissionSet | Permission Set
 
 try {
     $result = $apiInstance->updatePermissionSet($permission_set_id, $body);
@@ -956,11 +956,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **permission_set_id** | **int**| id of permission set |
- **body** | [**\Swagger\Client\Looker\Model\PermissionSet**](../Model/PermissionSet.md)| Permission Set |
+ **body** | [**\Looker\Model\PermissionSet**](../Model/PermissionSet.md)| Permission Set |
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\PermissionSet**](../Model/PermissionSet.md)
+[**\Looker\Model\PermissionSet**](../Model/PermissionSet.md)
 
 ### Authorization
 
@@ -974,7 +974,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateRole**
-> \Swagger\Client\Looker\Model\Role updateRole($role_id, $body)
+> \Looker\Model\Role updateRole($role_id, $body)
 
 Update Role
 
@@ -985,13 +985,13 @@ Update Role
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RoleApi(
+$apiInstance = new Looker\Api\RoleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $role_id = 789; // int | id of role
-$body = new \Swagger\Client\Looker\Model\Role(); // \Swagger\Client\Looker\Model\Role | Role
+$body = new \Looker\Model\Role(); // \Looker\Model\Role | Role
 
 try {
     $result = $apiInstance->updateRole($role_id, $body);
@@ -1007,11 +1007,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **role_id** | **int**| id of role |
- **body** | [**\Swagger\Client\Looker\Model\Role**](../Model/Role.md)| Role |
+ **body** | [**\Looker\Model\Role**](../Model/Role.md)| Role |
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Role**](../Model/Role.md)
+[**\Looker\Model\Role**](../Model/Role.md)
 
 ### Authorization
 

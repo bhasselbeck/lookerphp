@@ -1,4 +1,4 @@
-# Swagger\Client\UserApi
+# Looker\UserApi
 
 All URIs are relative to *https://ethosce.looker.com:19999/api/3.1*
 
@@ -57,7 +57,7 @@ Method | HTTP request | Description
 
 
 # **allUserAccessFilters**
-> \Swagger\Client\Looker\Model\AccessFilter[] allUserAccessFilters($user_id, $fields)
+> \Looker\Model\AccessFilter[] allUserAccessFilters($user_id, $fields)
 
 Get All Access Filters
 
@@ -68,7 +68,7 @@ Get All Access Filters
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -94,7 +94,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\AccessFilter[]**](../Model/AccessFilter.md)
+[**\Looker\Model\AccessFilter[]**](../Model/AccessFilter.md)
 
 ### Authorization
 
@@ -108,7 +108,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allUserCredentialsApi3s**
-> \Swagger\Client\Looker\Model\CredentialsApi3[] allUserCredentialsApi3s($user_id, $fields)
+> \Looker\Model\CredentialsApi3[] allUserCredentialsApi3s($user_id, $fields)
 
 Get All API 3 Credentials
 
@@ -119,7 +119,7 @@ Get All API 3 Credentials
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -145,7 +145,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\CredentialsApi3[]**](../Model/CredentialsApi3.md)
+[**\Looker\Model\CredentialsApi3[]**](../Model/CredentialsApi3.md)
 
 ### Authorization
 
@@ -159,7 +159,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allUserCredentialsEmbeds**
-> \Swagger\Client\Looker\Model\CredentialsEmbed[] allUserCredentialsEmbeds($user_id, $fields)
+> \Looker\Model\CredentialsEmbed[] allUserCredentialsEmbeds($user_id, $fields)
 
 Get All Embedding Credentials
 
@@ -170,7 +170,7 @@ Get All Embedding Credentials
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -196,7 +196,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\CredentialsEmbed[]**](../Model/CredentialsEmbed.md)
+[**\Looker\Model\CredentialsEmbed[]**](../Model/CredentialsEmbed.md)
 
 ### Authorization
 
@@ -210,7 +210,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allUserSessions**
-> \Swagger\Client\Looker\Model\Session[] allUserSessions($user_id, $fields)
+> \Looker\Model\Session[] allUserSessions($user_id, $fields)
 
 Get All Web Login Sessions
 
@@ -221,7 +221,7 @@ Get All Web Login Sessions
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -247,7 +247,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Session[]**](../Model/Session.md)
+[**\Looker\Model\Session[]**](../Model/Session.md)
 
 ### Authorization
 
@@ -261,7 +261,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allUsers**
-> \Swagger\Client\Looker\Model\User[] allUsers($fields, $page, $per_page, $sorts, $ids)
+> \Looker\Model\User[] allUsers($fields, $page, $per_page, $sorts, $ids)
 
 Get All Users
 
@@ -272,7 +272,7 @@ Get All Users
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -304,7 +304,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\User[]**](../Model/User.md)
+[**\Looker\Model\User[]**](../Model/User.md)
 
 ### Authorization
 
@@ -318,7 +318,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createUser**
-> \Swagger\Client\Looker\Model\User createUser($body, $fields)
+> \Looker\Model\User createUser($body, $fields)
 
 Create User
 
@@ -329,12 +329,12 @@ Create User
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\User(); // \Swagger\Client\Looker\Model\User | User
+$body = new \Looker\Model\User(); // \Looker\Model\User | User
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -350,12 +350,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\User**](../Model/User.md)| User | [optional]
+ **body** | [**\Looker\Model\User**](../Model/User.md)| User | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\User**](../Model/User.md)
+[**\Looker\Model\User**](../Model/User.md)
 
 ### Authorization
 
@@ -369,7 +369,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createUserAccessFilter**
-> \Swagger\Client\Looker\Model\AccessFilter createUserAccessFilter($user_id, $body, $fields)
+> \Looker\Model\AccessFilter createUserAccessFilter($user_id, $body, $fields)
 
 Create Access Filter
 
@@ -380,13 +380,13 @@ Create Access Filter
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $user_id = 789; // int | id of user
-$body = new \Swagger\Client\Looker\Model\AccessFilter(); // \Swagger\Client\Looker\Model\AccessFilter | Access Filter
+$body = new \Looker\Model\AccessFilter(); // \Looker\Model\AccessFilter | Access Filter
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -403,12 +403,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_id** | **int**| id of user |
- **body** | [**\Swagger\Client\Looker\Model\AccessFilter**](../Model/AccessFilter.md)| Access Filter | [optional]
+ **body** | [**\Looker\Model\AccessFilter**](../Model/AccessFilter.md)| Access Filter | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\AccessFilter**](../Model/AccessFilter.md)
+[**\Looker\Model\AccessFilter**](../Model/AccessFilter.md)
 
 ### Authorization
 
@@ -422,7 +422,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createUserCredentialsApi**
-> \Swagger\Client\Looker\Model\CredentialsApi createUserCredentialsApi($user_id, $body)
+> \Looker\Model\CredentialsApi createUserCredentialsApi($user_id, $body)
 
 Create API Credential
 
@@ -433,13 +433,13 @@ Create API Credential
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $user_id = 789; // int | Id of user
-$body = new \Swagger\Client\Looker\Model\CredentialsApi(); // \Swagger\Client\Looker\Model\CredentialsApi | API Credential
+$body = new \Looker\Model\CredentialsApi(); // \Looker\Model\CredentialsApi | API Credential
 
 try {
     $result = $apiInstance->createUserCredentialsApi($user_id, $body);
@@ -455,11 +455,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_id** | **int**| Id of user |
- **body** | [**\Swagger\Client\Looker\Model\CredentialsApi**](../Model/CredentialsApi.md)| API Credential | [optional]
+ **body** | [**\Looker\Model\CredentialsApi**](../Model/CredentialsApi.md)| API Credential | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\CredentialsApi**](../Model/CredentialsApi.md)
+[**\Looker\Model\CredentialsApi**](../Model/CredentialsApi.md)
 
 ### Authorization
 
@@ -473,7 +473,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createUserCredentialsApi3**
-> \Swagger\Client\Looker\Model\CredentialsApi3 createUserCredentialsApi3($user_id, $body, $fields)
+> \Looker\Model\CredentialsApi3 createUserCredentialsApi3($user_id, $body, $fields)
 
 Create API 3 Credential
 
@@ -484,13 +484,13 @@ Create API 3 Credential
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $user_id = 789; // int | id of user
-$body = new \Swagger\Client\Looker\Model\CredentialsApi3(); // \Swagger\Client\Looker\Model\CredentialsApi3 | API 3 Credential
+$body = new \Looker\Model\CredentialsApi3(); // \Looker\Model\CredentialsApi3 | API 3 Credential
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -507,12 +507,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_id** | **int**| id of user |
- **body** | [**\Swagger\Client\Looker\Model\CredentialsApi3**](../Model/CredentialsApi3.md)| API 3 Credential | [optional]
+ **body** | [**\Looker\Model\CredentialsApi3**](../Model/CredentialsApi3.md)| API 3 Credential | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\CredentialsApi3**](../Model/CredentialsApi3.md)
+[**\Looker\Model\CredentialsApi3**](../Model/CredentialsApi3.md)
 
 ### Authorization
 
@@ -526,7 +526,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createUserCredentialsEmail**
-> \Swagger\Client\Looker\Model\CredentialsEmail createUserCredentialsEmail($user_id, $body, $fields)
+> \Looker\Model\CredentialsEmail createUserCredentialsEmail($user_id, $body, $fields)
 
 Create Email/Password Credential
 
@@ -537,13 +537,13 @@ Create Email/Password Credential
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $user_id = 789; // int | id of user
-$body = new \Swagger\Client\Looker\Model\CredentialsEmail(); // \Swagger\Client\Looker\Model\CredentialsEmail | Email/Password Credential
+$body = new \Looker\Model\CredentialsEmail(); // \Looker\Model\CredentialsEmail | Email/Password Credential
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -560,12 +560,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_id** | **int**| id of user |
- **body** | [**\Swagger\Client\Looker\Model\CredentialsEmail**](../Model/CredentialsEmail.md)| Email/Password Credential | [optional]
+ **body** | [**\Looker\Model\CredentialsEmail**](../Model/CredentialsEmail.md)| Email/Password Credential | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\CredentialsEmail**](../Model/CredentialsEmail.md)
+[**\Looker\Model\CredentialsEmail**](../Model/CredentialsEmail.md)
 
 ### Authorization
 
@@ -579,7 +579,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createUserCredentialsEmailPasswordReset**
-> \Swagger\Client\Looker\Model\CredentialsEmail createUserCredentialsEmailPasswordReset($user_id, $expires, $fields)
+> \Looker\Model\CredentialsEmail createUserCredentialsEmailPasswordReset($user_id, $expires, $fields)
 
 Create Password Reset Token
 
@@ -590,7 +590,7 @@ Create Password Reset Token
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -618,7 +618,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\CredentialsEmail**](../Model/CredentialsEmail.md)
+[**\Looker\Model\CredentialsEmail**](../Model/CredentialsEmail.md)
 
 ### Authorization
 
@@ -632,7 +632,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createUserCredentialsTotp**
-> \Swagger\Client\Looker\Model\CredentialsTotp createUserCredentialsTotp($user_id, $body, $fields)
+> \Looker\Model\CredentialsTotp createUserCredentialsTotp($user_id, $body, $fields)
 
 Create Two-Factor Credential
 
@@ -643,13 +643,13 @@ Create Two-Factor Credential
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $user_id = 789; // int | id of user
-$body = new \Swagger\Client\Looker\Model\CredentialsTotp(); // \Swagger\Client\Looker\Model\CredentialsTotp | Two-Factor Credential
+$body = new \Looker\Model\CredentialsTotp(); // \Looker\Model\CredentialsTotp | Two-Factor Credential
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -666,12 +666,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_id** | **int**| id of user |
- **body** | [**\Swagger\Client\Looker\Model\CredentialsTotp**](../Model/CredentialsTotp.md)| Two-Factor Credential | [optional]
+ **body** | [**\Looker\Model\CredentialsTotp**](../Model/CredentialsTotp.md)| Two-Factor Credential | [optional]
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\CredentialsTotp**](../Model/CredentialsTotp.md)
+[**\Looker\Model\CredentialsTotp**](../Model/CredentialsTotp.md)
 
 ### Authorization
 
@@ -696,7 +696,7 @@ Delete User
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -745,7 +745,7 @@ Delete Access Filter
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -796,7 +796,7 @@ Delete User Attribute User Value
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -846,7 +846,7 @@ Delete API Credential
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -895,7 +895,7 @@ Delete API 3 Credential
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -946,7 +946,7 @@ Delete Email/Password Credential
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -995,7 +995,7 @@ Delete Embedding Credential
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1046,7 +1046,7 @@ Delete Google Auth Credential
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1095,7 +1095,7 @@ Delete LDAP Credential
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1144,7 +1144,7 @@ Delete Looker OpenId Credential
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1193,7 +1193,7 @@ Delete OIDC Auth Credential
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1242,7 +1242,7 @@ Delete Saml Auth Credential
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1291,7 +1291,7 @@ Delete Two-Factor Credential
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1340,7 +1340,7 @@ Delete Web Login Session
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1380,7 +1380,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **me**
-> \Swagger\Client\Looker\Model\User me($fields)
+> \Looker\Model\User me($fields)
 
 Get Current User
 
@@ -1391,7 +1391,7 @@ Get Current User
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1415,7 +1415,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\User**](../Model/User.md)
+[**\Looker\Model\User**](../Model/User.md)
 
 ### Authorization
 
@@ -1429,7 +1429,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **searchUsers**
-> \Swagger\Client\Looker\Model\User[] searchUsers($fields, $page, $per_page, $sorts, $id, $first_name, $last_name, $verified_looker_employee, $email, $is_disabled, $filter_or, $content_metadata_id, $group_id)
+> \Looker\Model\User[] searchUsers($fields, $page, $per_page, $sorts, $id, $first_name, $last_name, $verified_looker_employee, $email, $is_disabled, $filter_or, $content_metadata_id, $group_id)
 
 Search Users
 
@@ -1440,7 +1440,7 @@ Search Users
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1488,7 +1488,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\User[]**](../Model/User.md)
+[**\Looker\Model\User[]**](../Model/User.md)
 
 ### Authorization
 
@@ -1502,7 +1502,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **searchUsersNames**
-> \Swagger\Client\Looker\Model\User[] searchUsersNames($pattern, $fields, $page, $per_page, $sorts, $id, $first_name, $last_name, $verified_looker_employee, $email, $is_disabled)
+> \Looker\Model\User[] searchUsersNames($pattern, $fields, $page, $per_page, $sorts, $id, $first_name, $last_name, $verified_looker_employee, $email, $is_disabled)
 
 Search User Names
 
@@ -1513,7 +1513,7 @@ Search User Names
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1557,7 +1557,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\User[]**](../Model/User.md)
+[**\Looker\Model\User[]**](../Model/User.md)
 
 ### Authorization
 
@@ -1571,7 +1571,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setUserAttributeUserValue**
-> \Swagger\Client\Looker\Model\UserAttributeWithValue setUserAttributeUserValue($user_id, $user_attribute_id, $body)
+> \Looker\Model\UserAttributeWithValue setUserAttributeUserValue($user_id, $user_attribute_id, $body)
 
 Set User Attribute User Value
 
@@ -1582,14 +1582,14 @@ Set User Attribute User Value
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $user_id = 789; // int | Id of user
 $user_attribute_id = 789; // int | Id of user attribute
-$body = new \Swagger\Client\Looker\Model\UserAttributeWithValue(); // \Swagger\Client\Looker\Model\UserAttributeWithValue | New attribute value for user.
+$body = new \Looker\Model\UserAttributeWithValue(); // \Looker\Model\UserAttributeWithValue | New attribute value for user.
 
 try {
     $result = $apiInstance->setUserAttributeUserValue($user_id, $user_attribute_id, $body);
@@ -1606,11 +1606,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_id** | **int**| Id of user |
  **user_attribute_id** | **int**| Id of user attribute |
- **body** | [**\Swagger\Client\Looker\Model\UserAttributeWithValue**](../Model/UserAttributeWithValue.md)| New attribute value for user. |
+ **body** | [**\Looker\Model\UserAttributeWithValue**](../Model/UserAttributeWithValue.md)| New attribute value for user. |
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\UserAttributeWithValue**](../Model/UserAttributeWithValue.md)
+[**\Looker\Model\UserAttributeWithValue**](../Model/UserAttributeWithValue.md)
 
 ### Authorization
 
@@ -1624,7 +1624,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setUserRoles**
-> \Swagger\Client\Looker\Model\Role[] setUserRoles($user_id, $body, $fields)
+> \Looker\Model\Role[] setUserRoles($user_id, $body, $fields)
 
 Set User Roles
 
@@ -1635,13 +1635,13 @@ Set User Roles
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $user_id = 789; // int | id of user
-$body = array(new \Swagger\Client\Looker\Model\int[]()); // int[] | array of roles ids for user
+$body = array(new \Looker\Model\int[]()); // int[] | array of roles ids for user
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -1663,7 +1663,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Role[]**](../Model/Role.md)
+[**\Looker\Model\Role[]**](../Model/Role.md)
 
 ### Authorization
 
@@ -1677,7 +1677,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateUser**
-> \Swagger\Client\Looker\Model\User updateUser($user_id, $body, $fields)
+> \Looker\Model\User updateUser($user_id, $body, $fields)
 
 Update User
 
@@ -1688,13 +1688,13 @@ Update User
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $user_id = 789; // int | Id of user
-$body = new \Swagger\Client\Looker\Model\User(); // \Swagger\Client\Looker\Model\User | User
+$body = new \Looker\Model\User(); // \Looker\Model\User | User
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -1711,12 +1711,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_id** | **int**| Id of user |
- **body** | [**\Swagger\Client\Looker\Model\User**](../Model/User.md)| User |
+ **body** | [**\Looker\Model\User**](../Model/User.md)| User |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\User**](../Model/User.md)
+[**\Looker\Model\User**](../Model/User.md)
 
 ### Authorization
 
@@ -1730,7 +1730,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateUserAccessFilter**
-> \Swagger\Client\Looker\Model\AccessFilter updateUserAccessFilter($user_id, $access_filter_id, $body, $fields)
+> \Looker\Model\AccessFilter updateUserAccessFilter($user_id, $access_filter_id, $body, $fields)
 
 Update Access Filter
 
@@ -1741,14 +1741,14 @@ Update Access Filter
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $user_id = 789; // int | id of user
 $access_filter_id = 789; // int | id of Access Filter
-$body = new \Swagger\Client\Looker\Model\AccessFilter(); // \Swagger\Client\Looker\Model\AccessFilter | Access Filter
+$body = new \Looker\Model\AccessFilter(); // \Looker\Model\AccessFilter | Access Filter
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -1766,12 +1766,12 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_id** | **int**| id of user |
  **access_filter_id** | **int**| id of Access Filter |
- **body** | [**\Swagger\Client\Looker\Model\AccessFilter**](../Model/AccessFilter.md)| Access Filter |
+ **body** | [**\Looker\Model\AccessFilter**](../Model/AccessFilter.md)| Access Filter |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\AccessFilter**](../Model/AccessFilter.md)
+[**\Looker\Model\AccessFilter**](../Model/AccessFilter.md)
 
 ### Authorization
 
@@ -1785,7 +1785,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateUserCredentialsEmail**
-> \Swagger\Client\Looker\Model\CredentialsEmail updateUserCredentialsEmail($user_id, $body, $fields)
+> \Looker\Model\CredentialsEmail updateUserCredentialsEmail($user_id, $body, $fields)
 
 Update Email/Password Credential
 
@@ -1796,13 +1796,13 @@ Update Email/Password Credential
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $user_id = 789; // int | id of user
-$body = new \Swagger\Client\Looker\Model\CredentialsEmail(); // \Swagger\Client\Looker\Model\CredentialsEmail | Email/Password Credential
+$body = new \Looker\Model\CredentialsEmail(); // \Looker\Model\CredentialsEmail | Email/Password Credential
 $fields = "fields_example"; // string | Requested fields.
 
 try {
@@ -1819,12 +1819,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_id** | **int**| id of user |
- **body** | [**\Swagger\Client\Looker\Model\CredentialsEmail**](../Model/CredentialsEmail.md)| Email/Password Credential |
+ **body** | [**\Looker\Model\CredentialsEmail**](../Model/CredentialsEmail.md)| Email/Password Credential |
  **fields** | **string**| Requested fields. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\CredentialsEmail**](../Model/CredentialsEmail.md)
+[**\Looker\Model\CredentialsEmail**](../Model/CredentialsEmail.md)
 
 ### Authorization
 
@@ -1838,7 +1838,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **user**
-> \Swagger\Client\Looker\Model\User user($user_id, $fields)
+> \Looker\Model\User user($user_id, $fields)
 
 Get User by Id
 
@@ -1849,7 +1849,7 @@ Get User by Id
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1875,7 +1875,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\User**](../Model/User.md)
+[**\Looker\Model\User**](../Model/User.md)
 
 ### Authorization
 
@@ -1889,7 +1889,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userAccessFilter**
-> \Swagger\Client\Looker\Model\AccessFilter userAccessFilter($user_id, $access_filter_id, $fields)
+> \Looker\Model\AccessFilter userAccessFilter($user_id, $access_filter_id, $fields)
 
 Get Access Filter
 
@@ -1900,7 +1900,7 @@ Get Access Filter
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1928,7 +1928,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\AccessFilter**](../Model/AccessFilter.md)
+[**\Looker\Model\AccessFilter**](../Model/AccessFilter.md)
 
 ### Authorization
 
@@ -1942,7 +1942,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userAttributeUserValues**
-> \Swagger\Client\Looker\Model\UserAttributeWithValue[] userAttributeUserValues($user_id, $fields, $user_attribute_ids, $all_values, $include_unset)
+> \Looker\Model\UserAttributeWithValue[] userAttributeUserValues($user_id, $fields, $user_attribute_ids, $all_values, $include_unset)
 
 Get User Attribute Values
 
@@ -1953,7 +1953,7 @@ Get User Attribute Values
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1985,7 +1985,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\UserAttributeWithValue[]**](../Model/UserAttributeWithValue.md)
+[**\Looker\Model\UserAttributeWithValue[]**](../Model/UserAttributeWithValue.md)
 
 ### Authorization
 
@@ -1999,7 +1999,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userCredentialsApi**
-> \Swagger\Client\Looker\Model\CredentialsApi userCredentialsApi($user_id, $fields)
+> \Looker\Model\CredentialsApi userCredentialsApi($user_id, $fields)
 
 Get API Credential
 
@@ -2010,7 +2010,7 @@ Get API Credential
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -2036,7 +2036,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\CredentialsApi**](../Model/CredentialsApi.md)
+[**\Looker\Model\CredentialsApi**](../Model/CredentialsApi.md)
 
 ### Authorization
 
@@ -2050,7 +2050,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userCredentialsApi3**
-> \Swagger\Client\Looker\Model\CredentialsApi3 userCredentialsApi3($user_id, $credentials_api3_id, $fields)
+> \Looker\Model\CredentialsApi3 userCredentialsApi3($user_id, $credentials_api3_id, $fields)
 
 Get API 3 Credential
 
@@ -2061,7 +2061,7 @@ Get API 3 Credential
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -2089,7 +2089,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\CredentialsApi3**](../Model/CredentialsApi3.md)
+[**\Looker\Model\CredentialsApi3**](../Model/CredentialsApi3.md)
 
 ### Authorization
 
@@ -2103,7 +2103,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userCredentialsEmail**
-> \Swagger\Client\Looker\Model\CredentialsEmail userCredentialsEmail($user_id, $fields)
+> \Looker\Model\CredentialsEmail userCredentialsEmail($user_id, $fields)
 
 Get Email/Password Credential
 
@@ -2114,7 +2114,7 @@ Get Email/Password Credential
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -2140,7 +2140,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\CredentialsEmail**](../Model/CredentialsEmail.md)
+[**\Looker\Model\CredentialsEmail**](../Model/CredentialsEmail.md)
 
 ### Authorization
 
@@ -2154,7 +2154,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userCredentialsEmbed**
-> \Swagger\Client\Looker\Model\CredentialsEmbed userCredentialsEmbed($user_id, $credentials_embed_id, $fields)
+> \Looker\Model\CredentialsEmbed userCredentialsEmbed($user_id, $credentials_embed_id, $fields)
 
 Get Embedding Credential
 
@@ -2165,7 +2165,7 @@ Get Embedding Credential
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -2193,7 +2193,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\CredentialsEmbed**](../Model/CredentialsEmbed.md)
+[**\Looker\Model\CredentialsEmbed**](../Model/CredentialsEmbed.md)
 
 ### Authorization
 
@@ -2207,7 +2207,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userCredentialsGoogle**
-> \Swagger\Client\Looker\Model\CredentialsGoogle userCredentialsGoogle($user_id, $fields)
+> \Looker\Model\CredentialsGoogle userCredentialsGoogle($user_id, $fields)
 
 Get Google Auth Credential
 
@@ -2218,7 +2218,7 @@ Get Google Auth Credential
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -2244,7 +2244,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\CredentialsGoogle**](../Model/CredentialsGoogle.md)
+[**\Looker\Model\CredentialsGoogle**](../Model/CredentialsGoogle.md)
 
 ### Authorization
 
@@ -2258,7 +2258,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userCredentialsLdap**
-> \Swagger\Client\Looker\Model\CredentialsLDAP userCredentialsLdap($user_id, $fields)
+> \Looker\Model\CredentialsLDAP userCredentialsLdap($user_id, $fields)
 
 Get LDAP Credential
 
@@ -2269,7 +2269,7 @@ Get LDAP Credential
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -2295,7 +2295,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\CredentialsLDAP**](../Model/CredentialsLDAP.md)
+[**\Looker\Model\CredentialsLDAP**](../Model/CredentialsLDAP.md)
 
 ### Authorization
 
@@ -2309,7 +2309,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userCredentialsLookerOpenid**
-> \Swagger\Client\Looker\Model\CredentialsLookerOpenid userCredentialsLookerOpenid($user_id, $fields)
+> \Looker\Model\CredentialsLookerOpenid userCredentialsLookerOpenid($user_id, $fields)
 
 Get Looker OpenId Credential
 
@@ -2320,7 +2320,7 @@ Get Looker OpenId Credential
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -2346,7 +2346,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\CredentialsLookerOpenid**](../Model/CredentialsLookerOpenid.md)
+[**\Looker\Model\CredentialsLookerOpenid**](../Model/CredentialsLookerOpenid.md)
 
 ### Authorization
 
@@ -2360,7 +2360,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userCredentialsOidc**
-> \Swagger\Client\Looker\Model\CredentialsOIDC userCredentialsOidc($user_id, $fields)
+> \Looker\Model\CredentialsOIDC userCredentialsOidc($user_id, $fields)
 
 Get OIDC Auth Credential
 
@@ -2371,7 +2371,7 @@ Get OIDC Auth Credential
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -2397,7 +2397,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\CredentialsOIDC**](../Model/CredentialsOIDC.md)
+[**\Looker\Model\CredentialsOIDC**](../Model/CredentialsOIDC.md)
 
 ### Authorization
 
@@ -2411,7 +2411,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userCredentialsSaml**
-> \Swagger\Client\Looker\Model\CredentialsSaml userCredentialsSaml($user_id, $fields)
+> \Looker\Model\CredentialsSaml userCredentialsSaml($user_id, $fields)
 
 Get Saml Auth Credential
 
@@ -2422,7 +2422,7 @@ Get Saml Auth Credential
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -2448,7 +2448,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\CredentialsSaml**](../Model/CredentialsSaml.md)
+[**\Looker\Model\CredentialsSaml**](../Model/CredentialsSaml.md)
 
 ### Authorization
 
@@ -2462,7 +2462,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userCredentialsTotp**
-> \Swagger\Client\Looker\Model\CredentialsTotp userCredentialsTotp($user_id, $fields)
+> \Looker\Model\CredentialsTotp userCredentialsTotp($user_id, $fields)
 
 Get Two-Factor Credential
 
@@ -2473,7 +2473,7 @@ Get Two-Factor Credential
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -2499,7 +2499,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\CredentialsTotp**](../Model/CredentialsTotp.md)
+[**\Looker\Model\CredentialsTotp**](../Model/CredentialsTotp.md)
 
 ### Authorization
 
@@ -2513,7 +2513,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userForCredential**
-> \Swagger\Client\Looker\Model\User userForCredential($credential_type, $credential_id, $fields)
+> \Looker\Model\User userForCredential($credential_type, $credential_id, $fields)
 
 Get User by Credential Id
 
@@ -2524,7 +2524,7 @@ Get User by Credential Id
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -2552,7 +2552,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\User**](../Model/User.md)
+[**\Looker\Model\User**](../Model/User.md)
 
 ### Authorization
 
@@ -2566,7 +2566,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userRoles**
-> \Swagger\Client\Looker\Model\Role[] userRoles($user_id, $fields, $direct_association_only)
+> \Looker\Model\Role[] userRoles($user_id, $fields, $direct_association_only)
 
 Get User Roles
 
@@ -2577,7 +2577,7 @@ Get User Roles
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -2605,7 +2605,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Role[]**](../Model/Role.md)
+[**\Looker\Model\Role[]**](../Model/Role.md)
 
 ### Authorization
 
@@ -2619,7 +2619,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userSession**
-> \Swagger\Client\Looker\Model\Session userSession($user_id, $session_id, $fields)
+> \Looker\Model\Session userSession($user_id, $session_id, $fields)
 
 Get Web Login Session
 
@@ -2630,7 +2630,7 @@ Get Web Login Session
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Looker\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -2658,7 +2658,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Session**](../Model/Session.md)
+[**\Looker\Model\Session**](../Model/Session.md)
 
 ### Authorization
 

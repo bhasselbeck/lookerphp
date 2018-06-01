@@ -1,4 +1,4 @@
-# Swagger\Client\RunningQueriesApi
+# Looker\RunningQueriesApi
 
 All URIs are relative to *https://ethosce.looker.com:19999/api/3.1*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **allRunningQueries**
-> \Swagger\Client\Looker\Model\RunningQueries[] allRunningQueries()
+> \Looker\Model\RunningQueries[] allRunningQueries()
 
 Get All Running Queries
 
@@ -20,7 +20,7 @@ Get information about all running queries.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RunningQueriesApi(
+$apiInstance = new Looker\Api\RunningQueriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -40,7 +40,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\RunningQueries[]**](../Model/RunningQueries.md)
+[**\Looker\Model\RunningQueries[]**](../Model/RunningQueries.md)
 
 ### Authorization
 
@@ -65,7 +65,7 @@ Kill a query with a specific query_task_id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RunningQueriesApi(
+$apiInstance = new Looker\Api\RunningQueriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()

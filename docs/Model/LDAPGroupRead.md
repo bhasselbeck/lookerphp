@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **string** | Name of group in LDAP | [optional] 
-**roles** | [**\Swagger\Client\Looker\Model\Role[]**](Role.md) | Looker Roles | [optional] 
+**roles** | [**\Looker\Model\Role[]**](Role.md) | Looker Roles | [optional] 
 **url** | **string** | Link to ldap config | [optional] 
 **can** | **map[string,bool]** | Operations the current user is able to perform on this object | [optional] 
 

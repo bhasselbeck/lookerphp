@@ -1,4 +1,4 @@
-# Swagger\Client\ProjectApi
+# Looker\ProjectApi
 
 All URIs are relative to *https://ethosce.looker.com:19999/api/3.1*
 
@@ -23,7 +23,7 @@ Method | HTTP request | Description
 
 
 # **allGitBranches**
-> \Swagger\Client\Looker\Model\GitBranch[] allGitBranches($project_id)
+> \Looker\Model\GitBranch[] allGitBranches($project_id)
 
 Get All Git Branchs
 
@@ -34,7 +34,7 @@ Get All Git Branchs
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProjectApi(
+$apiInstance = new Looker\Api\ProjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\GitBranch[]**](../Model/GitBranch.md)
+[**\Looker\Model\GitBranch[]**](../Model/GitBranch.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allGitConnectionTests**
-> \Swagger\Client\Looker\Model\GitConnectionTest[] allGitConnectionTests($project_id)
+> \Looker\Model\GitConnectionTest[] allGitConnectionTests($project_id)
 
 Get All Git Connection Tests
 
@@ -83,7 +83,7 @@ Get All Git Connection Tests
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProjectApi(
+$apiInstance = new Looker\Api\ProjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\GitConnectionTest[]**](../Model/GitConnectionTest.md)
+[**\Looker\Model\GitConnectionTest[]**](../Model/GitConnectionTest.md)
 
 ### Authorization
 
@@ -121,7 +121,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allProjectFiles**
-> \Swagger\Client\Looker\Model\ProjectFile[] allProjectFiles($project_id, $fields)
+> \Looker\Model\ProjectFile[] allProjectFiles($project_id, $fields)
 
 Get All Project Files
 
@@ -132,7 +132,7 @@ Get All Project Files
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProjectApi(
+$apiInstance = new Looker\Api\ProjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ProjectFile[]**](../Model/ProjectFile.md)
+[**\Looker\Model\ProjectFile[]**](../Model/ProjectFile.md)
 
 ### Authorization
 
@@ -172,7 +172,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **allProjects**
-> \Swagger\Client\Looker\Model\Project[] allProjects($fields)
+> \Looker\Model\Project[] allProjects($fields)
 
 Get All Projects
 
@@ -183,7 +183,7 @@ Get All Projects
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProjectApi(
+$apiInstance = new Looker\Api\ProjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -207,7 +207,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Project[]**](../Model/Project.md)
+[**\Looker\Model\Project[]**](../Model/Project.md)
 
 ### Authorization
 
@@ -232,7 +232,7 @@ Create Deploy Key
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProjectApi(
+$apiInstance = new Looker\Api\ProjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -270,7 +270,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createProject**
-> \Swagger\Client\Looker\Model\Project createProject($body)
+> \Looker\Model\Project createProject($body)
 
 Create Project
 
@@ -281,12 +281,12 @@ Create Project
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProjectApi(
+$apiInstance = new Looker\Api\ProjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Looker\Model\Project(); // \Swagger\Client\Looker\Model\Project | Project
+$body = new \Looker\Model\Project(); // \Looker\Model\Project | Project
 
 try {
     $result = $apiInstance->createProject($body);
@@ -301,11 +301,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Looker\Model\Project**](../Model/Project.md)| Project | [optional]
+ **body** | [**\Looker\Model\Project**](../Model/Project.md)| Project | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Project**](../Model/Project.md)
+[**\Looker\Model\Project**](../Model/Project.md)
 
 ### Authorization
 
@@ -330,7 +330,7 @@ Git Deploy Key
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProjectApi(
+$apiInstance = new Looker\Api\ProjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -368,7 +368,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **project**
-> \Swagger\Client\Looker\Model\Project project($project_id, $fields)
+> \Looker\Model\Project project($project_id, $fields)
 
 Get Project
 
@@ -379,7 +379,7 @@ Get Project
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProjectApi(
+$apiInstance = new Looker\Api\ProjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -405,7 +405,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Project**](../Model/Project.md)
+[**\Looker\Model\Project**](../Model/Project.md)
 
 ### Authorization
 
@@ -419,7 +419,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **projectFile**
-> \Swagger\Client\Looker\Model\ProjectFile projectFile($project_id, $file_id, $fields)
+> \Looker\Model\ProjectFile projectFile($project_id, $file_id, $fields)
 
 Get Project File
 
@@ -430,7 +430,7 @@ Get Project File
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProjectApi(
+$apiInstance = new Looker\Api\ProjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -458,7 +458,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ProjectFile**](../Model/ProjectFile.md)
+[**\Looker\Model\ProjectFile**](../Model/ProjectFile.md)
 
 ### Authorization
 
@@ -472,7 +472,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **projectValidationResults**
-> \Swagger\Client\Looker\Model\ProjectValidationCache projectValidationResults($project_id, $fields)
+> \Looker\Model\ProjectValidationCache projectValidationResults($project_id, $fields)
 
 Cached Project Validation Results
 
@@ -483,7 +483,7 @@ Cached Project Validation Results
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProjectApi(
+$apiInstance = new Looker\Api\ProjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -509,7 +509,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ProjectValidationCache**](../Model/ProjectValidationCache.md)
+[**\Looker\Model\ProjectValidationCache**](../Model/ProjectValidationCache.md)
 
 ### Authorization
 
@@ -523,7 +523,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **projectWorkspace**
-> \Swagger\Client\Looker\Model\ProjectWorkspace projectWorkspace($project_id, $fields)
+> \Looker\Model\ProjectWorkspace projectWorkspace($project_id, $fields)
 
 Get Project Workspace
 
@@ -534,7 +534,7 @@ Get Project Workspace
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProjectApi(
+$apiInstance = new Looker\Api\ProjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -560,7 +560,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ProjectWorkspace**](../Model/ProjectWorkspace.md)
+[**\Looker\Model\ProjectWorkspace**](../Model/ProjectWorkspace.md)
 
 ### Authorization
 
@@ -585,7 +585,7 @@ Reset To Production
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProjectApi(
+$apiInstance = new Looker\Api\ProjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -634,7 +634,7 @@ Reset To Remote
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProjectApi(
+$apiInstance = new Looker\Api\ProjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -672,7 +672,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **runGitConnectionTest**
-> \Swagger\Client\Looker\Model\GitConnectionTestResult runGitConnectionTest($project_id, $test_id)
+> \Looker\Model\GitConnectionTestResult runGitConnectionTest($project_id, $test_id)
 
 Run Git Connection Test
 
@@ -683,7 +683,7 @@ Run Git Connection Test
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProjectApi(
+$apiInstance = new Looker\Api\ProjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -709,7 +709,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\GitConnectionTestResult**](../Model/GitConnectionTestResult.md)
+[**\Looker\Model\GitConnectionTestResult**](../Model/GitConnectionTestResult.md)
 
 ### Authorization
 
@@ -723,7 +723,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateProject**
-> \Swagger\Client\Looker\Model\Project updateProject($project_id, $body, $fields)
+> \Looker\Model\Project updateProject($project_id, $body, $fields)
 
 Update Project
 
@@ -734,13 +734,13 @@ Update Project
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProjectApi(
+$apiInstance = new Looker\Api\ProjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $project_id = "project_id_example"; // string | Project Id
-$body = new \Swagger\Client\Looker\Model\Project(); // \Swagger\Client\Looker\Model\Project | Project
+$body = new \Looker\Model\Project(); // \Looker\Model\Project | Project
 $fields = "fields_example"; // string | Requested fields
 
 try {
@@ -757,12 +757,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **project_id** | **string**| Project Id |
- **body** | [**\Swagger\Client\Looker\Model\Project**](../Model/Project.md)| Project |
+ **body** | [**\Looker\Model\Project**](../Model/Project.md)| Project |
  **fields** | **string**| Requested fields | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\Project**](../Model/Project.md)
+[**\Looker\Model\Project**](../Model/Project.md)
 
 ### Authorization
 
@@ -776,7 +776,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **validateProject**
-> \Swagger\Client\Looker\Model\ProjectValidation validateProject($project_id, $fields)
+> \Looker\Model\ProjectValidation validateProject($project_id, $fields)
 
 Validate Project
 
@@ -787,7 +787,7 @@ Validate Project
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProjectApi(
+$apiInstance = new Looker\Api\ProjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -813,7 +813,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Looker\Model\ProjectValidation**](../Model/ProjectValidation.md)
+[**\Looker\Model\ProjectValidation**](../Model/ProjectValidation.md)
 
 ### Authorization
 

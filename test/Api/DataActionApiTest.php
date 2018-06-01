@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Looker
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace Swagger\Client;
+namespace Looker;
 
-use \Swagger\Client\Configuration;
-use \Swagger\Client\ApiException;
-use \Swagger\Client\ObjectSerializer;
+use \Looker\Configuration;
+use \Looker\ApiException;
+use \Looker\ObjectSerializer;
 
 /**
  * DataActionApiTest Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Looker
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
