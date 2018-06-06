@@ -20,11 +20,11 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/dlc-solutions/lookerphp.git"
+      "url": "https://github.com/ethosce/lookerphp.git"
     }
   ],
   "require": {
-    "dlc-solutions/lookerphp": "*@dev"
+    "ethosce/lookerphp": "*@dev"
   }
 }
 ```
